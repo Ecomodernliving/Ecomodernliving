@@ -1,0 +1,101 @@
+"use client";
+
+import {
+  AirVent,
+  Award,
+  BookOpen,
+  Bot,
+  Building2,
+  Calculator,
+  Camera,
+  ClipboardList,
+  Compass,
+  Cpu,
+  DollarSign,
+  Download,
+  Droplets,
+  FileText,
+  Flame,
+  GraduationCap,
+  Hammer,
+  Handshake,
+  Home,
+  House,
+  Leaf,
+  Lightbulb,
+  MapPin,
+  MessageCircle,
+  Paintbrush,
+  Palette,
+  Plug,
+  Recycle,
+  Search,
+  Shield,
+  ShoppingBag,
+  Smartphone,
+  Sofa,
+  Sparkles,
+  Sun,
+  Thermometer,
+  TreePine,
+  Users,
+  Video,
+  Wind,
+  Zap,
+} from "lucide-react";
+import type { NavIconName } from "@/config/navigation";
+
+const iconMap = {
+  airVent: AirVent,
+  award: Award,
+  bookOpen: BookOpen,
+  bot: Bot,
+  building2: Building2,
+  calculator: Calculator,
+  camera: Camera,
+  clipboardList: ClipboardList,
+  compass: Compass,
+  cpu: Cpu,
+  dollarSign: DollarSign,
+  download: Download,
+  droplets: Droplets,
+  fileText: FileText,
+  flame: Flame,
+  graduationCap: GraduationCap,
+  hammer: Hammer,
+  handshake: Handshake,
+  home: Home,
+  house: House,
+  leaf: Leaf,
+  lightbulb: Lightbulb,
+  mapPin: MapPin,
+  messageCircle: MessageCircle,
+  paintbrush: Paintbrush,
+  palette: Palette,
+  plug: Plug,
+  recycle: Recycle,
+  search: Search,
+  shield: Shield,
+  shoppingBag: ShoppingBag,
+  smartphone: Smartphone,
+  sofa: Sofa,
+  sparkles: Sparkles,
+  sun: Sun,
+  thermometer: Thermometer,
+  treePine: TreePine,
+  users: Users,
+  video: Video,
+  wind: Wind,
+  zap: Zap,
+} satisfies Record<NavIconName, React.ComponentType<{ className?: string }>>;
+
+type NavIconProps = {
+  name?: NavIconName;
+  className?: string;
+};
+
+export function NavIcon({ name, className }: NavIconProps) {
+  if (!name) return null;
+  const Icon = iconMap[name];
+  return Icon ? <Icon className={className} /> : null;
+}
