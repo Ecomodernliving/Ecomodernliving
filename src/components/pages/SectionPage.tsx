@@ -1,232 +1,588 @@
 "use client";
 
+
+
 import { Breadcrumbs } from "./Breadcrumbs";
+
 import { PageHero, CTAButton } from "./PageHero";
+
 import {
-  SidebarNav,
+
+  SectionNav,
+
   HighlightList,
+
   FeatureGrid,
-  ProductGrid,
+
   HowItWorks,
+
   TimelineView,
+
   TipsList,
+
   RelatedPages,
+
   HubGrid,
+
   ContactForm,
+
   NewsletterForm,
+
   AuditForm,
+
   CTABanner,
+
+  SectionHeading,
+
 } from "./PageSections";
+
+import { PassiveHouseCalculators } from "@/components/passive-house/Calculators";
+
+import { PassiveHouseFAQ } from "@/components/passive-house/PassiveHouseFAQ";
+
+import { ProductCatalog } from "@/components/marketplace/ProductCatalog";
+import { countUniqueProducts } from "@/lib/marketplace-product-utils";
+
 import type { PageCategory } from "@/lib/navigation-utils";
+
 import type { PageContent } from "@/config/page-content";
+
 import { getCategoryAccent } from "@/config/page-content";
+
 import type { NavLink, NavSection } from "@/config/navigation";
 
+
+
 export type SectionPageProps = {
+
   href: string;
+
   link: NavLink;
+
   parentLabel: string;
+
   parentBadge?: string;
+
   sectionTitle: string;
+
   sectionLinks: NavLink[];
+
   siblings: NavLink[];
+
   breadcrumbs: { label: string; href: string }[];
+
   category: PageCategory;
+
   content: PageContent;
+
   isHub: boolean;
+
   hubSections: NavSection[];
+
 };
 
+
+
 function getAllSectionLinks(sections: NavSection[]): NavLink[] {
+
   return sections.flatMap((s) => s.links);
+
 }
 
-export function SectionPage({
-  href,
-  link,
-  parentLabel,
-  parentBadge,
-  sectionTitle,
-  sectionLinks,
-  siblings,
-  breadcrumbs,
-  category,
-  content,
-  isHub,
-  hubSections,
-}: SectionPageProps) {
-  const accent = getCategoryAccent(category);
-  const sidebarLinks = isHub ? getAllSectionLinks(hubSections) : sectionLinks;
+
+
+function ContentSection({
+
+  children,
+
+  className = "",
+
+  id,
+
+}: {
+
+  children: React.ReactNode;
+
+  className?: string;
+
+  id?: string;
+
+}) {
 
   return (
+
+    <section
+
+      id={id}
+
+      className={`rounded-2xl border border-sage-200/60 bg-white/80 p-5 shadow-sm backdrop-blur-sm sm:p-6 md:p-8 ${className}`}
+
+    >
+
+      {children}
+
+    </section>
+
+  );
+
+}
+
+
+
+export function SectionPage({
+
+  href,
+
+  link,
+
+  parentLabel,
+
+  parentBadge,
+
+  sectionTitle,
+
+  sectionLinks,
+
+  siblings,
+
+  breadcrumbs,
+
+  category,
+
+  content,
+
+  isHub,
+
+  hubSections,
+
+}: SectionPageProps) {
+
+  const accent = getCategoryAccent(category);
+
+  const sidebarLinks = isHub ? getAllSectionLinks(hubSections) : sectionLinks;
+
+
+
+  return (
+
     <>
+
       <PageHero
+
         title={link.label}
+
         description={content.intro}
+
         icon={link.icon}
+
         badge={link.badge ?? parentBadge}
+
+        eyebrow={parentLabel}
+
         category={category}
+
         comingSoon={content.comingSoon}
+
       />
 
-      <div className="mx-auto max-w-7xl px-4 py-12 lg:px-6 lg:py-16">
+
+
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:py-10 lg:px-6 lg:py-14">
+
         <Breadcrumbs items={breadcrumbs} />
 
-        <div className="grid gap-10 lg:grid-cols-[240px_1fr]">
-          <SidebarNav
-            title={isHub ? parentLabel : sectionTitle}
-            links={sidebarLinks}
-            currentHref={href}
-          />
 
-          <div className="min-w-0 space-y-12">
+
+        <SectionNav
+
+          title={isHub ? parentLabel : sectionTitle}
+
+          links={sidebarLinks}
+
+          currentHref={href}
+
+        />
+
+
+
+        <div className="min-w-0 space-y-8">
+
             {isHub ? (
-              <HubGrid sections={hubSections} category={category} />
+
+              <ContentSection className="!bg-white/90">
+
+                <HubGrid sections={hubSections} category={category} />
+
+              </ContentSection>
+
             ) : (
+
               <>
+
                 {!content.comingSoon && content.ctaLabel && content.ctaHref && (
-                  <div>
+
+                  <div className="flex justify-center">
+
                     <CTAButton
+
                       label={content.ctaLabel}
+
                       href={content.ctaHref}
+
                       category={category}
+
                     />
+
                   </div>
+
                 )}
+
+
 
                 {content.highlights.length > 0 && (
-                  <section>
-                    <h2 className="mb-4 font-display text-xl font-semibold text-forest-900">
-                      Key Highlights
-                    </h2>
+
+                  <ContentSection>
+
+                    <SectionHeading
+
+                      title="Key Highlights"
+
+                      subtitle="What matters most for this topic"
+
+                    />
+
                     <HighlightList items={content.highlights} />
-                  </section>
+
+                  </ContentSection>
+
                 )}
+
+
 
                 {content.features.length > 0 && (
-                  <section>
-                    <h2 className="mb-4 font-display text-xl font-semibold text-forest-900">
-                      Why It Matters
-                    </h2>
+
+                  <ContentSection>
+
+                    <SectionHeading
+
+                      title="Why It Matters"
+
+                      subtitle="Core benefits and considerations"
+
+                    />
+
                     <FeatureGrid features={content.features} category={category} />
-                  </section>
+
+                  </ContentSection>
+
                 )}
+
+
 
                 {content.products && content.products.length > 0 && (
-                  <section>
-                    <h2 className="mb-4 font-display text-xl font-semibold text-forest-900">
-                      Top Picks
-                    </h2>
-                    <ProductGrid products={content.products} />
-                  </section>
+
+                  <ContentSection id="products">
+
+                    <SectionHeading
+
+                      title="Top Picks"
+
+                      subtitle={`${countUniqueProducts(content.products)} curated products — compare prices at Amazon, Home Depot, Lowe's & more`}
+
+                    />
+
+                    <ProductCatalog
+                      products={content.products}
+                      catalogSlug={href.split("/").filter(Boolean).pop()}
+                    />
+
+                  </ContentSection>
+
                 )}
+
+
 
                 {content.steps && content.steps.length > 0 && (
-                  <section>
-                    <h2 className="mb-4 font-display text-xl font-semibold text-forest-900">
-                      How It Works
-                    </h2>
+
+                  <ContentSection id="get-started">
+
+                    <SectionHeading
+
+                      title="How It Works"
+
+                      subtitle="A simple path from start to finish"
+
+                    />
+
                     <HowItWorks steps={content.steps} category={category} />
-                  </section>
+
+                  </ContentSection>
+
                 )}
+
+
 
                 {content.timeline && content.timeline.length > 0 && (
-                  <section>
-                    <h2 className="mb-4 font-display text-xl font-semibold text-forest-900">
-                      {category === "passive-house" ? "Build Timeline" : "Project Timeline"}
-                    </h2>
+
+                  <ContentSection>
+
+                    <SectionHeading
+
+                      title={
+
+                        category === "passive-house"
+
+                          ? "Certification Path"
+
+                          : "Project Timeline"
+
+                      }
+
+                      subtitle="Typical milestones and phases"
+
+                    />
+
                     <TimelineView items={content.timeline} />
-                  </section>
+
+                  </ContentSection>
+
                 )}
+
+
 
                 {content.tips && content.tips.length > 0 && (
-                  <section>
+
+                  <ContentSection>
+
                     <TipsList tips={content.tips} />
-                  </section>
+
+                  </ContentSection>
+
                 )}
 
-                {href === "/contact" && <ContactForm />}
+
+
+                {href === "/contact" && (
+
+                  <ContentSection>
+
+                    <SectionHeading
+
+                      title="Send Us a Message"
+
+                      subtitle="We typically respond within 1–2 business days"
+
+                    />
+
+                    <ContactForm />
+
+                  </ContentSection>
+
+                )}
+
+
+
                 {href === "/community/newsletter" && (
-                  <section className={`rounded-2xl ${accent.light} p-8`}>
-                    <h2 className="font-display text-xl font-semibold text-forest-900">
-                      Subscribe to our newsletter
-                    </h2>
-                    <p className="mt-2 text-sm text-sage-600">
-                      Weekly eco products, AI trends, and passive house updates.
-                    </p>
-                    <div className="mt-5">
-                      <NewsletterForm />
-                    </div>
-                  </section>
+
+                  <ContentSection className={`${accent.light} border-forest-200/40`}>
+
+                    <SectionHeading
+
+                      title="Subscribe to Our Newsletter"
+
+                      subtitle="Weekly eco products, AI trends, and passive house education"
+
+                    />
+
+                    <NewsletterForm />
+
+                  </ContentSection>
+
                 )}
+
+
+
                 {href === "/ai/energy-audit" && (
-                  <section>
-                    <h2 className="mb-4 font-display text-xl font-semibold text-forest-900">
-                      Start Your Free Audit
-                    </h2>
+
+                  <ContentSection>
+
+                    <SectionHeading
+
+                      title="Start Your Free Audit"
+
+                      subtitle="Enter your home details for a personalized savings estimate"
+
+                    />
+
                     <AuditForm />
-                  </section>
+
+                  </ContentSection>
+
                 )}
+
+
+
+                {href === "/passive-house-calculators" && (
+
+                  <ContentSection>
+
+                    <SectionHeading
+
+                      title="Passive House Calculators"
+
+                      subtitle="Educational estimates — confirm with PHPP for certification"
+
+                    />
+
+                    <PassiveHouseCalculators />
+
+                  </ContentSection>
+
+                )}
+
+
+
+                {href === "/passive-house-faq" && (
+
+                  <ContentSection>
+
+                    <SectionHeading
+
+                      title="Frequently Asked Questions"
+
+                      subtitle="Search 100+ answers on design, construction, and certification"
+
+                    />
+
+                    <PassiveHouseFAQ />
+
+                  </ContentSection>
+
+                )}
+
+
 
                 {content.comingSoon && (
-                  <section className="rounded-2xl border-2 border-dashed border-sage-200 bg-sage-50/50 p-10 text-center">
-                    <p className="font-display text-lg font-semibold text-forest-900">
+
+                  <section className="rounded-3xl border-2 border-dashed border-sage-200 bg-sage-50/60 p-10 text-center sm:p-14">
+
+                    <p className="font-display text-xl font-semibold text-forest-900 sm:text-2xl">
+
                       Coming Soon
+
                     </p>
-                    <p className="mt-2 text-sm text-sage-500">
+
+                    <p className="mx-auto mt-3 max-w-md text-sm text-sage-500">
+
                       We&apos;re building this feature. Join our newsletter to get notified at launch.
+
                     </p>
-                    <div className="mt-6 flex justify-center">
+
+                    <div className="mt-8 flex justify-center">
+
                       <NewsletterForm />
+
                     </div>
+
                   </section>
+
                 )}
+
+
 
                 {siblings.length > 0 && (
-                  <section>
-                    <h2 className="mb-4 font-display text-xl font-semibold text-forest-900">
-                      Explore More
-                    </h2>
+
+                  <ContentSection>
+
+                    <SectionHeading
+
+                      title="Explore More"
+
+                      subtitle={`More in ${sectionTitle}`}
+
+                    />
+
                     <RelatedPages links={siblings} category={category} />
-                  </section>
+
+                  </ContentSection>
+
                 )}
 
+
+
                 <CTABanner
+
                   title={
+
                     category === "marketplace"
+
                       ? "Need help choosing?"
+
                       : category === "passive-house"
-                        ? "Follow our build journey"
+
+                        ? "Explore Passive House guides"
+
                         : "Ready to get started?"
+
                   }
+
                   description={
+
                     category === "marketplace"
+
                       ? "Try our AI Product Recommender for personalized suggestions based on your home and budget."
+
                       : category === "passive-house"
-                        ? "Subscribe for weekly build journal updates, photos, and lessons learned."
+
+                        ? "Use our free calculators and FAQ to plan your energy-efficient home."
+
                         : "Use our free AI tools to analyze your home and discover the best sustainable upgrades."
+
                   }
+
                   ctaLabel={
+
                     category === "marketplace"
+
                       ? "Try AI Recommender"
+
                       : category === "passive-house"
-                        ? "Read Build Journal"
+
+                        ? "Try Calculators"
+
                         : "Free Energy Audit"
+
                   }
+
                   ctaHref={
+
                     category === "marketplace"
+
                       ? "/ai/product-recommender"
+
                       : category === "passive-house"
-                        ? "/passive-house/journal"
+
+                        ? "/passive-house-calculators"
+
                         : "/ai/energy-audit"
+
                   }
+
                   category={category}
+
                 />
+
               </>
+
             )}
+
           </div>
-        </div>
+
       </div>
+
     </>
+
   );
+
 }
+

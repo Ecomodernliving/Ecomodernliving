@@ -186,41 +186,50 @@ export const mainNavigation: NavItem[] = [
     ],
   },
   {
-    label: "Our Passive House",
-    badge: "Build Journey",
+    label: "Passive House",
+    badge: "Learn",
     featured: {
-      label: "Follow Our Build",
+      label: "Passive House Guide",
       href: "/passive-house",
-      description: "We're building an eco-modern passive house — follow every step from design to move-in.",
-      icon: "hammer",
-      badge: "Live",
+      description: "Principles, certification, calculators, product picks & 100+ FAQs for homeowners.",
+      icon: "bookOpen",
     },
     sections: [
       {
-        title: "The Project",
+        title: "Education Hub",
         links: [
-          { label: "Vision & Goals", href: "/passive-house/vision", description: "Why we're building passive & what we aim for", icon: "compass" },
-          { label: "Design Process", href: "/passive-house/design", description: "Architect selection, PHPP modeling & plans", icon: "palette" },
-          { label: "Site & Location", href: "/passive-house/site", description: "Lot analysis, orientation & climate zone", icon: "mapPin" },
-          { label: "Build Timeline", href: "/passive-house/timeline", description: "Milestones from groundbreaking to certification", icon: "clipboardList" },
+          { label: "Passive House Guide", href: "/passive-house", description: "Comprehensive overview, benefits, certification & ROI", icon: "bookOpen" },
+          { label: "Five Principles", href: "/passive-house-principles", description: "Insulation, airtightness, windows, bridges & ventilation", icon: "shield" },
+          { label: "Product Guide", href: "/passive-house-products", description: "Windows, insulation, ERVs, heat pumps & solar mapped to systems", icon: "shoppingBag" },
+          { label: "Calculators", href: "/passive-house-calculators", description: "Heat loss, R-value, ACH50, energy savings & ROI tools", icon: "calculator" },
+          { label: "FAQ (100+)", href: "/passive-house-faq", description: "Searchable answers on design, construction & certification", icon: "fileText" },
         ],
       },
       {
-        title: "Systems & Materials",
+        title: "Planning & Design",
+        links: [
+          { label: "Why Passive House?", href: "/passive-house/vision", description: "Benefits, comfort, health & long-term savings", icon: "compass" },
+          { label: "Design & PHPP", href: "/passive-house/design", description: "Energy modeling, form factor & orientation", icon: "palette" },
+          { label: "Site & Climate", href: "/passive-house/site", description: "Lot selection, solar access & climate zones", icon: "mapPin" },
+          { label: "Certification Path", href: "/passive-house/timeline", description: "Steps from design review to blower door test", icon: "clipboardList" },
+        ],
+      },
+      {
+        title: "Building Systems",
         links: [
           { label: "Envelope & Insulation", href: "/passive-house/envelope", description: "Airtight layer, windows & thermal bridge-free design", icon: "shield" },
           { label: "HVAC & Ventilation", href: "/passive-house/hvac", description: "ERV, heat pump & passive cooling strategies", icon: "airVent" },
-          { label: "Solar & Energy", href: "/passive-house/solar", description: "PV array, battery storage & net metering", icon: "sun" },
-          { label: "Materials We Chose", href: "/passive-house/materials", description: "Every product decision documented with links", icon: "hammer" },
+          { label: "Solar & Energy", href: "/passive-house/solar", description: "PV sizing, battery storage & net metering", icon: "sun" },
+          { label: "Recommended Materials", href: "/passive-house/materials", description: "Insulation, windows, membranes & ventilation products", icon: "hammer" },
         ],
       },
       {
-        title: "Documenting the Journey",
+        title: "Costs & Research",
         links: [
-          { label: "Build Journal", href: "/passive-house/journal", description: "Weekly updates, photos & lessons learned", icon: "camera" },
-          { label: "Before & After", href: "/passive-house/before-after", description: "Transformation gallery as construction progresses", icon: "sparkles" },
-          { label: "Cost Breakdown", href: "/passive-house/costs", description: "Transparent budget tracking & ROI analysis", icon: "calculator" },
-          { label: "Open House Tours", href: "/passive-house/tours", description: "Virtual & in-person tours when complete", icon: "video" },
+          { label: "Cost & ROI Guide", href: "/passive-house/costs", description: "Budget expectations, payback & lifecycle savings", icon: "calculator" },
+          { label: "Case Studies", href: "/passive-house/before-after", description: "Real-world passive house examples & performance results", icon: "sparkles" },
+          { label: "Articles & Insights", href: "/passive-house/journal", description: "Educational articles on passive house topics", icon: "camera" },
+          { label: "Tax Credits & Grants", href: "/guides/incentives", description: "Federal and state programs that reduce project costs", icon: "dollarSign" },
         ],
       },
     ],
@@ -261,7 +270,7 @@ export const mainNavigation: NavItem[] = [
         title: "Discover",
         links: [
           { label: "Eco Homes Marketplace", href: "/eco-homes", description: "Green-certified, passive & solar-powered listings", icon: "building2" },
-          { label: "Instagram", href: siteConfig.social.instagram, description: "Minimalist eco interiors & build updates", icon: "camera", external: true },
+          { label: "Instagram", href: siteConfig.social.instagram, description: "Minimalist eco interiors & sustainable design inspiration", icon: "camera", external: true },
           { label: "Pinterest", href: siteConfig.social.pinterest, description: "Scandinavian eco design inspiration", icon: "camera", external: true },
           { label: "EcoModern Store", href: "/store", description: "Our brand — decor, kits & planners (coming soon)", icon: "shoppingBag", badge: "Soon" },
         ],
@@ -274,9 +283,3 @@ export const utilityLinks: NavLink[] = [
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
-
-export const ctaLink: NavLink = {
-  label: "Get Free Energy Audit",
-  href: "/ai/energy-audit",
-  icon: "zap",
-};

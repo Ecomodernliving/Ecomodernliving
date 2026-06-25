@@ -1,0 +1,21 @@
+{
+  "slug": "rainwater-harvesting-basics",
+  "title": "Rainwater Harvesting for Sustainable Homes",
+  "metaDescription": "Collection, filtration, and code considerations for residential rainwater systems.",
+  "targetKeyword": "rainwater harvesting",
+  "category": "Water",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/marketplace/water-fixtures"
+  ],
+  "affiliateCategories": [
+    "water-fixtures"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Components",
+    "Uses",
+    "Codes",
+    "Maintenance"
+  ]
+}

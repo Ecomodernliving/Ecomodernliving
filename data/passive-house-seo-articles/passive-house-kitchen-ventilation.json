@@ -1,0 +1,21 @@
+{
+  "slug": "passive-house-kitchen-ventilation",
+  "title": "Kitchen Ventilation in Airtight Homes",
+  "metaDescription": "Range hoods, make-up air, and integration with balanced ventilation systems.",
+  "targetKeyword": "kitchen ventilation passive house",
+  "category": "Ventilation",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house/hvac"
+  ],
+  "affiliateCategories": [
+    "passive-house-materials"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Exhaust rates",
+    "Make-up air",
+    "Filters",
+    "Details"
+  ]
+}

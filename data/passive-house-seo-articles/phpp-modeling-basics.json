@@ -1,0 +1,20 @@
+{
+  "slug": "phpp-modeling-basics",
+  "title": "PHPP Modeling Basics for Homeowners and Designers",
+  "metaDescription": "Introduction to Passive House Planning Package inputs, outputs, and verification workflow.",
+  "targetKeyword": "PHPP",
+  "category": "Modeling",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house/design",
+    "/passive-house-calculators"
+  ],
+  "affiliateCategories": [],
+  "faqSchema": [],
+  "outline": [
+    "Inputs",
+    "Climate data",
+    "Verification",
+    "Iterations"
+  ]
+}

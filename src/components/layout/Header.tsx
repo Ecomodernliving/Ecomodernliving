@@ -7,12 +7,12 @@ import clsx from "clsx";
 import {
   mainNavigation,
   utilityLinks,
-  ctaLink,
   type NavItem,
 } from "@/config/navigation";
 import { NavIcon } from "@/components/NavIcon";
 import { MobileMenu } from "./MobileMenu";
 import { NavHref } from "@/components/NavHref";
+import { AuthNav } from "@/components/auth/AuthNav";
 
 function MegaMenuDropdown({
   item,
@@ -203,7 +203,7 @@ export function Header() {
                       <button
                         type="button"
                         className={clsx(
-                          "flex h-10 items-center gap-1 whitespace-nowrap rounded-lg px-2.5 xl:px-3 text-[13px] font-medium transition-colors",
+                          "flex min-h-11 items-center gap-1 whitespace-nowrap rounded-lg px-2.5 xl:px-3 text-[13px] font-medium transition-colors",
                           activeMenu === item.label
                             ? "bg-forest-50 text-forest-700"
                             : "text-sage-700 hover:bg-sage-100/70 hover:text-forest-700"
@@ -227,7 +227,7 @@ export function Header() {
                     ) : (
                       <Link
                         href={item.href ?? "#"}
-                        className="flex h-10 items-center whitespace-nowrap rounded-lg px-2.5 xl:px-3 text-[13px] font-medium text-sage-700 hover:bg-sage-100/70 hover:text-forest-700 transition-colors"
+                        className="flex min-h-11 items-center whitespace-nowrap rounded-lg px-2.5 xl:px-3 text-[13px] font-medium text-sage-700 hover:bg-sage-100/70 hover:text-forest-700 transition-colors"
                       >
                         {item.label}
                       </Link>
@@ -237,31 +237,23 @@ export function Header() {
               </ul>
             </nav>
 
-            <div className="ml-auto flex shrink-0 items-center gap-2 lg:ml-0">
-              <div className="hidden items-center gap-1 md:flex">
+            <div className="ml-auto flex shrink-0 items-center gap-1.5 sm:gap-2">
+              <div className="hidden items-center gap-1 lg:flex">
                 {utilityLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="rounded-lg px-2.5 py-2 text-[13px] font-medium text-sage-500 hover:text-forest-700 transition-colors"
+                    className="inline-flex min-h-11 items-center rounded-lg px-3 py-2 text-[13px] font-medium text-sage-500 hover:text-forest-700 transition-colors"
                   >
                     {link.label}
                   </Link>
                 ))}
+                <AuthNav variant="header" />
               </div>
-
-              <Link
-                href={ctaLink.href}
-                className="hidden md:inline-flex h-9 items-center gap-1.5 rounded-full bg-forest-600 px-4 text-[13px] font-semibold text-white shadow-md shadow-forest-600/20 hover:bg-forest-700 transition-colors"
-              >
-                <NavIcon name={ctaLink.icon} className="h-3.5 w-3.5" />
-                <span className="hidden xl:inline">{ctaLink.label}</span>
-                <span className="xl:hidden">Energy Audit</span>
-              </Link>
 
               <button
                 type="button"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-lg text-sage-700 hover:bg-sage-100 lg:hidden"
+                className="hidden min-h-11 min-w-11 items-center justify-center rounded-lg text-sage-700 hover:bg-sage-100 max-lg:inline-flex"
                 onClick={() => setMobileOpen(true)}
                 aria-label="Open menu"
               >

@@ -1,0 +1,24 @@
+{
+  "slug": "eco-friendly-homes-checklist",
+  "title": "Eco-Friendly Homes Checklist for Buyers and Builders",
+  "metaDescription": "Verify claims with this checklist covering energy, water, materials, indoor air, and renewable readiness.",
+  "targetKeyword": "Eco Friendly Homes",
+  "category": "Fundamentals",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/guides/zero-waste",
+    "/marketplace"
+  ],
+  "affiliateCategories": [
+    "air-purifiers",
+    "water-fixtures"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Energy",
+    "Water",
+    "Materials",
+    "IAQ",
+    "Landscaping"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "passive-house-tax-credits",
+  "title": "Tax Credits and Rebates for Passive House Projects",
+  "metaDescription": "Stack federal IRA rebates, solar ITC, and state programs for envelope and HVAC upgrades.",
+  "targetKeyword": "passive house incentives",
+  "category": "Economics",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/guides/incentives"
+  ],
+  "affiliateCategories": [
+    "heat-pumps",
+    "solar"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Federal",
+    "State",
+    "Utility",
+    "Documentation"
+  ]
+}

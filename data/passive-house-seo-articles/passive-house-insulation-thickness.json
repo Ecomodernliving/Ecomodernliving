@@ -1,0 +1,22 @@
+{
+  "slug": "passive-house-insulation-thickness",
+  "title": "How Much Insulation Does a Passive House Need?",
+  "metaDescription": "Climate-specific R-value targets, form factor effects, and how to right-size insulation without overspending.",
+  "targetKeyword": "Passive House Insulation",
+  "category": "Envelope",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/marketplace/insulation",
+    "/passive-house/envelope"
+  ],
+  "affiliateCategories": [
+    "insulation"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "R-value basics",
+    "Climate zones",
+    "Form factor",
+    "Material options"
+  ]
+}

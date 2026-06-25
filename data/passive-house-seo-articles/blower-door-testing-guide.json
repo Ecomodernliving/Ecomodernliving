@@ -1,0 +1,22 @@
+{
+  "slug": "blower-door-testing-guide",
+  "title": "Blower Door Testing: ACH50 Explained for Homeowners",
+  "metaDescription": "What happens during a blower door test, how ACH50 is calculated, and targets for Passive House.",
+  "targetKeyword": "blower door test",
+  "category": "Airtightness",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house-calculators",
+    "/passive-house/envelope"
+  ],
+  "affiliateCategories": [
+    "passive-house-materials"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Test procedure",
+    "Metrics",
+    "Targets",
+    "Fixing leaks"
+  ]
+}

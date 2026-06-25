@@ -1,0 +1,21 @@
+{
+  "slug": "greywater-systems-home",
+  "title": "Greywater Systems for Home Water Recycling",
+  "metaDescription": "Reuse shower and laundry water safely for irrigation and non-potable uses.",
+  "targetKeyword": "greywater system",
+  "category": "Water",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/marketplace/water-fixtures"
+  ],
+  "affiliateCategories": [
+    "water-fixtures"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Sources",
+    "Treatment",
+    "Codes",
+    "Design"
+  ]
+}

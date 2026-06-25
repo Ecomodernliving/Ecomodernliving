@@ -17,6 +17,9 @@ type PageProps = {
   params: Promise<{ slug?: string[] }>;
 };
 
+/** Refresh marketplace products from Google Sheet every hour */
+export const revalidate = 3600;
+
 function hrefFromSlug(slug: string[] = []): string {
   return "/" + slug.join("/");
 }
@@ -71,6 +74,15 @@ export default async function DynamicPage({ params }: PageProps) {
     category,
     context.link.badge ?? context.parent.badge
   );
+
+  const pageSlug = href.split("/").pop() ?? "";
+  if (category === "marketplace" && pageSlug) {
+    const { getProductsForSlug } = await import("@/lib/marketplace-catalog");
+    const sheetProducts = await getProductsForSlug(pageSlug);
+    if (sheetProducts.length > 0) {
+      content.products = sheetProducts;
+    }
+  }
 
   return (
     <SectionPage

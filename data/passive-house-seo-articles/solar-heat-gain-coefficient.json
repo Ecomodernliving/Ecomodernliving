@@ -1,0 +1,21 @@
+{
+  "slug": "solar-heat-gain-coefficient",
+  "title": "Solar Heat Gain Coefficient (SHGC): A Homeowner Guide",
+  "metaDescription": "How SHGC affects heating bills and summer comfort — and how to pick the right g-value.",
+  "targetKeyword": "SHGC",
+  "category": "Windows",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house-principles"
+  ],
+  "affiliateCategories": [
+    "windows"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Definition",
+    "Orientation",
+    "Shading",
+    "Tradeoffs"
+  ]
+}

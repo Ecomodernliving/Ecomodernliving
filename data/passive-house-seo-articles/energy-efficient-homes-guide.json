@@ -1,0 +1,23 @@
+{
+  "slug": "energy-efficient-homes-guide",
+  "title": "Energy Efficient Homes: From Code to Passive House",
+  "metaDescription": "A practical roadmap for improving home energy performance — air sealing, insulation, windows, and smart controls.",
+  "targetKeyword": "Energy Efficient Homes",
+  "category": "Fundamentals",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/guides/healthy-homes",
+    "/ai/energy-audit"
+  ],
+  "affiliateCategories": [
+    "smart-thermostats",
+    "insulation"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Audit first",
+    "Envelope upgrades",
+    "Systems",
+    "Monitoring"
+  ]
+}

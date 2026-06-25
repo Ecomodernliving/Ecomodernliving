@@ -1,0 +1,22 @@
+{
+  "slug": "low-voc-paints-passive-house",
+  "title": "Low-VOC Paints and Finishes for Healthy Homes",
+  "metaDescription": "Choose finishes that support indoor air quality in tightly built, well-ventilated homes.",
+  "targetKeyword": "low VOC paint",
+  "category": "Materials",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/marketplace/eco-paints",
+    "/guides/healthy-homes"
+  ],
+  "affiliateCategories": [
+    "eco-paints"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "VOC basics",
+    "Certifications",
+    "Application",
+    "Ventilation"
+  ]
+}

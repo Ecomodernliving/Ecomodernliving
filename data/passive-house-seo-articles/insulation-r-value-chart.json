@@ -1,0 +1,21 @@
+{
+  "slug": "insulation-r-value-chart",
+  "title": "Insulation R-Value Chart and Material Comparison",
+  "metaDescription": "R per inch for common materials and how to build high-R assemblies.",
+  "targetKeyword": "insulation r value",
+  "category": "Materials",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/marketplace/insulation"
+  ],
+  "affiliateCategories": [
+    "insulation"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Materials table",
+    "Assemblies",
+    "Climate",
+    "Install tips"
+  ]
+}

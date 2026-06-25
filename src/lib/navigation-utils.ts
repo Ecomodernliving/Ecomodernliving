@@ -62,20 +62,23 @@ export function findPageContext(href: string): PageContext | null {
     for (const section of parent.sections ?? []) {
       const match = section.links.find((l) => l.href === href);
       if (match) {
+        const parentHref =
+          parent.featured?.href ?? section.links[0]?.href ?? "/";
+        const breadcrumbs: { label: string; href: string }[] = [
+          { label: "Home", href: "/" },
+        ];
+        if (parent.featured || parentHref !== href) {
+          breadcrumbs.push({ label: parent.label, href: parentHref });
+        }
+        breadcrumbs.push({ label: match.label, href: match.href });
+
         return {
           href,
           link: match,
           parent,
           section,
           siblings: section.links.filter((l) => l.href !== href),
-          breadcrumbs: [
-            { label: "Home", href: "/" },
-            {
-              label: parent.label,
-              href: parent.featured?.href ?? section.links[0]?.href ?? "/",
-            },
-            { label: match.label, href: match.href },
-          ],
+          breadcrumbs,
         };
       }
     }

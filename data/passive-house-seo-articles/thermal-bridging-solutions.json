@@ -1,0 +1,22 @@
+{
+  "slug": "thermal-bridging-solutions",
+  "title": "Thermal Bridging: How to Design Bridge-Free Details",
+  "metaDescription": "Linear and point bridges explained with practical detailing for slabs, balconies, and roof connections.",
+  "targetKeyword": "thermal bridging",
+  "category": "Envelope",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house-principles",
+    "/passive-house/envelope"
+  ],
+  "affiliateCategories": [
+    "insulation"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Psi and Chi values",
+    "Common bridges",
+    "Detailing",
+    "PHPP modeling"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "passive-house-retrofit-guide",
+  "title": "EnerPHit Retrofit Guide for Existing Homes",
+  "metaDescription": "Step-by-step approach to deep energy retrofits using EnerPHit component and demand methods.",
+  "targetKeyword": "Passive House retrofit",
+  "category": "Retrofit",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house",
+    "/guides/passive-house"
+  ],
+  "affiliateCategories": [
+    "windows",
+    "insulation"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Assessment",
+    "Component method",
+    "Airtightness",
+    "Ventilation"
+  ]
+}

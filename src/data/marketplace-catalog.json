@@ -1,0 +1,3743 @@
+{
+  "smart-thermostats": [
+    {
+      "name": "Google Nest Learning Thermostat",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08HRWWCTR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B08HRWWCTR",
+      "amazonAsin": "B08HRWWCTR"
+    },
+    {
+      "name": "ecobee Smart Thermostat Premium",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09XXS48P8.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09XXS48P8",
+      "amazonAsin": "B09XXS48P8"
+    }
+  ],
+  "smart-home": [
+    {
+      "name": "Sense Home Energy Monitor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0C79PNK84.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0C79PNK84",
+      "amazonAsin": "B0C79PNK84"
+    },
+    {
+      "name": "Emporia Vue Smart Home Energy Monitor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0C7B1LKDW.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0C7B1LKDW",
+      "amazonAsin": "B0C7B1LKDW"
+    },
+    {
+      "name": "Kasa Smart Plug Mini",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B091699Z3W.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B091699Z3W",
+      "amazonAsin": "B091699Z3W"
+    },
+    {
+      "name": "Smart Energy Saving Power Strip",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07G95FFN3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07G95FFN3",
+      "amazonAsin": "B07G95FFN3"
+    },
+    {
+      "name": "Smart Electrical Panel Energy Monitor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0D6X5GW5N.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0D6X5GW5N",
+      "amazonAsin": "B0D6X5GW5N"
+    },
+    {
+      "name": "Energy Efficient Induction Cooktop",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0B4J6PXPN.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0B4J6PXPN",
+      "amazonAsin": "B0B4J6PXPN"
+    },
+    {
+      "name": "Portable Induction Burner",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0DM6VPPQS.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0DM6VPPQS",
+      "amazonAsin": "B0DM6VPPQS"
+    },
+    {
+      "name": "ENERGY STAR Refrigerator",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0G443NKSP.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0G443NKSP",
+      "amazonAsin": "B0G443NKSP"
+    },
+    {
+      "name": "Energy Saving Washing Machine",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0799Q45TT.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0799Q45TT",
+      "amazonAsin": "B0799Q45TT"
+    },
+    {
+      "name": "Heat Pump Clothes Dryer",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B082YGFMQZ.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B082YGFMQZ",
+      "amazonAsin": "B082YGFMQZ"
+    },
+    {
+      "name": "Philips Hue Smart Lighting System",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0FMGP1P6W.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0FMGP1P6W",
+      "amazonAsin": "B0FMGP1P6W"
+    },
+    {
+      "name": "Lutron Caseta Smart Lighting Control",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07DX5QRB8.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07DX5QRB8",
+      "amazonAsin": "B07DX5QRB8"
+    },
+    {
+      "name": "Aqara Smart Home Sensors",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09TP7VMKB.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09TP7VMKB",
+      "amazonAsin": "B09TP7VMKB"
+    },
+    {
+      "name": "SwitchBot Smart Home Automation",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0DKXZZ79Z.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0DKXZZ79Z",
+      "amazonAsin": "B0DKXZZ79Z"
+    },
+    {
+      "name": "Smart WiFi Door Lock",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0F61WG9F2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0F61WG9F2",
+      "amazonAsin": "B0F61WG9F2"
+    },
+    {
+      "name": "EGO Battery Powered Lawn Mower",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0857KWHHC.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0857KWHHC",
+      "amazonAsin": "B0857KWHHC"
+    },
+    {
+      "name": "Greenworks Electric Lawn Mower",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0CLSC6B2T.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0CLSC6B2T",
+      "amazonAsin": "B0CLSC6B2T"
+    },
+    {
+      "name": "Worx Landroid Robotic Lawn Mower",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GQMG6ZJ3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0GQMG6ZJ3",
+      "amazonAsin": "B0GQMG6ZJ3"
+    },
+    {
+      "name": "Battery Powered Leaf Blower",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0DJJB7WS9.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0DJJB7WS9",
+      "amazonAsin": "B0DJJB7WS9"
+    },
+    {
+      "name": "Battery Powered String Trimmer",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B018S68U40.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B018S68U40",
+      "amazonAsin": "B018S68U40"
+    },
+    {
+      "name": "Smart HVAC Air Vent",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0792R5KJF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0792R5KJF",
+      "amazonAsin": "B0792R5KJF"
+    },
+    {
+      "name": "Smart HVAC Air Vent",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0792R5KJF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Smart%20HVAC%20Air%20Vent",
+      "amazonAsin": "B0792R5KJF"
+    },
+    {
+      "name": "Smart HVAC Air Vent",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0792R5KJF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Smart%20HVAC%20Air%20Vent",
+      "amazonAsin": "B0792R5KJF"
+    },
+    {
+      "name": "MERV 13 High Efficiency Air Filter",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01CR9K33K.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B01CR9K33K",
+      "amazonAsin": "B01CR9K33K"
+    },
+    {
+      "name": "MERV 13 High Efficiency Air Filter",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01CR9K33K.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/MERV%2013%20High%20Efficiency%20Air%20Filter",
+      "amazonAsin": "B01CR9K33K"
+    },
+    {
+      "name": "MERV 13 High Efficiency Air Filter",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01CR9K33K.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=MERV%2013%20High%20Efficiency%20Air%20Filter",
+      "amazonAsin": "B01CR9K33K"
+    },
+    {
+      "name": "Smart Temperature Room Sensor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07NQVWRR3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07NQVWRR3",
+      "amazonAsin": "B07NQVWRR3"
+    },
+    {
+      "name": "Smart Temperature Room Sensor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07NQVWRR3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Smart%20Temperature%20Room%20Sensor",
+      "amazonAsin": "B07NQVWRR3"
+    },
+    {
+      "name": "Jackery Solar Generator",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0D2L1G66J.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0D2L1G66J",
+      "amazonAsin": "B0D2L1G66J"
+    },
+    {
+      "name": "EcoFlow Portable Power Station",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0B9XB57XM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0B9XB57XM",
+      "amazonAsin": "B0B9XB57XM"
+    },
+    {
+      "name": "BLUETTI Solar Generator",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0C1SMJTDT.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0C1SMJTDT",
+      "amazonAsin": "B0C1SMJTDT"
+    },
+    {
+      "name": "Solar Powered Outdoor Lights",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09F3DJNGF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09F3DJNGF",
+      "amazonAsin": "B09F3DJNGF"
+    },
+    {
+      "name": "Solar Security Camera",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0CCYP6KFM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0CCYP6KFM",
+      "amazonAsin": "B0CCYP6KFM"
+    },
+    {
+      "name": "Renogy Solar Panel Kit",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.amazon.com/s?k=renogy+solar+panel+kit"
+    }
+  ],
+  "heat-pumps": [
+    {
+      "name": "Smart HVAC Air Vent",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0792R5KJF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0792R5KJF",
+      "amazonAsin": "B0792R5KJF"
+    },
+    {
+      "name": "Smart HVAC Air Vent",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0792R5KJF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Smart%20HVAC%20Air%20Vent",
+      "amazonAsin": "B0792R5KJF"
+    },
+    {
+      "name": "Smart HVAC Air Vent",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0792R5KJF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Smart%20HVAC%20Air%20Vent",
+      "amazonAsin": "B0792R5KJF"
+    },
+    {
+      "name": "MERV 13 High Efficiency Air Filter",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01CR9K33K.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B01CR9K33K",
+      "amazonAsin": "B01CR9K33K"
+    },
+    {
+      "name": "MERV 13 High Efficiency Air Filter",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01CR9K33K.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/MERV%2013%20High%20Efficiency%20Air%20Filter",
+      "amazonAsin": "B01CR9K33K"
+    },
+    {
+      "name": "MERV 13 High Efficiency Air Filter",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01CR9K33K.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=MERV%2013%20High%20Efficiency%20Air%20Filter",
+      "amazonAsin": "B01CR9K33K"
+    },
+    {
+      "name": "Smart Temperature Room Sensor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07NQVWRR3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07NQVWRR3",
+      "amazonAsin": "B07NQVWRR3"
+    },
+    {
+      "name": "Smart Temperature Room Sensor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07NQVWRR3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Smart%20Temperature%20Room%20Sensor",
+      "amazonAsin": "B07NQVWRR3"
+    },
+    {
+      "name": "Smart Temperature Room Sensor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07NQVWRR3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Smart%20Temperature%20Room%20Sensor",
+      "amazonAsin": "B07NQVWRR3"
+    },
+    {
+      "name": "HVAC Duct Sealing Kit",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07PDRY2T2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07PDRY2T2",
+      "amazonAsin": "B07PDRY2T2"
+    },
+    {
+      "name": "HVAC Duct Sealing Kit",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07PDRY2T2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/HVAC%20Duct%20Sealing%20Kit",
+      "amazonAsin": "B07PDRY2T2"
+    },
+    {
+      "name": "HVAC Duct Sealing Kit",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07PDRY2T2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=HVAC%20Duct%20Sealing%20Kit",
+      "amazonAsin": "B07PDRY2T2"
+    },
+    {
+      "name": "Air Flow Balancing Register",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0BPXKVZXV.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0BPXKVZXV",
+      "amazonAsin": "B0BPXKVZXV"
+    },
+    {
+      "name": "Air Flow Balancing Register",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0BPXKVZXV.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Air%20Flow%20Balancing%20Register",
+      "amazonAsin": "B0BPXKVZXV"
+    },
+    {
+      "name": "Air Flow Balancing Register",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0BPXKVZXV.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Air%20Flow%20Balancing%20Register",
+      "amazonAsin": "B0BPXKVZXV"
+    },
+    {
+      "name": "Andersen 400 Series Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07H7QK9YL",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen 400 Series Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Andersen%20400%20Series%20Double-Hung%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen 400 Series Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Andersen%20400%20Series%20Double-Hung%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen 400 Series Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Andersen%20400%20Series%20Double-Hung%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Pella 250 Series Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07VJBL2PK",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Pella 250 Series Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Pella%20250%20Series%20Vinyl%20Window",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Pella 250 Series Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Pella%20250%20Series%20Vinyl%20Window",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Pella 250 Series Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Pella%20250%20Series%20Vinyl%20Window",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Pro Clima TESCON VANA Airtight Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B005AWY5FO",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Pro Clima TESCON VANA Airtight Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Pro%20Clima%20TESCON%20VANA%20Airtight%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Pro Clima TESCON VANA Airtight Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Pro%20Clima%20TESCON%20VANA%20Airtight%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "SIGA Fentrim Airtight Window Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B005AWY5FO",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "SIGA Fentrim Airtight Window Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/SIGA%20Fentrim%20Airtight%20Window%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "SIGA Fentrim Airtight Window Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=SIGA%20Fentrim%20Airtight%20Window%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "475 High Performance Building Supply Membrane",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00DRL8MBI",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "475 High Performance Building Supply Membrane",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/475%20High%20Performance%20Building%20Supply%20Membrane",
+      "amazonAsin": "B00DRL8MBI"
+    }
+  ],
+  "water-fixtures": [
+    {
+      "name": "Rachio Smart Sprinkler Controller",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07CZ864Y9.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07CZ864Y9",
+      "amazonAsin": "B07CZ864Y9"
+    },
+    {
+      "name": "Rachio Smart Sprinkler Controller",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07CZ864Y9.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Rachio%20Smart%20Sprinkler%20Controller",
+      "amazonAsin": "B07CZ864Y9"
+    },
+    {
+      "name": "Rachio Smart Sprinkler Controller",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07CZ864Y9.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Rachio%20Smart%20Sprinkler%20Controller",
+      "amazonAsin": "B07CZ864Y9"
+    },
+    {
+      "name": "Moen Flo Smart Water Monitor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00C03D01Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00C03D01Q",
+      "amazonAsin": "B00C03D01Q"
+    },
+    {
+      "name": "Moen Flo Smart Water Monitor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00C03D01Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Moen%20Flo%20Smart%20Water%20Monitor",
+      "amazonAsin": "B00C03D01Q"
+    },
+    {
+      "name": "Moen Flo Smart Water Monitor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00C03D01Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Moen%20Flo%20Smart%20Water%20Monitor",
+      "amazonAsin": "B00C03D01Q"
+    },
+    {
+      "name": "Rainwater Collection Barrel",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00YFT9846.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00YFT9846",
+      "amazonAsin": "B00YFT9846"
+    },
+    {
+      "name": "Rainwater Collection Barrel",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00YFT9846.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Rainwater%20Collection%20Barrel",
+      "amazonAsin": "B00YFT9846"
+    },
+    {
+      "name": "Rainwater Collection Barrel",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00YFT9846.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Rainwater%20Collection%20Barrel",
+      "amazonAsin": "B00YFT9846"
+    },
+    {
+      "name": "Smart Water Leak Detector",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0DQLDBXWF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0DQLDBXWF",
+      "amazonAsin": "B0DQLDBXWF"
+    },
+    {
+      "name": "Smart Water Leak Detector",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0DQLDBXWF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Smart%20Water%20Leak%20Detector",
+      "amazonAsin": "B0DQLDBXWF"
+    },
+    {
+      "name": "Smart Water Leak Detector",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0DQLDBXWF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Smart%20Water%20Leak%20Detector",
+      "amazonAsin": "B0DQLDBXWF"
+    },
+    {
+      "name": "Smart Water Shutoff Valve",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B084WYB8PM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B084WYB8PM",
+      "amazonAsin": "B084WYB8PM"
+    },
+    {
+      "name": "Smart Water Shutoff Valve",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B084WYB8PM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Smart%20Water%20Shutoff%20Valve",
+      "amazonAsin": "B084WYB8PM"
+    },
+    {
+      "name": "Smart Water Shutoff Valve",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B084WYB8PM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Smart%20Water%20Shutoff%20Valve",
+      "amazonAsin": "B084WYB8PM"
+    },
+    {
+      "name": "Water Saving Low Flow Shower Head",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08WPQ12XX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B08WPQ12XX",
+      "amazonAsin": "B08WPQ12XX"
+    },
+    {
+      "name": "Water Saving Low Flow Shower Head",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08WPQ12XX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Water%20Saving%20Low%20Flow%20Shower%20Head",
+      "amazonAsin": "B08WPQ12XX"
+    },
+    {
+      "name": "Water Saving Low Flow Shower Head",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08WPQ12XX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Water%20Saving%20Low%20Flow%20Shower%20Head",
+      "amazonAsin": "B08WPQ12XX"
+    },
+    {
+      "name": "Water Saving Faucet Aerator",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09ZNWP8YX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09ZNWP8YX",
+      "amazonAsin": "B09ZNWP8YX"
+    },
+    {
+      "name": "Water Saving Faucet Aerator",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09ZNWP8YX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Water%20Saving%20Faucet%20Aerator",
+      "amazonAsin": "B09ZNWP8YX"
+    },
+    {
+      "name": "Water Saving Faucet Aerator",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09ZNWP8YX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Water%20Saving%20Faucet%20Aerator",
+      "amazonAsin": "B09ZNWP8YX"
+    },
+    {
+      "name": "Dual Flush Toilet Conversion Kit",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00B9BNGU0.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00B9BNGU0",
+      "amazonAsin": "B00B9BNGU0"
+    },
+    {
+      "name": "Dual Flush Toilet Conversion Kit",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00B9BNGU0.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Dual%20Flush%20Toilet%20Conversion%20Kit",
+      "amazonAsin": "B00B9BNGU0"
+    },
+    {
+      "name": "Dual Flush Toilet Conversion Kit",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00B9BNGU0.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Dual%20Flush%20Toilet%20Conversion%20Kit",
+      "amazonAsin": "B00B9BNGU0"
+    },
+    {
+      "name": "High Efficiency Water Saving Toilet",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09WYQCPMP.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09WYQCPMP",
+      "amazonAsin": "B09WYQCPMP"
+    },
+    {
+      "name": "High Efficiency Water Saving Toilet",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09WYQCPMP.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/High%20Efficiency%20Water%20Saving%20Toilet",
+      "amazonAsin": "B09WYQCPMP"
+    },
+    {
+      "name": "High Efficiency Water Saving Toilet",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09WYQCPMP.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=High%20Efficiency%20Water%20Saving%20Toilet",
+      "amazonAsin": "B09WYQCPMP"
+    },
+    {
+      "name": "High Sierra Water Saving Showerhead",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.amazon.com/s?k=high+sierra+showerhead"
+    },
+    {
+      "name": "High Sierra Water Saving Showerhead",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.homedepot.com/s/High%20Sierra%20Water%20Saving%20Showerhead"
+    },
+    {
+      "name": "High Sierra Water Saving Showerhead",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=High%20Sierra%20Water%20Saving%20Showerhead"
+    },
+    {
+      "name": "Niagara Earth Massage Water Saving Showerhead",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.amazon.com/s?k=niagara+earth+massage+showerhead"
+    },
+    {
+      "name": "Niagara Earth Massage Water Saving Showerhead",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.homedepot.com/s/Niagara%20Earth%20Massage%20Water%20Saving%20Showerhead"
+    },
+    {
+      "name": "Niagara Earth Massage Water Saving Showerhead",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Niagara%20Earth%20Massage%20Water%20Saving%20Showerhead"
+    }
+  ],
+  "air-purifiers": [
+    {
+      "name": "Airthings View Plus Indoor Air Quality Monitor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B097YW5Q72.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B097YW5Q72",
+      "amazonAsin": "B097YW5Q72"
+    },
+    {
+      "name": "Temtop Air Quality Monitor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0D1K7GNPM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0D1K7GNPM",
+      "amazonAsin": "B0D1K7GNPM"
+    },
+    {
+      "name": "HEPA Air Purifier for Home",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0BGPF71Q6.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0BGPF71Q6",
+      "amazonAsin": "B0BGPF71Q6"
+    },
+    {
+      "name": "Energy Efficient Dehumidifier",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0DXKRFFGM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0DXKRFFGM",
+      "amazonAsin": "B0DXKRFFGM"
+    },
+    {
+      "name": "Whole House Humidifier",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01MR4Y0CZ.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B01MR4Y0CZ",
+      "amazonAsin": "B01MR4Y0CZ"
+    },
+    {
+      "name": "VOC Indoor Air Quality Detector",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08W8KS8D3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B08W8KS8D3",
+      "amazonAsin": "B08W8KS8D3"
+    },
+    {
+      "name": "Infrared Sauna Blanket",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09PSKN6X3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09PSKN6X3",
+      "amazonAsin": "B09PSKN6X3"
+    },
+    {
+      "name": "Red Light Therapy Panel",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0C77RVG2X.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0C77RVG2X",
+      "amazonAsin": "B0C77RVG2X"
+    },
+    {
+      "name": "Whole House Water Filter System",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09JG2SWVC.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09JG2SWVC",
+      "amazonAsin": "B09JG2SWVC"
+    },
+    {
+      "name": "Circadian Rhythm Lighting System",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0DGW46BW3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0DGW46BW3",
+      "amazonAsin": "B0DGW46BW3"
+    },
+    {
+      "name": "Medical Grade HEPA Air Purifier",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01728NLRG.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B01728NLRG",
+      "amazonAsin": "B01728NLRG"
+    },
+    {
+      "name": "Levoit Core 400S Smart Air Purifier",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.amazon.com/s?k=levoit+core+400s"
+    },
+    {
+      "name": "Coway Airmega Air Purifier",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.amazon.com/s?k=coway+airmega"
+    }
+  ],
+  "furniture": [
+    {
+      "name": "Organic Natural Mattress",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0DTTN5YMW.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0DTTN5YMW",
+      "amazonAsin": "B0DTTN5YMW"
+    },
+    {
+      "name": "Organic Natural Mattress",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0DTTN5YMW.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Organic%20Natural%20Mattress",
+      "amazonAsin": "B0DTTN5YMW"
+    },
+    {
+      "name": "Organic Natural Mattress",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0DTTN5YMW.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Organic%20Natural%20Mattress",
+      "amazonAsin": "B0DTTN5YMW"
+    },
+    {
+      "name": "Organic Cotton Bedding Set",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09JTTQ66V.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09JTTQ66V",
+      "amazonAsin": "B09JTTQ66V"
+    },
+    {
+      "name": "Organic Cotton Bedding Set",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09JTTQ66V.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Organic%20Cotton%20Bedding%20Set",
+      "amazonAsin": "B09JTTQ66V"
+    },
+    {
+      "name": "Organic Cotton Bedding Set",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09JTTQ66V.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Organic%20Cotton%20Bedding%20Set",
+      "amazonAsin": "B09JTTQ66V"
+    },
+    {
+      "name": "Natural Wool Area Rug",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07JJDS9XP.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07JJDS9XP",
+      "amazonAsin": "B07JJDS9XP"
+    },
+    {
+      "name": "Natural Wool Area Rug",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07JJDS9XP.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Natural%20Wool%20Area%20Rug",
+      "amazonAsin": "B07JJDS9XP"
+    },
+    {
+      "name": "Natural Wool Area Rug",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07JJDS9XP.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Natural%20Wool%20Area%20Rug",
+      "amazonAsin": "B07JJDS9XP"
+    },
+    {
+      "name": "GreenPan Ceramic Nonstick Cookware",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08T4Q3CNY.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B08T4Q3CNY",
+      "amazonAsin": "B08T4Q3CNY"
+    },
+    {
+      "name": "GreenPan Ceramic Nonstick Cookware",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08T4Q3CNY.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=GreenPan%20Ceramic%20Nonstick%20Cookware",
+      "amazonAsin": "B08T4Q3CNY"
+    },
+    {
+      "name": "GreenPan Ceramic Nonstick Cookware",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08T4Q3CNY.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=GreenPan%20Ceramic%20Nonstick%20Cookware",
+      "amazonAsin": "B08T4Q3CNY"
+    },
+    {
+      "name": "Caraway Non-Toxic Cookware Set",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08XLDWJYV.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B08XLDWJYV",
+      "amazonAsin": "B08XLDWJYV"
+    },
+    {
+      "name": "Caraway Non-Toxic Cookware Set",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08XLDWJYV.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Caraway%20Non-Toxic%20Cookware%20Set",
+      "amazonAsin": "B08XLDWJYV"
+    },
+    {
+      "name": "Caraway Non-Toxic Cookware Set",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08XLDWJYV.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Caraway%20Non-Toxic%20Cookware%20Set",
+      "amazonAsin": "B08XLDWJYV"
+    },
+    {
+      "name": "Stasher Reusable Silicone Storage Bags",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B087XBR564.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B087XBR564",
+      "amazonAsin": "B087XBR564"
+    },
+    {
+      "name": "Stasher Reusable Silicone Storage Bags",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B087XBR564.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Stasher%20Reusable%20Silicone%20Storage%20Bags",
+      "amazonAsin": "B087XBR564"
+    },
+    {
+      "name": "Stasher Reusable Silicone Storage Bags",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B087XBR564.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Stasher%20Reusable%20Silicone%20Storage%20Bags",
+      "amazonAsin": "B087XBR564"
+    },
+    {
+      "name": "Bamboo Standing Desk",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08DK1WS6S.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B08DK1WS6S",
+      "amazonAsin": "B08DK1WS6S"
+    },
+    {
+      "name": "Bamboo Standing Desk",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08DK1WS6S.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Bamboo%20Standing%20Desk",
+      "amazonAsin": "B08DK1WS6S"
+    },
+    {
+      "name": "Bamboo Standing Desk",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08DK1WS6S.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Bamboo%20Standing%20Desk",
+      "amazonAsin": "B08DK1WS6S"
+    },
+    {
+      "name": "Electric Standing Desk",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0F8MHPVPH.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0F8MHPVPH",
+      "amazonAsin": "B0F8MHPVPH"
+    },
+    {
+      "name": "Electric Standing Desk",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0F8MHPVPH.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Electric%20Standing%20Desk",
+      "amazonAsin": "B0F8MHPVPH"
+    },
+    {
+      "name": "Electric Standing Desk",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0F8MHPVPH.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Electric%20Standing%20Desk",
+      "amazonAsin": "B0F8MHPVPH"
+    },
+    {
+      "name": "Energy Efficient Computer Monitor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0F1HNQTN2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0F1HNQTN2",
+      "amazonAsin": "B0F1HNQTN2"
+    },
+    {
+      "name": "Energy Efficient Computer Monitor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0F1HNQTN2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Energy%20Efficient%20Computer%20Monitor",
+      "amazonAsin": "B0F1HNQTN2"
+    },
+    {
+      "name": "Energy Efficient Computer Monitor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0F1HNQTN2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Energy%20Efficient%20Computer%20Monitor",
+      "amazonAsin": "B0F1HNQTN2"
+    },
+    {
+      "name": "LED Energy Saving Desk Lamp",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0F1HNQTN2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0F1HNQTN2",
+      "amazonAsin": "B0F1HNQTN2"
+    },
+    {
+      "name": "LED Energy Saving Desk Lamp",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0F1HNQTN2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=LED%20Energy%20Saving%20Desk%20Lamp",
+      "amazonAsin": "B0F1HNQTN2"
+    },
+    {
+      "name": "LED Energy Saving Desk Lamp",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0F1HNQTN2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=LED%20Energy%20Saving%20Desk%20Lamp",
+      "amazonAsin": "B0F1HNQTN2"
+    }
+  ],
+  "composting": [
+    {
+      "name": "Lomi Kitchen Composter",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0CVNNKPRP.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0CVNNKPRP",
+      "amazonAsin": "B0CVNNKPRP"
+    },
+    {
+      "name": "Lomi Kitchen Composter",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0CVNNKPRP.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Lomi%20Kitchen%20Composter",
+      "amazonAsin": "B0CVNNKPRP"
+    },
+    {
+      "name": "Lomi Kitchen Composter",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0CVNNKPRP.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Lomi%20Kitchen%20Composter",
+      "amazonAsin": "B0CVNNKPRP"
+    },
+    {
+      "name": "Countertop Compost Bin",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B015DRQ36E.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B015DRQ36E",
+      "amazonAsin": "B015DRQ36E"
+    },
+    {
+      "name": "Countertop Compost Bin",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B015DRQ36E.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Countertop%20Compost%20Bin",
+      "amazonAsin": "B015DRQ36E"
+    },
+    {
+      "name": "Countertop Compost Bin",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B015DRQ36E.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Countertop%20Compost%20Bin",
+      "amazonAsin": "B015DRQ36E"
+    },
+    {
+      "name": "Food Waste Recycler",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0C777PL71.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0C777PL71",
+      "amazonAsin": "B0C777PL71"
+    },
+    {
+      "name": "Food Waste Recycler",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0C777PL71.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Food%20Waste%20Recycler",
+      "amazonAsin": "B0C777PL71"
+    },
+    {
+      "name": "Food Waste Recycler",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0C777PL71.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Food%20Waste%20Recycler",
+      "amazonAsin": "B0C777PL71"
+    },
+    {
+      "name": "Vitamix Professional Blender",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0BWSJVTCJ.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0BWSJVTCJ",
+      "amazonAsin": "B0BWSJVTCJ"
+    },
+    {
+      "name": "Vitamix Professional Blender",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0BWSJVTCJ.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Vitamix%20Professional%20Blender",
+      "amazonAsin": "B0BWSJVTCJ"
+    },
+    {
+      "name": "Vitamix Professional Blender",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0BWSJVTCJ.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Vitamix%20Professional%20Blender",
+      "amazonAsin": "B0BWSJVTCJ"
+    },
+    {
+      "name": "Berkey Water Filtration System",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09C59M3YY.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09C59M3YY",
+      "amazonAsin": "B09C59M3YY"
+    },
+    {
+      "name": "Berkey Water Filtration System",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09C59M3YY.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Berkey%20Water%20Filtration%20System",
+      "amazonAsin": "B09C59M3YY"
+    },
+    {
+      "name": "Berkey Water Filtration System",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09C59M3YY.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Berkey%20Water%20Filtration%20System",
+      "amazonAsin": "B09C59M3YY"
+    },
+    {
+      "name": "Whole Home Water Filtration System",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B083NPW1DN.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B083NPW1DN",
+      "amazonAsin": "B083NPW1DN"
+    },
+    {
+      "name": "Whole Home Water Filtration System",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B083NPW1DN.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Whole%20Home%20Water%20Filtration%20System",
+      "amazonAsin": "B083NPW1DN"
+    },
+    {
+      "name": "Whole Home Water Filtration System",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "https://m.media-amazon.com/images/P/B083NPW1DN.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Whole%20Home%20Water%20Filtration%20System",
+      "amazonAsin": "B083NPW1DN"
+    },
+    {
+      "name": "FCMP Outdoor Compost Tumbler",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.amazon.com/s?k=fcmp+outdoor+compost+tumbler"
+    },
+    {
+      "name": "FCMP Outdoor Compost Tumbler",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=FCMP%20Outdoor%20Compost%20Tumbler"
+    },
+    {
+      "name": "FCMP Outdoor Compost Tumbler",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=FCMP%20Outdoor%20Compost%20Tumbler"
+    },
+    {
+      "name": "Miracle-Gro Dual Chamber Composter",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.amazon.com/s?k=miracle+gro+composter"
+    },
+    {
+      "name": "Miracle-Gro Dual Chamber Composter",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Wayfair",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Miracle-Gro%20Dual%20Chamber%20Composter"
+    },
+    {
+      "name": "Miracle-Gro Dual Chamber Composter",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Target",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Miracle-Gro%20Dual%20Chamber%20Composter"
+    }
+  ],
+  "solar": [
+    {
+      "name": "Jackery Solar Generator",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0D2L1G66J.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0D2L1G66J",
+      "amazonAsin": "B0D2L1G66J"
+    },
+    {
+      "name": "EcoFlow Portable Power Station",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0B9XB57XM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0B9XB57XM",
+      "amazonAsin": "B0B9XB57XM"
+    },
+    {
+      "name": "BLUETTI Solar Generator",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0C1SMJTDT.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0C1SMJTDT",
+      "amazonAsin": "B0C1SMJTDT"
+    },
+    {
+      "name": "Solar Powered Outdoor Lights",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09F3DJNGF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09F3DJNGF",
+      "amazonAsin": "B09F3DJNGF"
+    },
+    {
+      "name": "Solar Security Camera",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0CCYP6KFM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0CCYP6KFM",
+      "amazonAsin": "B0CCYP6KFM"
+    },
+    {
+      "name": "Renogy Solar Panel Kit",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.amazon.com/s?k=renogy+solar+panel+kit"
+    }
+  ],
+  "indoor-gardening": [
+    {
+      "name": "AeroGarden Indoor Garden System",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0B6BB4TVC.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0B6BB4TVC",
+      "amazonAsin": "B0B6BB4TVC"
+    },
+    {
+      "name": "Gardyn Indoor Hydroponic Garden",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0CJ4HWMCS.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0CJ4HWMCS",
+      "amazonAsin": "B0CJ4HWMCS"
+    },
+    {
+      "name": "Click and Grow Smart Garden",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01MRVMKQH.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B01MRVMKQH",
+      "amazonAsin": "B01MRVMKQH"
+    },
+    {
+      "name": "Hydroponic Growing System",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08DLMRKHM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B08DLMRKHM",
+      "amazonAsin": "B08DLMRKHM"
+    },
+    {
+      "name": "Indoor Greenhouse Growing Kit",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0FL7V6PYB.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0FL7V6PYB",
+      "amazonAsin": "B0FL7V6PYB"
+    },
+    {
+      "name": "AeroGarden Harvest Indoor Garden",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.amazon.com/s?k=aerogarden+harvest"
+    },
+    {
+      "name": "iDOO Hydroponic Garden System",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.amazon.com/s?k=idoo+hydroponic+garden"
+    }
+  ],
+  "ev-chargers": [
+    {
+      "name": "ChargePoint Home Flex Level 2 EV Charger",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.amazon.com/s?k=chargepoint+home+flex"
+    },
+    {
+      "name": "Emporia Level 2 EV Charger",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.amazon.com/s?k=emporia+ev+charger"
+    },
+    {
+      "name": "Jackery Solar Generator",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0D2L1G66J.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0D2L1G66J",
+      "amazonAsin": "B0D2L1G66J"
+    },
+    {
+      "name": "EcoFlow Portable Power Station",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0B9XB57XM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0B9XB57XM",
+      "amazonAsin": "B0B9XB57XM"
+    },
+    {
+      "name": "BLUETTI Solar Generator",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0C1SMJTDT.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0C1SMJTDT",
+      "amazonAsin": "B0C1SMJTDT"
+    },
+    {
+      "name": "Solar Powered Outdoor Lights",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09F3DJNGF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09F3DJNGF",
+      "amazonAsin": "B09F3DJNGF"
+    },
+    {
+      "name": "Solar Security Camera",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0CCYP6KFM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0CCYP6KFM",
+      "amazonAsin": "B0CCYP6KFM"
+    },
+    {
+      "name": "Renogy Solar Panel Kit",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.amazon.com/s?k=renogy+solar+panel+kit"
+    }
+  ],
+  "eco-paints": [
+    {
+      "name": "ECOS Low VOC Eco-Friendly Paint",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.amazon.com/s?k=ecos+paint"
+    },
+    {
+      "name": "ECOS Low VOC Eco-Friendly Paint",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.homedepot.com/s/ECOS%20Low%20VOC%20Eco-Friendly%20Paint"
+    },
+    {
+      "name": "ECOS Low VOC Eco-Friendly Paint",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=ECOS%20Low%20VOC%20Eco-Friendly%20Paint"
+    },
+    {
+      "name": "Rust-Oleum Low VOC Paint",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.amazon.com/s?k=low+voc+paint"
+    },
+    {
+      "name": "Rust-Oleum Low VOC Paint",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.homedepot.com/s/Rust-Oleum%20Low%20VOC%20Paint"
+    },
+    {
+      "name": "Rust-Oleum Low VOC Paint",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "/images/product-placeholder.svg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Rust-Oleum%20Low%20VOC%20Paint"
+    }
+  ],
+  "windows": [
+    {
+      "name": "Andersen 400 Series Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07H7QK9YL",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen 400 Series Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Andersen%20400%20Series%20Double-Hung%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen 400 Series Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Andersen%20400%20Series%20Double-Hung%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen 400 Series Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Andersen%20400%20Series%20Double-Hung%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Pella 250 Series Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07VJBL2PK",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Pella 250 Series Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Pella%20250%20Series%20Vinyl%20Window",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Pella 250 Series Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Pella%20250%20Series%20Vinyl%20Window",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Pella 250 Series Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Pella%20250%20Series%20Vinyl%20Window",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Marvin Essential Casement Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08N5WRWNW.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B08N5WRWNW",
+      "amazonAsin": "B08N5WRWNW"
+    },
+    {
+      "name": "Marvin Essential Casement Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08N5WRWNW.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Marvin%20Essential%20Casement%20Window",
+      "amazonAsin": "B08N5WRWNW"
+    },
+    {
+      "name": "Marvin Essential Casement Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08N5WRWNW.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Marvin%20Essential%20Casement%20Window",
+      "amazonAsin": "B08N5WRWNW"
+    },
+    {
+      "name": "Marvin Essential Casement Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08N5WRWNW.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Marvin%20Essential%20Casement%20Window",
+      "amazonAsin": "B08N5WRWNW"
+    },
+    {
+      "name": "Velux Fixed Skylight",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0FSSHBSYX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0FSSHBSYX",
+      "amazonAsin": "B0FSSHBSYX"
+    },
+    {
+      "name": "Velux Fixed Skylight",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0FSSHBSYX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Velux%20Fixed%20Skylight",
+      "amazonAsin": "B0FSSHBSYX"
+    },
+    {
+      "name": "Velux Fixed Skylight",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0FSSHBSYX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Velux%20Fixed%20Skylight",
+      "amazonAsin": "B0FSSHBSYX"
+    },
+    {
+      "name": "Velux Fixed Skylight",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0FSSHBSYX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Velux%20Fixed%20Skylight",
+      "amazonAsin": "B0FSSHBSYX"
+    },
+    {
+      "name": "Milgard Tuscany Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07H7QK9YL",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Milgard Tuscany Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Milgard%20Tuscany%20Vinyl%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Milgard Tuscany Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Milgard%20Tuscany%20Vinyl%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Milgard Tuscany Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Milgard%20Tuscany%20Vinyl%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Jeld-Wen V-4500 Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07H7QK9YL",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Jeld-Wen V-4500 Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Jeld-Wen%20V-4500%20Vinyl%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Jeld-Wen V-4500 Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Jeld-Wen%20V-4500%20Vinyl%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Jeld-Wen V-4500 Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Jeld-Wen%20V-4500%20Vinyl%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen A-Series Triple-Pane Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07H7QK9YL",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen A-Series Triple-Pane Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Andersen%20A-Series%20Triple-Pane%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen A-Series Triple-Pane Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Andersen%20A-Series%20Triple-Pane%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen A-Series Triple-Pane Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Andersen%20A-Series%20Triple-Pane%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Pella Impervia Fiberglass Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07VJBL2PK",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Pella Impervia Fiberglass Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Pella%20Impervia%20Fiberglass%20Window",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Pella Impervia Fiberglass Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Pella%20Impervia%20Fiberglass%20Window",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Pella Impervia Fiberglass Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Pella%20Impervia%20Fiberglass%20Window",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Kolbe Ultra Triple-Glazed Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0FRXMCJDV.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0FRXMCJDV",
+      "amazonAsin": "B0FRXMCJDV"
+    },
+    {
+      "name": "Kolbe Ultra Triple-Glazed Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0FRXMCJDV.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Kolbe%20Ultra%20Triple-Glazed%20Window",
+      "amazonAsin": "B0FRXMCJDV"
+    },
+    {
+      "name": "Kolbe Ultra Triple-Glazed Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0FRXMCJDV.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Kolbe%20Ultra%20Triple-Glazed%20Window",
+      "amazonAsin": "B0FRXMCJDV"
+    },
+    {
+      "name": "Kolbe Ultra Triple-Glazed Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0FRXMCJDV.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Kolbe%20Ultra%20Triple-Glazed%20Window",
+      "amazonAsin": "B0FRXMCJDV"
+    },
+    {
+      "name": "Alpen High Performance Fiberglass Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07H7QK9YL",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Alpen High Performance Fiberglass Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Alpen%20High%20Performance%20Fiberglass%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Alpen High Performance Fiberglass Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Alpen%20High%20Performance%20Fiberglass%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Alpen High Performance Fiberglass Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Alpen%20High%20Performance%20Fiberglass%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Wasco Tubular Skylight Kit",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000BQR0Z8.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B000BQR0Z8",
+      "amazonAsin": "B000BQR0Z8"
+    },
+    {
+      "name": "Wasco Tubular Skylight Kit",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000BQR0Z8.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Wasco%20Tubular%20Skylight%20Kit",
+      "amazonAsin": "B000BQR0Z8"
+    },
+    {
+      "name": "Wasco Tubular Skylight Kit",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000BQR0Z8.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Wasco%20Tubular%20Skylight%20Kit",
+      "amazonAsin": "B000BQR0Z8"
+    },
+    {
+      "name": "Wasco Tubular Skylight Kit",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000BQR0Z8.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Wasco%20Tubular%20Skylight%20Kit",
+      "amazonAsin": "B000BQR0Z8"
+    },
+    {
+      "name": "VELUX Solar Powered Skylight",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0FSSHBSYX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0FSSHBSYX",
+      "amazonAsin": "B0FSSHBSYX"
+    },
+    {
+      "name": "VELUX Solar Powered Skylight",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0FSSHBSYX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/VELUX%20Solar%20Powered%20Skylight",
+      "amazonAsin": "B0FSSHBSYX"
+    },
+    {
+      "name": "VELUX Solar Powered Skylight",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0FSSHBSYX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=VELUX%20Solar%20Powered%20Skylight",
+      "amazonAsin": "B0FSSHBSYX"
+    },
+    {
+      "name": "VELUX Solar Powered Skylight",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0FSSHBSYX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=VELUX%20Solar%20Powered%20Skylight",
+      "amazonAsin": "B0FSSHBSYX"
+    },
+    {
+      "name": "Therma-Tru Fiberglass Entry Door",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0DBW1LPFN.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0DBW1LPFN",
+      "amazonAsin": "B0DBW1LPFN"
+    },
+    {
+      "name": "Therma-Tru Fiberglass Entry Door",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0DBW1LPFN.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Therma-Tru%20Fiberglass%20Entry%20Door",
+      "amazonAsin": "B0DBW1LPFN"
+    },
+    {
+      "name": "Therma-Tru Fiberglass Entry Door",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0DBW1LPFN.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Therma-Tru%20Fiberglass%20Entry%20Door",
+      "amazonAsin": "B0DBW1LPFN"
+    },
+    {
+      "name": "Therma-Tru Fiberglass Entry Door",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0DBW1LPFN.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Therma-Tru%20Fiberglass%20Entry%20Door",
+      "amazonAsin": "B0DBW1LPFN"
+    },
+    {
+      "name": "Andersen E-Series Aluminum-Clad Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07H7QK9YL",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen E-Series Aluminum-Clad Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Andersen%20E-Series%20Aluminum-Clad%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen E-Series Aluminum-Clad Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Andersen%20E-Series%20Aluminum-Clad%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen E-Series Aluminum-Clad Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Andersen%20E-Series%20Aluminum-Clad%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Marvin Ultimate Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08N5WRWNW.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B08N5WRWNW",
+      "amazonAsin": "B08N5WRWNW"
+    },
+    {
+      "name": "Marvin Ultimate Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08N5WRWNW.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Marvin%20Ultimate%20Double-Hung%20Window",
+      "amazonAsin": "B08N5WRWNW"
+    },
+    {
+      "name": "Marvin Ultimate Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08N5WRWNW.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Marvin%20Ultimate%20Double-Hung%20Window",
+      "amazonAsin": "B08N5WRWNW"
+    },
+    {
+      "name": "Marvin Ultimate Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B08N5WRWNW.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Marvin%20Ultimate%20Double-Hung%20Window",
+      "amazonAsin": "B08N5WRWNW"
+    },
+    {
+      "name": "Rockwool ComfortBatt Mineral Wool Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07K13HDBD",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Rockwool ComfortBatt Mineral Wool Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Rockwool%20ComfortBatt%20Mineral%20Wool%20Insulation",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Rockwool ComfortBatt Mineral Wool Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Rockwool%20ComfortBatt%20Mineral%20Wool%20Insulation",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Rockwool ComfortBatt Mineral Wool Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Rockwool%20ComfortBatt%20Mineral%20Wool%20Insulation",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Owens Corning R-30 Fiberglass Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000C0B2V6.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B000C0B2V6",
+      "amazonAsin": "B000C0B2V6"
+    },
+    {
+      "name": "Owens Corning R-30 Fiberglass Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000C0B2V6.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Owens%20Corning%20R-30%20Fiberglass%20Batts",
+      "amazonAsin": "B000C0B2V6"
+    },
+    {
+      "name": "Owens Corning R-30 Fiberglass Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000C0B2V6.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Owens%20Corning%20R-30%20Fiberglass%20Batts",
+      "amazonAsin": "B000C0B2V6"
+    },
+    {
+      "name": "Owens Corning R-30 Fiberglass Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000C0B2V6.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Owens%20Corning%20R-30%20Fiberglass%20Batts",
+      "amazonAsin": "B000C0B2V6"
+    },
+    {
+      "name": "Pro Clima TESCON VANA Airtight Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B005AWY5FO",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Pro Clima TESCON VANA Airtight Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Pro%20Clima%20TESCON%20VANA%20Airtight%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Pro Clima TESCON VANA Airtight Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Pro%20Clima%20TESCON%20VANA%20Airtight%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "SIGA Fentrim Airtight Window Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B005AWY5FO",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "SIGA Fentrim Airtight Window Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/SIGA%20Fentrim%20Airtight%20Window%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "SIGA Fentrim Airtight Window Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=SIGA%20Fentrim%20Airtight%20Window%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "475 High Performance Building Supply Membrane",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00DRL8MBI",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "475 High Performance Building Supply Membrane",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/475%20High%20Performance%20Building%20Supply%20Membrane",
+      "amazonAsin": "B00DRL8MBI"
+    }
+  ],
+  "insulation": [
+    {
+      "name": "Rockwool ComfortBatt Mineral Wool Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07K13HDBD",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Rockwool ComfortBatt Mineral Wool Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Rockwool%20ComfortBatt%20Mineral%20Wool%20Insulation",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Rockwool ComfortBatt Mineral Wool Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Rockwool%20ComfortBatt%20Mineral%20Wool%20Insulation",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Rockwool ComfortBatt Mineral Wool Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Rockwool%20ComfortBatt%20Mineral%20Wool%20Insulation",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Owens Corning R-30 Fiberglass Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000C0B2V6.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B000C0B2V6",
+      "amazonAsin": "B000C0B2V6"
+    },
+    {
+      "name": "Owens Corning R-30 Fiberglass Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000C0B2V6.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Owens%20Corning%20R-30%20Fiberglass%20Batts",
+      "amazonAsin": "B000C0B2V6"
+    },
+    {
+      "name": "Owens Corning R-30 Fiberglass Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000C0B2V6.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Owens%20Corning%20R-30%20Fiberglass%20Batts",
+      "amazonAsin": "B000C0B2V6"
+    },
+    {
+      "name": "Owens Corning R-30 Fiberglass Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000C0B2V6.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Owens%20Corning%20R-30%20Fiberglass%20Batts",
+      "amazonAsin": "B000C0B2V6"
+    },
+    {
+      "name": "Johns Manville Formaldehyde-Free Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07K13HDBD",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Johns Manville Formaldehyde-Free Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Johns%20Manville%20Formaldehyde-Free%20Batts",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Johns Manville Formaldehyde-Free Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Johns%20Manville%20Formaldehyde-Free%20Batts",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Johns Manville Formaldehyde-Free Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Johns%20Manville%20Formaldehyde-Free%20Batts",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "CertainTeed Sustainable Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DKE6FEI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00DKE6FEI",
+      "amazonAsin": "B00DKE6FEI"
+    },
+    {
+      "name": "CertainTeed Sustainable Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DKE6FEI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/CertainTeed%20Sustainable%20Insulation",
+      "amazonAsin": "B00DKE6FEI"
+    },
+    {
+      "name": "CertainTeed Sustainable Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DKE6FEI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=CertainTeed%20Sustainable%20Insulation",
+      "amazonAsin": "B00DKE6FEI"
+    },
+    {
+      "name": "CertainTeed Sustainable Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DKE6FEI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=CertainTeed%20Sustainable%20Insulation",
+      "amazonAsin": "B00DKE6FEI"
+    },
+    {
+      "name": "ROCKWOOL Safe'n'Sound Soundproofing",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07K13HDBD",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "ROCKWOOL Safe'n'Sound Soundproofing",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/ROCKWOOL%20Safe'n'Sound%20Soundproofing",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "ROCKWOOL Safe'n'Sound Soundproofing",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=ROCKWOOL%20Safe'n'Sound%20Soundproofing",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "ROCKWOOL Safe'n'Sound Soundproofing",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=ROCKWOOL%20Safe'n'Sound%20Soundproofing",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Applegate Cellulose Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DKE6FEI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00DKE6FEI",
+      "amazonAsin": "B00DKE6FEI"
+    },
+    {
+      "name": "Applegate Cellulose Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DKE6FEI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Applegate%20Cellulose%20Insulation",
+      "amazonAsin": "B00DKE6FEI"
+    },
+    {
+      "name": "Applegate Cellulose Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DKE6FEI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Applegate%20Cellulose%20Insulation",
+      "amazonAsin": "B00DKE6FEI"
+    },
+    {
+      "name": "Applegate Cellulose Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DKE6FEI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Applegate%20Cellulose%20Insulation",
+      "amazonAsin": "B00DKE6FEI"
+    },
+    {
+      "name": "Greenfiber Cellulose Blow-In Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DKE6FEI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00DKE6FEI",
+      "amazonAsin": "B00DKE6FEI"
+    },
+    {
+      "name": "Greenfiber Cellulose Blow-In Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DKE6FEI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Greenfiber%20Cellulose%20Blow-In%20Insulation",
+      "amazonAsin": "B00DKE6FEI"
+    },
+    {
+      "name": "Greenfiber Cellulose Blow-In Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DKE6FEI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Greenfiber%20Cellulose%20Blow-In%20Insulation",
+      "amazonAsin": "B00DKE6FEI"
+    },
+    {
+      "name": "Greenfiber Cellulose Blow-In Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DKE6FEI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Greenfiber%20Cellulose%20Blow-In%20Insulation",
+      "amazonAsin": "B00DKE6FEI"
+    },
+    {
+      "name": "Kingspan Kooltherm Rigid Foam Board",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07Z7J36F3",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Kingspan Kooltherm Rigid Foam Board",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Kingspan%20Kooltherm%20Rigid%20Foam%20Board",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Kingspan Kooltherm Rigid Foam Board",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Kingspan%20Kooltherm%20Rigid%20Foam%20Board",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Kingspan Kooltherm Rigid Foam Board",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Kingspan%20Kooltherm%20Rigid%20Foam%20Board",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Hunter XCI Polyiso Insulation Board",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07Z7J36F3",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Hunter XCI Polyiso Insulation Board",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Hunter%20XCI%20Polyiso%20Insulation%20Board",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Hunter XCI Polyiso Insulation Board",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Hunter%20XCI%20Polyiso%20Insulation%20Board",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Hunter XCI Polyiso Insulation Board",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Hunter%20XCI%20Polyiso%20Insulation%20Board",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "ZIP System R-Sheathing Panel",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07Z7J36F3",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "ZIP System R-Sheathing Panel",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/ZIP%20System%20R-Sheathing%20Panel",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "ZIP System R-Sheathing Panel",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=ZIP%20System%20R-Sheathing%20Panel",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "ZIP System R-Sheathing Panel",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=ZIP%20System%20R-Sheathing%20Panel",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Huber ZIP System Tape",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07Z7J36F3",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Huber ZIP System Tape",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Huber%20ZIP%20System%20Tape",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Huber ZIP System Tape",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Huber%20ZIP%20System%20Tape",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Huber ZIP System Tape",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Huber%20ZIP%20System%20Tape",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "3M All Weather Flashing Tape",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B005AWY5FO",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "3M All Weather Flashing Tape",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/3M%20All%20Weather%20Flashing%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "3M All Weather Flashing Tape",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=3M%20All%20Weather%20Flashing%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "3M All Weather Flashing Tape",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=3M%20All%20Weather%20Flashing%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Tyvek HomeWrap Weather Barrier",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00DRL8MBI",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "Tyvek HomeWrap Weather Barrier",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Tyvek%20HomeWrap%20Weather%20Barrier",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "Tyvek HomeWrap Weather Barrier",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Tyvek%20HomeWrap%20Weather%20Barrier",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "Tyvek HomeWrap Weather Barrier",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Tyvek%20HomeWrap%20Weather%20Barrier",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "Henry Blueskin VP100 Air Barrier",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B005AWY5FO",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Henry Blueskin VP100 Air Barrier",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Henry%20Blueskin%20VP100%20Air%20Barrier",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Henry Blueskin VP100 Air Barrier",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Henry%20Blueskin%20VP100%20Air%20Barrier",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Henry Blueskin VP100 Air Barrier",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Henry%20Blueskin%20VP100%20Air%20Barrier",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Pro Clima INTELLO Plus Vapor Control",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B005AWY5FO",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Pro Clima INTELLO Plus Vapor Control",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Pro%20Clima%20INTELLO%20Plus%20Vapor%20Control",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Pro Clima INTELLO Plus Vapor Control",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Pro%20Clima%20INTELLO%20Plus%20Vapor%20Control",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Pro Clima INTELLO Plus Vapor Control",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Pro%20Clima%20INTELLO%20Plus%20Vapor%20Control",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Pro Clima TESCON VANA Airtight Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B005AWY5FO",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Pro Clima TESCON VANA Airtight Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Pro%20Clima%20TESCON%20VANA%20Airtight%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Pro Clima TESCON VANA Airtight Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Pro%20Clima%20TESCON%20VANA%20Airtight%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "SIGA Fentrim Airtight Window Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B005AWY5FO",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "SIGA Fentrim Airtight Window Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/SIGA%20Fentrim%20Airtight%20Window%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "SIGA Fentrim Airtight Window Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=SIGA%20Fentrim%20Airtight%20Window%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "475 High Performance Building Supply Membrane",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00DRL8MBI",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "475 High Performance Building Supply Membrane",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/475%20High%20Performance%20Building%20Supply%20Membrane",
+      "amazonAsin": "B00DRL8MBI"
+    }
+  ],
+  "passive-house-materials": [
+    {
+      "name": "Pro Clima TESCON VANA Airtight Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B005AWY5FO",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Pro Clima TESCON VANA Airtight Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Pro%20Clima%20TESCON%20VANA%20Airtight%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Pro Clima TESCON VANA Airtight Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Pro%20Clima%20TESCON%20VANA%20Airtight%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "SIGA Fentrim Airtight Window Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B005AWY5FO",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "SIGA Fentrim Airtight Window Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/SIGA%20Fentrim%20Airtight%20Window%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "SIGA Fentrim Airtight Window Tape",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=SIGA%20Fentrim%20Airtight%20Window%20Tape",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "475 High Performance Building Supply Membrane",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00DRL8MBI",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "475 High Performance Building Supply Membrane",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/475%20High%20Performance%20Building%20Supply%20Membrane",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "475 High Performance Building Supply Membrane",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=475%20High%20Performance%20Building%20Supply%20Membrane",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "Zehnder ComfoAir ERV System",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0GSYZ57CR",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Zehnder ComfoAir ERV System",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Zehnder%20ComfoAir%20ERV%20System",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Zehnder ComfoAir ERV System",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Zehnder%20ComfoAir%20ERV%20System",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Broan HRV Heat Recovery Ventilator",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0GSYZ57CR",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Broan HRV Heat Recovery Ventilator",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Broan%20HRV%20Heat%20Recovery%20Ventilator",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Broan HRV Heat Recovery Ventilator",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Broan%20HRV%20Heat%20Recovery%20Ventilator",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Fantech HRV with Heat Recovery",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0GSYZ57CR",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Fantech HRV with Heat Recovery",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Fantech%20HRV%20with%20Heat%20Recovery",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Fantech HRV with Heat Recovery",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Fantech%20HRV%20with%20Heat%20Recovery",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Aldes ERV Ventilation Unit",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0GSYZ57CR",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Aldes ERV Ventilation Unit",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Aldes%20ERV%20Ventilation%20Unit",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Aldes ERV Ventilation Unit",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Aldes%20ERV%20Ventilation%20Unit",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Lunos E2 Through-Wall Ventilator",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0GSYZ57CR",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Lunos E2 Through-Wall Ventilator",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Lunos%20E2%20Through-Wall%20Ventilator",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Lunos E2 Through-Wall Ventilator",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Lunos%20E2%20Through-Wall%20Ventilator",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Renson Healthbox 3 Smart Ventilation",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0GSYZ57CR",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Renson Healthbox 3 Smart Ventilation",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Renson%20Healthbox%203%20Smart%20Ventilation",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "Renson Healthbox 3 Smart Ventilation",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0GSYZ57CR.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Renson%20Healthbox%203%20Smart%20Ventilation",
+      "amazonAsin": "B0GSYZ57CR"
+    },
+    {
+      "name": "AeroBarrier Airtightness Sealing System",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B005AWY5FO",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "AeroBarrier Airtightness Sealing System",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/AeroBarrier%20Airtightness%20Sealing%20System",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "AeroBarrier Airtightness Sealing System",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=AeroBarrier%20Airtightness%20Sealing%20System",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Blower Door Test Kit",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07K13HDBD",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Blower Door Test Kit",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Blower%20Door%20Test%20Kit",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Blower Door Test Kit",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Blower%20Door%20Test%20Kit",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Red Energy Thermal Imaging Camera",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01AX0L5D2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B01AX0L5D2",
+      "amazonAsin": "B01AX0L5D2"
+    },
+    {
+      "name": "Red Energy Thermal Imaging Camera",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01AX0L5D2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Red%20Energy%20Thermal%20Imaging%20Camera",
+      "amazonAsin": "B01AX0L5D2"
+    },
+    {
+      "name": "Red Energy Thermal Imaging Camera",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01AX0L5D2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Red%20Energy%20Thermal%20Imaging%20Camera",
+      "amazonAsin": "B01AX0L5D2"
+    },
+    {
+      "name": "Flir Thermal Camera for Building Envelope",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01AX0L5D2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B01AX0L5D2",
+      "amazonAsin": "B01AX0L5D2"
+    },
+    {
+      "name": "Flir Thermal Camera for Building Envelope",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01AX0L5D2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Flir%20Thermal%20Camera%20for%20Building%20Envelope",
+      "amazonAsin": "B01AX0L5D2"
+    },
+    {
+      "name": "Flir Thermal Camera for Building Envelope",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01AX0L5D2.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Flir%20Thermal%20Camera%20for%20Building%20Envelope",
+      "amazonAsin": "B01AX0L5D2"
+    },
+    {
+      "name": "SIGA Majvest Windtight Membrane",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00DRL8MBI",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "SIGA Majvest Windtight Membrane",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/SIGA%20Majvest%20Windtight%20Membrane",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "SIGA Majvest Windtight Membrane",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=SIGA%20Majvest%20Windtight%20Membrane",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "Pro Clima SOLITEX Mento Plus WRB",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00DRL8MBI",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "Pro Clima SOLITEX Mento Plus WRB",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Pro%20Clima%20SOLITEX%20Mento%20Plus%20WRB",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "Pro Clima SOLITEX Mento Plus WRB",
+      "description": "High-performance passive house materials product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B00DRL8MBI.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Pro%20Clima%20SOLITEX%20Mento%20Plus%20WRB",
+      "amazonAsin": "B00DRL8MBI"
+    },
+    {
+      "name": "Andersen 400 Series Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07H7QK9YL",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen 400 Series Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Andersen%20400%20Series%20Double-Hung%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen 400 Series Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Andersen%20400%20Series%20Double-Hung%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Andersen 400 Series Double-Hung Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07H7QK9YL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Andersen%20400%20Series%20Double-Hung%20Window",
+      "amazonAsin": "B07H7QK9YL"
+    },
+    {
+      "name": "Pella 250 Series Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07VJBL2PK",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Pella 250 Series Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Pella%20250%20Series%20Vinyl%20Window",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Pella 250 Series Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Pella%20250%20Series%20Vinyl%20Window",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Pella 250 Series Vinyl Window",
+      "description": "High-performance windows product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07VJBL2PK.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Pella%20250%20Series%20Vinyl%20Window",
+      "amazonAsin": "B07VJBL2PK"
+    },
+    {
+      "name": "Rockwool ComfortBatt Mineral Wool Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07K13HDBD",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Rockwool ComfortBatt Mineral Wool Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Rockwool%20ComfortBatt%20Mineral%20Wool%20Insulation",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Rockwool ComfortBatt Mineral Wool Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Rockwool%20ComfortBatt%20Mineral%20Wool%20Insulation",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Rockwool ComfortBatt Mineral Wool Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Rockwool%20ComfortBatt%20Mineral%20Wool%20Insulation",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Owens Corning R-30 Fiberglass Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000C0B2V6.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B000C0B2V6",
+      "amazonAsin": "B000C0B2V6"
+    },
+    {
+      "name": "Owens Corning R-30 Fiberglass Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000C0B2V6.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Owens%20Corning%20R-30%20Fiberglass%20Batts",
+      "amazonAsin": "B000C0B2V6"
+    },
+    {
+      "name": "Owens Corning R-30 Fiberglass Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000C0B2V6.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Owens%20Corning%20R-30%20Fiberglass%20Batts",
+      "amazonAsin": "B000C0B2V6"
+    },
+    {
+      "name": "Owens Corning R-30 Fiberglass Batts",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Wayfair",
+      "imageUrl": "https://m.media-amazon.com/images/P/B000C0B2V6.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Owens%20Corning%20R-30%20Fiberglass%20Batts",
+      "amazonAsin": "B000C0B2V6"
+    },
+    {
+      "name": "Smart HVAC Air Vent",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0792R5KJF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0792R5KJF",
+      "amazonAsin": "B0792R5KJF"
+    },
+    {
+      "name": "Smart HVAC Air Vent",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0792R5KJF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Smart%20HVAC%20Air%20Vent",
+      "amazonAsin": "B0792R5KJF"
+    },
+    {
+      "name": "Smart HVAC Air Vent",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B0792R5KJF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Smart%20HVAC%20Air%20Vent",
+      "amazonAsin": "B0792R5KJF"
+    },
+    {
+      "name": "MERV 13 High Efficiency Air Filter",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01CR9K33K.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B01CR9K33K",
+      "amazonAsin": "B01CR9K33K"
+    },
+    {
+      "name": "MERV 13 High Efficiency Air Filter",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01CR9K33K.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/MERV%2013%20High%20Efficiency%20Air%20Filter",
+      "amazonAsin": "B01CR9K33K"
+    },
+    {
+      "name": "MERV 13 High Efficiency Air Filter",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B01CR9K33K.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=MERV%2013%20High%20Efficiency%20Air%20Filter",
+      "amazonAsin": "B01CR9K33K"
+    },
+    {
+      "name": "Smart Temperature Room Sensor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07NQVWRR3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07NQVWRR3",
+      "amazonAsin": "B07NQVWRR3"
+    },
+    {
+      "name": "Smart Temperature Room Sensor",
+      "description": "Curated eco-friendly pick for sustainable modern homes.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07NQVWRR3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Smart%20Temperature%20Room%20Sensor",
+      "amazonAsin": "B07NQVWRR3"
+    }
+  ],
+  "green-roofing": [
+    {
+      "name": "GAF Timberline HDZ Cool Roof Shingles",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07Z7J36F3",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "GAF Timberline HDZ Cool Roof Shingles",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/GAF%20Timberline%20HDZ%20Cool%20Roof%20Shingles",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "GAF Timberline HDZ Cool Roof Shingles",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=GAF%20Timberline%20HDZ%20Cool%20Roof%20Shingles",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Owens Corning Duration Cool Shingles",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07Z7J36F3",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Owens Corning Duration Cool Shingles",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Owens%20Corning%20Duration%20Cool%20Shingles",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Owens Corning Duration Cool Shingles",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Owens%20Corning%20Duration%20Cool%20Shingles",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "CertainTeed Landmark ClimateFlex Shingles",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07Z7J36F3",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "CertainTeed Landmark ClimateFlex Shingles",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/CertainTeed%20Landmark%20ClimateFlex%20Shingles",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "CertainTeed Landmark ClimateFlex Shingles",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=CertainTeed%20Landmark%20ClimateFlex%20Shingles",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Metal Sales Standing Seam Roofing Panel",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07Z7J36F3",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Metal Sales Standing Seam Roofing Panel",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Metal%20Sales%20Standing%20Seam%20Roofing%20Panel",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Metal Sales Standing Seam Roofing Panel",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Metal%20Sales%20Standing%20Seam%20Roofing%20Panel",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "EPDM Rubber Roofing Membrane",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B005AWY5FO",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "EPDM Rubber Roofing Membrane",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/EPDM%20Rubber%20Roofing%20Membrane",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "EPDM Rubber Roofing Membrane",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=EPDM%20Rubber%20Roofing%20Membrane",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "TPO White Reflective Roofing Membrane",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B005AWY5FO",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "TPO White Reflective Roofing Membrane",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/TPO%20White%20Reflective%20Roofing%20Membrane",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "TPO White Reflective Roofing Membrane",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=TPO%20White%20Reflective%20Roofing%20Membrane",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Green Roof Sedum Tray System",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07K13HDBD",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Green Roof Sedum Tray System",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Green%20Roof%20Sedum%20Tray%20System",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Green Roof Sedum Tray System",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Green%20Roof%20Sedum%20Tray%20System",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "LiveRoof Modular Green Roof System",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07K13HDBD",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "LiveRoof Modular Green Roof System",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/LiveRoof%20Modular%20Green%20Roof%20System",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "LiveRoof Modular Green Roof System",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07K13HDBD.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=LiveRoof%20Modular%20Green%20Roof%20System",
+      "amazonAsin": "B07K13HDBD"
+    },
+    {
+      "name": "Solar Roof Flashing Kit",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B005AWY5FO",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Solar Roof Flashing Kit",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Solar%20Roof%20Flashing%20Kit",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Solar Roof Flashing Kit",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B005AWY5FO.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Solar%20Roof%20Flashing%20Kit",
+      "amazonAsin": "B005AWY5FO"
+    },
+    {
+      "name": "Ridge Vent with External Baffle",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B07Z7J36F3",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Ridge Vent with External Baffle",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Ridge%20Vent%20with%20External%20Baffle",
+      "amazonAsin": "B07Z7J36F3"
+    },
+    {
+      "name": "Ridge Vent with External Baffle",
+      "description": "High-performance green roofing product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B07Z7J36F3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Ridge%20Vent%20with%20External%20Baffle",
+      "amazonAsin": "B07Z7J36F3"
+    }
+  ],
+  "flooring": [
+    {
+      "name": "Marmoleum Click Linoleum Flooring",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09S7KPF7Q",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Marmoleum Click Linoleum Flooring",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Marmoleum%20Click%20Linoleum%20Flooring",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Marmoleum Click Linoleum Flooring",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Marmoleum%20Click%20Linoleum%20Flooring",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Cali Bamboo Fossilized Bamboo Flooring",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09S7KPF7Q",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Cali Bamboo Fossilized Bamboo Flooring",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Cali%20Bamboo%20Fossilized%20Bamboo%20Flooring",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Cali Bamboo Fossilized Bamboo Flooring",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Cali%20Bamboo%20Fossilized%20Bamboo%20Flooring",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Torlys Cork Flooring Planks",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09S7KPF7Q",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Torlys Cork Flooring Planks",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Torlys%20Cork%20Flooring%20Planks",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Torlys Cork Flooring Planks",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Torlys%20Cork%20Flooring%20Planks",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Kahrs Engineered Wood Flooring",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09S7KPF7Q",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Kahrs Engineered Wood Flooring",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Kahrs%20Engineered%20Wood%20Flooring",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Kahrs Engineered Wood Flooring",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Kahrs%20Engineered%20Wood%20Flooring",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "COREtec Plus Luxury Vinyl Plank",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09S7KPF7Q",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "COREtec Plus Luxury Vinyl Plank",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/COREtec%20Plus%20Luxury%20Vinyl%20Plank",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "COREtec Plus Luxury Vinyl Plank",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=COREtec%20Plus%20Luxury%20Vinyl%20Plank",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Forbo Marmoleum Sheet Flooring",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09S7KPF7Q",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Forbo Marmoleum Sheet Flooring",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Forbo%20Marmoleum%20Sheet%20Flooring",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Forbo Marmoleum Sheet Flooring",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Forbo%20Marmoleum%20Sheet%20Flooring",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Green Building Supply Cork Tiles",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09S7KPF7Q",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Green Building Supply Cork Tiles",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Green%20Building%20Supply%20Cork%20Tiles",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Green Building Supply Cork Tiles",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Green%20Building%20Supply%20Cork%20Tiles",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Reclaimed Wood Flooring Planks",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09S7KPF7Q",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Reclaimed Wood Flooring Planks",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Reclaimed%20Wood%20Flooring%20Planks",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Reclaimed Wood Flooring Planks",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Reclaimed%20Wood%20Flooring%20Planks",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Wool Carpet Natural Fiber",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09S7KPF7Q",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Wool Carpet Natural Fiber",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Wool%20Carpet%20Natural%20Fiber",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Wool Carpet Natural Fiber",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Wool%20Carpet%20Natural%20Fiber",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Interface Carbon Neutral Carpet Tile",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09S7KPF7Q",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Interface Carbon Neutral Carpet Tile",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Home Depot",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Interface%20Carbon%20Neutral%20Carpet%20Tile",
+      "amazonAsin": "B09S7KPF7Q"
+    },
+    {
+      "name": "Interface Carbon Neutral Carpet Tile",
+      "description": "High-performance flooring product — verify specs for your climate zone and project.",
+      "store": "Lowe's",
+      "imageUrl": "https://m.media-amazon.com/images/P/B09S7KPF7Q.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Interface%20Carbon%20Neutral%20Carpet%20Tile",
+      "amazonAsin": "B09S7KPF7Q"
+    }
+  ]
+}

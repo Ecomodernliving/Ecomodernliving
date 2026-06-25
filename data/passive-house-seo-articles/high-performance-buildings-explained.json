@@ -1,0 +1,22 @@
+{
+  "slug": "high-performance-buildings-explained",
+  "title": "High Performance Buildings: Standards Beyond Code",
+  "metaDescription": "From ENERGY STAR to Passive House — understand performance tiers and what each delivers.",
+  "targetKeyword": "High Performance Buildings",
+  "category": "Fundamentals",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house",
+    "/guides/passive-house"
+  ],
+  "affiliateCategories": [
+    "insulation"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Code baseline",
+    "Above-code programs",
+    "Passive House",
+    "Choosing a path"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "domestic-hot-water-efficiency",
+  "title": "Efficient Domestic Hot Water for Low-Energy Homes",
+  "metaDescription": "Heat pump water heaters, pipe insulation, and recirculation strategies that cut DHW energy.",
+  "targetKeyword": "efficient hot water",
+  "category": "HVAC",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house/hvac",
+    "/marketplace/water-fixtures"
+  ],
+  "affiliateCategories": [
+    "heat-pumps",
+    "water-fixtures"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Loads",
+    "Equipment",
+    "Distribution",
+    "Fixtures"
+  ]
+}

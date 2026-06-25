@@ -2,15 +2,15 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronDown, X, ArrowRight, Leaf } from "lucide-react";
+import { ChevronDown, X, Leaf } from "lucide-react";
 import clsx from "clsx";
 import {
   mainNavigation,
   utilityLinks,
-  ctaLink,
 } from "@/config/navigation";
 import { NavIcon } from "@/components/NavIcon";
 import { NavHref } from "@/components/NavHref";
+import { AuthNav } from "@/components/auth/AuthNav";
 
 type MobileMenuProps = {
   isOpen: boolean;
@@ -34,8 +34,8 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         aria-hidden="true"
       />
 
-      <div className="fixed inset-y-0 right-0 z-[70] flex w-full max-w-sm animate-slide-in flex-col bg-white shadow-2xl lg:hidden">
-        <div className="flex items-center justify-between border-b border-sage-100 px-5 py-4">
+      <div className="fixed inset-y-0 right-0 z-[70] flex w-full max-w-[min(100%,24rem)] animate-slide-in flex-col bg-white shadow-2xl pt-safe lg:hidden">
+        <div className="flex items-center justify-between border-b border-sage-100 px-4 py-3 sm:px-5 sm:py-4">
           <Link href="/" onClick={onClose} className="flex items-center gap-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-forest-600 text-white">
               <Leaf className="h-4 w-4" />
@@ -47,7 +47,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           <button
             type="button"
             onClick={onClose}
-            className="rounded-lg p-2 text-sage-600 hover:bg-sage-100"
+            className="touch-target rounded-lg text-sage-600 hover:bg-sage-100"
             aria-label="Close menu"
           >
             <X className="h-5 w-5" />
@@ -122,7 +122,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                                     href={link.href}
                                     external={link.external}
                                     onClick={onClose}
-                                    className="flex items-center gap-2.5 rounded-lg px-2 py-2.5 text-sm text-sage-700 hover:bg-forest-50 hover:text-forest-700"
+                                    className="flex min-h-11 items-center gap-2.5 rounded-lg px-2 py-2.5 text-sm text-sage-700 hover:bg-forest-50 hover:text-forest-700"
                                   >
                                     {link.icon && (
                                       <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-sage-100 text-sage-500">
@@ -163,19 +163,11 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 {link.label}
               </Link>
             ))}
-          </nav>
-        </div>
 
-        <div className="border-t border-sage-100 p-4">
-          <Link
-            href={ctaLink.href}
-            onClick={onClose}
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-forest-600 px-5 py-3.5 text-sm font-semibold text-white shadow-lg"
-          >
-            <NavIcon name={ctaLink.icon} className="h-4 w-4" />
-            {ctaLink.label}
-            <ArrowRight className="h-4 w-4" />
-          </Link>
+            <div className="mt-2 lg:hidden">
+              <AuthNav variant="mobile" />
+            </div>
+          </nav>
         </div>
       </div>
     </>

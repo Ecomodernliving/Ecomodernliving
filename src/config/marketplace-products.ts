@@ -111,7 +111,6 @@ export const marketplaceProducts: Record<string, PageProduct[]> = {
     product("Solar Powered Outdoor Lights", "https://www.amazon.com/dp/B09F3DJNGF?tag=ecomodernliving-20&linkCode=ll2"),
     product("Solar Security Camera", "https://www.amazon.com/dp/B0CCYP6KFM?tag=ecomodernliving-20&linkCode=ll2"),
     product("Renogy Solar Panel Kit", "https://www.amazon.com/s?k=renogy+solar+panel+kit"),
-    product("Jackery Solar Generator", "https://www.amazon.com/s?k=jackery+solar+generator"),
   ],
   "water-fixtures": [
     product("Rachio Smart Sprinkler Controller", "https://www.amazon.com/dp/B07CZ864Y9?tag=ecomodernliving-20&linkCode=ll2"),

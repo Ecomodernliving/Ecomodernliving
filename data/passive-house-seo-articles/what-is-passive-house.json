@@ -1,0 +1,30 @@
+{
+  "slug": "what-is-passive-house",
+  "title": "What Is Passive House? A Complete Guide for Homeowners",
+  "metaDescription": "Learn what Passive House means, how certification works, and why ultra-efficient homes deliver comfort, health, and lower energy bills.",
+  "targetKeyword": "Passive House",
+  "category": "Fundamentals",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house",
+    "/passive-house-principles",
+    "/guides/passive-house"
+  ],
+  "affiliateCategories": [
+    "insulation",
+    "windows"
+  ],
+  "faqSchema": [
+    {
+      "question": "Is Passive House only for houses?",
+      "answer": "No — offices, schools, and apartments can certify too."
+    }
+  ],
+  "outline": [
+    "Definition",
+    "Five principles",
+    "Certification overview",
+    "Myths debunked",
+    "Getting started"
+  ]
+}

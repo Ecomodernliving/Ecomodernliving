@@ -1,0 +1,23 @@
+{
+  "slug": "passive-house-roof-assemblies",
+  "title": "Passive House Roof Assemblies and Insulation Strategies",
+  "metaDescription": "Cathedral ceilings, flat roofs, and ventilated assemblies that meet thermal and moisture goals.",
+  "targetKeyword": "passive house roof",
+  "category": "Envelope",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house/envelope",
+    "/marketplace/insulation"
+  ],
+  "affiliateCategories": [
+    "insulation",
+    "green-roofing"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Roof types",
+    "R targets",
+    "Vapor control",
+    "Details"
+  ]
+}

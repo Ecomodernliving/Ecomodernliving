@@ -1,0 +1,22 @@
+{
+  "slug": "indoor-air-quality-passive-house",
+  "title": "Indoor Air Quality in Airtight Passive House Homes",
+  "metaDescription": "How continuous filtered ventilation delivers fresh air without energy penalty.",
+  "targetKeyword": "indoor air quality",
+  "category": "Health",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/guides/healthy-homes",
+    "/marketplace/air-purifiers"
+  ],
+  "affiliateCategories": [
+    "air-purifiers"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Ventilation rates",
+    "Filtration",
+    "CO2",
+    "VOCs"
+  ]
+}

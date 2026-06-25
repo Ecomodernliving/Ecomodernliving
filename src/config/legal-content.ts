@@ -38,7 +38,7 @@ export const legalPages: Record<string, LegalPageContent> = {
         paragraphs: ["We use collected information to:"],
         list: [
           "Respond to inquiries and support requests",
-          "Send newsletters and build updates you opt into",
+          "Send newsletters and product updates you opt into",
           "Improve our content, tools, and user experience",
           "Comply with legal obligations",
         ],
@@ -145,7 +145,7 @@ export const legalPages: Record<string, LegalPageContent> = {
       {
         title: "What This Means for You",
         paragraphs: [
-          "Affiliate relationships help fund our free guides, passive house build documentation, and AI tools. Our recommendations are based on sustainability criteria, performance, and relevance — not solely on commission rates.",
+          "Affiliate relationships help fund our free guides, passive house education, and AI tools. Our recommendations are based on sustainability criteria, performance, and relevance — not solely on commission rates.",
           "Prices and availability on retailer sites may change. Always verify details on the retailer's website before purchasing.",
         ],
       },

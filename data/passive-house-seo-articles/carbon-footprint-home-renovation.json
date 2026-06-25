@@ -1,0 +1,23 @@
+{
+  "slug": "carbon-footprint-home-renovation",
+  "title": "Reducing Carbon Footprint Through Home Renovation",
+  "metaDescription": "Embodied carbon and operational carbon strategies for whole-home retrofits.",
+  "targetKeyword": "carbon footprint home",
+  "category": "Sustainability",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/guides/eco-architecture",
+    "/passive-house"
+  ],
+  "affiliateCategories": [
+    "insulation",
+    "eco-paints"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Embodied vs operational",
+    "Materials",
+    "Electrify",
+    "Measure"
+  ]
+}

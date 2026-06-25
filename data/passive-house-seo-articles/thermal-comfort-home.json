@@ -1,0 +1,20 @@
+{
+  "slug": "thermal-comfort-home",
+  "title": "Thermal Comfort in Modern Eco Homes",
+  "metaDescription": "Operative temperature, drafts, and surface temperatures — how Passive House delivers even comfort.",
+  "targetKeyword": "thermal comfort",
+  "category": "Health",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/guides/healthy-homes",
+    "/passive-house-principles"
+  ],
+  "affiliateCategories": [],
+  "faqSchema": [],
+  "outline": [
+    "ISO 7730",
+    "Drafts",
+    "Surfaces",
+    "Ventilation"
+  ]
+}

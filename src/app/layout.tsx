@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { DM_Sans, Inter } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { AuthProvider } from "@/components/auth/AuthProvider";
 import "./globals.css";
 
 const inter = Inter({
@@ -26,18 +27,24 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ecomodernliving.ai"),
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${dmSans.variable}`}>
-      <body className="min-h-screen flex flex-col overflow-x-hidden">
+    <html lang="en" className={`${inter.variable} ${dmSans.variable}`}><body className="min-h-screen flex flex-col overflow-x-hidden">
+      <AuthProvider>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-      </body>
-    </html>
+      </AuthProvider>
+    </body></html>
   );
 }

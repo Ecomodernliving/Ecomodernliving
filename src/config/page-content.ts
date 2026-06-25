@@ -1,5 +1,8 @@
 import type { PageCategory } from "@/lib/navigation-utils";
 import type { NavIconName } from "@/config/navigation";
+import type { AffiliateStore } from "@/lib/affiliate-stores";
+import { marketplaceProducts } from "@/config/marketplace-products";
+import { passiveHouseContentOverrides } from "@/config/passive-house-content";
 
 export type PageFeature = {
   title: string;
@@ -11,6 +14,10 @@ export type PageProduct = {
   description: string;
   tag?: string;
   priceRange?: string;
+  store?: AffiliateStore;
+  imageUrl?: string;
+  affiliateUrl?: string;
+  amazonUrl?: string;
   amazonQuery?: string;
   amazonAsin?: string;
 };
@@ -39,25 +46,6 @@ export type PageContent = {
   comingSoon?: boolean;
   ctaLabel?: string;
   ctaHref?: string;
-};
-
-const marketplaceProducts: Record<string, PageProduct[]> = {
-  solar: [
-    { name: "REC Alpha Pure-R Panels", description: "High-efficiency monocrystalline with 22%+ efficiency", tag: "Top Pick", priceRange: "$$$", amazonQuery: "REC Alpha Pure R solar panel" },
-    { name: "Enphase IQ8 Microinverters", description: "Module-level monitoring and rapid shutdown compliance", tag: "Best Monitoring", priceRange: "$$$", amazonQuery: "Enphase IQ8 microinverter" },
-    { name: "Tesla Powerwall 3", description: "Integrated battery storage for backup and self-consumption", tag: "Popular", priceRange: "$$$$", amazonQuery: "home battery storage solar" },
-    { name: "Emporia Vue Energy Monitor", description: "Real-time whole-home energy tracking", tag: "Budget", priceRange: "$", amazonAsin: "B08CJGPHL9" },
-  ],
-  "heat-pumps": [
-    { name: "Mitsubishi Hyper-Heat H2i", description: "Cold-climate mini-split rated to -13°F", tag: "Top Pick", priceRange: "$$$", amazonQuery: "Mitsubishi mini split heat pump" },
-    { name: "Carrier Infinity Heat Pump", description: "Variable-speed central system with excellent SEER2", tag: "Whole Home", priceRange: "$$$$", amazonQuery: "Carrier heat pump system" },
-    { name: "Daikin Fit System", description: "Compact ducted solution for retrofits", tag: "Retrofit", priceRange: "$$$", amazonQuery: "Daikin ducted mini split" },
-  ],
-  furniture: [
-    { name: "Medley Sofa", description: "FSC-certified wood, OEKO-TEX fabrics, made in USA", tag: "Non-Toxic", priceRange: "$$$", amazonQuery: "non toxic sofa FSC certified" },
-    { name: "Avocado Green Mattress", description: "GOLS organic latex, zero polyurethane foam", tag: "Organic", priceRange: "$$$", amazonQuery: "Avocado green mattress organic" },
-    { name: "Greenington Bamboo Desk", description: "Sustainable bamboo with low-VOC finish", tag: "Eco Material", priceRange: "$$", amazonQuery: "bamboo desk sustainable" },
-  ],
 };
 
 function defaultProducts(label: string): PageProduct[] {
@@ -91,10 +79,10 @@ function defaultFeatures(label: string, category: PageCategory): PageFeature[] {
       { title: "Expert Reviewed", description: "Reviewed by sustainability and construction professionals" },
     ],
     "passive-house": [
-      { title: "Real Project", description: "Documenting our actual build — not theoretical advice" },
-      { title: "Transparent Costs", description: "Full budget breakdown with no hidden numbers" },
-      { title: "Product Links", description: "Every material choice linked to what we actually purchased" },
-      { title: "Lessons Learned", description: "Honest notes on what worked and what we'd change" },
+      { title: "Research-Backed", description: "Content based on building science and Passive House Institute standards" },
+      { title: "Practical Guidance", description: "Clear explanations homeowners and renovators can act on" },
+      { title: "Curated Products", description: "Recommended materials and systems mapped to each topic" },
+      { title: "Free Tools", description: "Calculators, FAQs, and AI audits to support your planning" },
     ],
     services: [
       { title: "Expert Guidance", description: "Personalized advice from sustainability professionals" },
@@ -104,15 +92,15 @@ function defaultFeatures(label: string, category: PageCategory): PageFeature[] {
     ],
     community: [
       { title: "Active Community", description: "Connect with others on the same sustainable journey" },
-      { title: "Weekly Updates", description: "Fresh content on products, trends, and our build" },
-      { title: "Exclusive Access", description: "Early access to tools, guides, and build updates" },
+      { title: "Weekly Updates", description: "Fresh content on products, trends, and sustainable living" },
+      { title: "Exclusive Access", description: "Early access to tools, guides, and new features" },
       { title: "Free to Join", description: "No cost to participate in our community channels" },
     ],
     utility: [
       { title: "Our Mission", description: "Making sustainable living accessible to every homeowner" },
       { title: "AI + Sustainability", description: "Unique blend of technology and green building expertise" },
-      { title: "Transparent", description: "Honest reviews, real build documentation, clear affiliations" },
-      { title: "Community First", description: "Built for homeowners, by people who are building too" },
+      { title: "Transparent", description: "Honest reviews, clear education, and open affiliate disclosures" },
+      { title: "Community First", description: "Built for homeowners exploring smarter, greener living" },
     ],
   };
   return base[category];
@@ -136,15 +124,6 @@ function defaultSteps(category: PageCategory): PageStep[] {
     ];
   }
   return [];
-}
-
-function defaultTimeline(label: string): PageTimelineItem[] {
-  return [
-    { title: "Planning Phase", status: "complete", date: "Q1 2025", description: `Completed initial research and planning for ${label.toLowerCase()}` },
-    { title: "Design & Specs", status: "in-progress", date: "Q2 2025", description: "Finalizing specifications and sourcing materials" },
-    { title: "Implementation", status: "planned", date: "Q3 2025", description: "Construction and installation phase" },
-    { title: "Testing & Certification", status: "planned", date: "Q4 2025", description: "Performance verification and final documentation" },
-  ];
 }
 
 function defaultTips(label: string, category: PageCategory): string[] {
@@ -180,19 +159,65 @@ const contentOverrides: Partial<Record<string, Partial<PageContent>>> = {
     ctaLabel: "Run Free Audit",
     ctaHref: "#audit-form",
   },
-  "/passive-house": {
-    intro: "We're building a certified eco-modern passive house from the ground up. Follow every decision — from site selection to move-in day — with full transparency on costs, materials, and lessons learned.",
-    timeline: [
-      { title: "Site Selection & Analysis", status: "complete", date: "Jan 2025", description: "Lot purchased with optimal south-facing orientation" },
-      { title: "Architect & PHPP Modeling", status: "complete", date: "Mar 2025", description: "Passive House Planning Package completed" },
-      { title: "Permitting", status: "in-progress", date: "Jun 2025", description: "Building permits submitted and under review" },
-      { title: "Foundation & Envelope", status: "planned", date: "Fall 2025", description: "Groundbreaking and airtight shell construction" },
-      { title: "Systems Installation", status: "planned", date: "Winter 2025", description: "ERV, heat pump, and solar PV installation" },
-      { title: "Certification & Move-In", status: "planned", date: "Spring 2026", description: "Blower door test, Passive House certification, keys!" },
+  "/passive-house/journal": {
+    intro: "Educational articles on passive house design, retrofit strategies, product comparisons, and industry trends — written to help you plan with confidence.",
+    comingSoon: true,
+  },
+  "/passive-house/before-after": {
+    intro: "Real-world passive house and deep retrofit case studies — performance results, design choices, and lessons from certified projects around the world.",
+    comingSoon: true,
+  },
+  "/passive-house/tours": {
+    intro: "Virtual walkthroughs and photo galleries of certified passive house homes — see what exceptional comfort and efficiency look like in practice.",
+    comingSoon: true,
+  },
+  "/passive-house/vision": {
+    intro: "Why homeowners and developers choose Passive House — superior comfort, indoor air quality, durability, and dramatically lower energy bills.",
+    highlights: [
+      "Even temperatures in every room, year-round",
+      "Continuous filtered fresh air without drafts",
+      "50–90% lower heating and cooling energy use",
+      "Higher resale value and long-term durability",
     ],
   },
-  "/passive-house/journal": {
-    intro: "Weekly updates from our passive house build site. Photos, decisions, challenges, and wins — documented in real time.",
+  "/passive-house/site": {
+    intro: "How site selection, solar orientation, and climate zone affect your passive house design — key factors to evaluate before you commit to a lot or retrofit.",
+    highlights: [
+      "South-facing solar access for winter gains",
+      "Shading from trees and neighboring buildings",
+      "Climate data drives insulation and glazing specs",
+      "Wind exposure affects airtightness detailing",
+    ],
+  },
+  "/passive-house/timeline": {
+    intro: "The typical Passive House certification path — from schematic design and PHPP modeling through construction, testing, and independent certifier review.",
+    timeline: [
+      { title: "Schematic Design", status: "complete", description: "Compact form, orientation, and initial PHPP feasibility study" },
+      { title: "Design Development", status: "complete", description: "Envelope details, window specs, and ventilation layout finalized in PHPP" },
+      { title: "Construction", status: "in-progress", description: "Air barrier installation, insulation, windows, and mechanical systems" },
+      { title: "Testing & Commissioning", status: "planned", description: "Blower door test, ventilation balancing, and performance verification" },
+      { title: "Certification", status: "planned", description: "Independent certifier review and PHI certification issued" },
+    ],
+  },
+  "/passive-house/materials": {
+    intro: "Recommended insulation, windows, air barriers, and ventilation products for passive house projects — curated for performance, availability, and value.",
+    tips: [
+      "Match insulation type to your assembly and climate",
+      "Specify windows with published U-factor and SHGC values",
+      "Use dedicated air barrier membranes — not spray foam alone",
+      "Select ERV/HRV units with ≥75% heat recovery efficiency",
+    ],
+    ctaLabel: "Browse Product Guide",
+    ctaHref: "/passive-house-products",
+  },
+  "/passive-house/solar": {
+    intro: "How to size solar PV and battery storage for a low-energy passive house home — efficiency first, then right-sized renewables.",
+    highlights: [
+      "Minimize demand before sizing solar arrays",
+      "Passive House Plus and Premium certification tiers",
+      "Battery storage for resilience and time-of-use savings",
+      "Federal 30% solar tax credit through 2032",
+    ],
   },
   "/guides/incentives": {
     intro: "Federal, state, and local incentives can dramatically reduce the cost of sustainable upgrades. Here's what's available in 2025-2026.",
@@ -219,21 +244,21 @@ const contentOverrides: Partial<Record<string, Partial<PageContent>>> = {
     ],
   },
   "/community/newsletter": {
-    intro: "Join thousands of homeowners getting weekly eco product picks, AI smart home trends, energy savings tips, and exclusive updates from our passive house build.",
+    intro: "Join thousands of homeowners getting weekly eco product picks, AI smart home trends, energy savings tips, and passive house education.",
     ctaLabel: "Subscribe Free",
     ctaHref: "#subscribe",
   },
   "/about": {
-    intro: "EcoModern Living is an AI-powered sustainable living platform. We combine curated eco products, intelligent home tools, and real-world passive house expertise to help you build a greener home.",
+    intro: "EcoModern Living is an AI-powered sustainable living platform. We combine curated eco products, intelligent home tools, and expert passive house education to help you plan a greener home.",
     highlights: [
       "Founded by sustainability and AI enthusiasts",
-      "Building a real passive house — documented openly",
+      "Research-backed passive house guides and tools",
       "60+ curated product categories with affiliate partnerships",
       "Free AI tools for energy audits and home upgrades",
     ],
   },
   "/contact": {
-    intro: "Have a question about sustainable living, our passive house build, or partnership opportunities? We'd love to hear from you.",
+    intro: "Have a question about sustainable living, passive house planning, or partnership opportunities? We'd love to hear from you.",
     ctaLabel: "Send Message",
     ctaHref: "#contact-form",
   },
@@ -247,7 +272,7 @@ export function buildPageContent(
   badge?: string
 ): PageContent {
   const slug = href.split("/").pop() ?? "";
-  const override = contentOverrides[href] ?? {};
+  const override = { ...passiveHouseContentOverrides[href], ...contentOverrides[href] };
 
   const isComingSoon =
     badge === "Soon" ||
@@ -262,15 +287,17 @@ export function buildPageContent(
       `Expert guidance on ${label.toLowerCase()}`,
       "Curated for sustainability and performance",
       "Updated with the latest products and research",
-      category === "passive-house" ? "From our real build experience" : "Free resources and tools available",
+      category === "passive-house" ? "Research-backed education" : "Free resources and tools available",
     ],
     features: defaultFeatures(label, category),
     products:
-      category === "marketplace"
-        ? marketplaceProducts[slug] ?? defaultProducts(label)
-        : undefined,
+      href === "/passive-house-products"
+        ? passiveHouseContentOverrides["/passive-house-products"]?.products
+        : category === "marketplace"
+          ? marketplaceProducts[slug] ?? defaultProducts(label)
+          : undefined,
     steps: defaultSteps(category).length > 0 ? defaultSteps(category) : undefined,
-    timeline: category === "passive-house" ? defaultTimeline(label) : undefined,
+    timeline: undefined,
     tips: defaultTips(label, category).length > 0 ? defaultTips(label, category) : undefined,
     comingSoon: isComingSoon,
     ctaLabel: category === "ai" ? "Try It Free" : category === "services" ? "Book Consultation" : "Explore Products",

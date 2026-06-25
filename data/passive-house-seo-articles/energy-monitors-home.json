@@ -1,0 +1,22 @@
+{
+  "slug": "energy-monitors-home",
+  "title": "Home Energy Monitors: Track Use in Real Time",
+  "metaDescription": "Circuit-level monitoring to verify performance and catch issues in efficient homes.",
+  "targetKeyword": "energy monitor",
+  "category": "Smart Home",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/marketplace/smart-home",
+    "/ai/energy-audit"
+  ],
+  "affiliateCategories": [
+    "smart-home"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Types",
+    "Install",
+    "PH value",
+    "Products"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "moisture-management-passive-house",
+  "title": "Moisture Management in Super-Insulated Homes",
+  "metaDescription": "Vapor control, airtightness, and ventilation to prevent mold and assembly rot.",
+  "targetKeyword": "moisture management",
+  "category": "Envelope",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house/envelope",
+    "/guides/healthy-homes"
+  ],
+  "affiliateCategories": [
+    "insulation"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Vapor drive",
+    "Air leaks",
+    "Ventilation",
+    "Materials"
+  ]
+}

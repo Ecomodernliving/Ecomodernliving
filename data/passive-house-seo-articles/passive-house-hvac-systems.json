@@ -1,0 +1,23 @@
+{
+  "slug": "passive-house-hvac-systems",
+  "title": "Passive House HVAC: Ventilation, Heat Pumps, and Sizing",
+  "metaDescription": "Why Passive House HVAC is smaller, how ERVs work, and how heat pumps cover heating and cooling efficiently.",
+  "targetKeyword": "Passive House HVAC",
+  "category": "HVAC",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house/hvac",
+    "/marketplace/heat-pumps"
+  ],
+  "affiliateCategories": [
+    "heat-pumps",
+    "passive-house-materials"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Ventilation first",
+    "Heat pump sizing",
+    "DHW",
+    "Commissioning"
+  ]
+}

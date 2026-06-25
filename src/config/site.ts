@@ -20,14 +20,23 @@ export const siteConfig = {
     youtube:
       process.env.NEXT_PUBLIC_YOUTUBE_URL ??
       "https://www.youtube.com/@EcoModernLiving",
-    discord:
-      process.env.NEXT_PUBLIC_DISCORD_URL ?? "https://discord.gg/ecomodernliving",
     instagram:
       process.env.NEXT_PUBLIC_INSTAGRAM_URL ??
       "https://www.instagram.com/ecomodernliving",
     pinterest:
       process.env.NEXT_PUBLIC_PINTEREST_URL ??
       "https://www.pinterest.com/ecomodernliving",
+    facebook:
+      process.env.NEXT_PUBLIC_FACEBOOK_URL ??
+      "https://www.facebook.com/ecomodernliving",
+    linkedin:
+      process.env.NEXT_PUBLIC_LINKEDIN_URL ??
+      "https://www.linkedin.com/company/ecomodernliving",
+    tiktok:
+      process.env.NEXT_PUBLIC_TIKTOK_URL ??
+      "https://www.tiktok.com/@ecomodernliving",
+    discord:
+      process.env.NEXT_PUBLIC_DISCORD_URL ?? "https://discord.gg/ecomodernliving",
   },
 } as const;
 

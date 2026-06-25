@@ -1,5 +1,11 @@
 import type { PageProduct } from "@/config/page-content";
+import type { AffiliateStore } from "@/lib/affiliate-stores";
 import { marketplaceProducts as staticProducts } from "@/config/marketplace-products";
+import {
+  mergeWithAdminProducts,
+  readAdminCatalog,
+} from "@/lib/marketplace-admin";
+import catalogJson from "@/data/marketplace-catalog.json";
 
 const ASIN_PATTERN = /^[A-Z0-9]{10}$/i;
 
@@ -28,6 +34,8 @@ export const categoryToSlug: Record<string, string> = {
   "Solar Products": "solar",
   "Eco Paints": "eco-paints",
 };
+
+const builtInCatalog = catalogJson as Record<string, PageProduct[]>;
 
 function extractAsin(value: string): string | null {
   const trimmed = value.trim();
@@ -84,6 +92,21 @@ function normalizeHeader(header: string): string {
     .replace(/[^a-z0-9_]/g, "");
 }
 
+function normalizeStore(value?: string): AffiliateStore | undefined {
+  if (!value) return undefined;
+  const v = value.trim();
+  const map: Record<string, AffiliateStore> = {
+    amazon: "Amazon",
+    "home depot": "Home Depot",
+    homedepot: "Home Depot",
+    lowes: "Lowe's",
+    "lowe's": "Lowe's",
+    wayfair: "Wayfair",
+    target: "Target",
+  };
+  return map[v.toLowerCase()] ?? (v as AffiliateStore);
+}
+
 function rowToProduct(row: Record<string, string>): PageProduct | null {
   const name =
     row.product_name ||
@@ -99,44 +122,28 @@ function rowToProduct(row: Record<string, string>): PageProduct | null {
     extractAsin(row.amazon_url || "") ||
     extractAsin(row.url || "");
 
-  const amazonUrl = toAmazonUrl(
-    asin ?? undefined,
-    row.amazon_url || row.url
-  );
+  const amazonUrl = toAmazonUrl(asin ?? undefined, row.amazon_url || row.url);
+  const store = normalizeStore(row.store || row.retailer);
+  const affiliateUrl = row.affiliate_url || row.product_url || row.url;
 
-  if (!amazonUrl && row.amazon_url) {
-    // Search URL fallback
-    const url = row.amazon_url || row.url;
-    if (url?.startsWith("http")) {
-      return {
-        name,
-        amazonUrl: url,
-        description:
-          row.description ||
-          "Curated eco-friendly pick for sustainable modern homes.",
-        tag: row.tag || row.badge || undefined,
-      };
-    }
-  }
-
-  if (!amazonUrl) return null;
+  if (!amazonUrl && !affiliateUrl?.startsWith("http")) return null;
 
   return {
     name,
-    amazonUrl,
     description:
       row.description ||
       "Curated eco-friendly pick for sustainable modern homes.",
     tag: row.tag || row.badge || undefined,
+    store: store ?? "Amazon",
+    imageUrl: row.image_url || row.image || undefined,
+    affiliateUrl: affiliateUrl?.startsWith("http") ? affiliateUrl : undefined,
+    amazonUrl: amazonUrl ?? undefined,
+    amazonAsin: asin ?? undefined,
   };
 }
 
 function resolveSlug(row: Record<string, string>): string | null {
-  const direct =
-    row.slug ||
-    row.page_slug ||
-    row.marketplace_slug ||
-    "";
+  const direct = row.slug || row.page_slug || row.marketplace_slug || "";
   if (direct) return direct.trim();
 
   const category = row.category || row.category_name || "";
@@ -165,7 +172,8 @@ export function parseMarketplaceCsv(csv: string): Record<string, PageProduct[]> 
     if (!slug || !product) continue;
 
     if (!catalog[slug]) catalog[slug] = [];
-    if (!catalog[slug].some((p) => p.name === product.name)) {
+    const key = `${product.store ?? "Amazon"}::${product.name}`;
+    if (!catalog[slug].some((p) => `${p.store ?? "Amazon"}::${p.name}` === key)) {
       catalog[slug].push(product);
     }
   }
@@ -190,14 +198,40 @@ async function fetchSheetCatalog(): Promise<Record<string, PageProduct[]> | null
   }
 }
 
+function mergeCatalogs(
+  ...sources: Record<string, PageProduct[]>[]
+): Record<string, PageProduct[]> {
+  const merged: Record<string, PageProduct[]> = {};
+
+  for (const source of sources) {
+    for (const [slug, products] of Object.entries(source)) {
+      if (!merged[slug]) merged[slug] = [];
+      for (const product of products) {
+        const key = `${product.store ?? "Amazon"}::${product.name}`;
+        if (!merged[slug].some((p) => `${p.store ?? "Amazon"}::${p.name}` === key)) {
+          merged[slug].push(product);
+        }
+      }
+    }
+  }
+
+  return merged;
+}
+
 let catalogCache: Promise<Record<string, PageProduct[]>> | null = null;
 
 export function getMarketplaceCatalog(): Promise<Record<string, PageProduct[]>> {
   if (!catalogCache) {
     catalogCache = (async () => {
-      const fromSheet = await fetchSheetCatalog();
-      if (fromSheet) return fromSheet;
-      return staticProducts;
+      try {
+        const fromSheet = await fetchSheetCatalog();
+        if (fromSheet) {
+          return mergeCatalogs(builtInCatalog, fromSheet);
+        }
+      } catch {
+        // Fall through to built-in catalog
+      }
+      return mergeCatalogs(builtInCatalog, staticProducts);
     })();
   }
   return catalogCache;
@@ -205,5 +239,13 @@ export function getMarketplaceCatalog(): Promise<Record<string, PageProduct[]>> 
 
 export async function getProductsForSlug(slug: string): Promise<PageProduct[]> {
   const catalog = await getMarketplaceCatalog();
-  return catalog[slug] ?? [];
+  const base = catalog[slug] ?? [];
+  const adminCatalog = await readAdminCatalog();
+  const admin = adminCatalog[slug] ?? [];
+  return mergeWithAdminProducts(base, admin);
+}
+
+export async function getTotalProductCount(): Promise<number> {
+  const catalog = await getMarketplaceCatalog();
+  return Object.values(catalog).reduce((sum, items) => sum + items.length, 0);
 }

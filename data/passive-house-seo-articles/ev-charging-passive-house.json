@@ -1,0 +1,22 @@
+{
+  "slug": "ev-charging-passive-house",
+  "title": "EV Charging at Home for Energy-Efficient Households",
+  "metaDescription": "Level 2 chargers, load management, and solar integration for low-energy homes.",
+  "targetKeyword": "EV home charging",
+  "category": "Renewables",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/marketplace/ev-chargers",
+    "/guides/incentives"
+  ],
+  "affiliateCategories": [
+    "ev-chargers"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Charger types",
+    "Electrical",
+    "Solar pairing",
+    "Incentives"
+  ]
+}

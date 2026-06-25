@@ -1,0 +1,22 @@
+{
+  "slug": "solar-pv-passive-house",
+  "title": "Solar PV for Passive House: Sizing and Integration",
+  "metaDescription": "Add renewables after efficiency — how to size solar and batteries for PH Plus and Premium.",
+  "targetKeyword": "passive house solar",
+  "category": "Renewables",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house/solar",
+    "/marketplace/solar"
+  ],
+  "affiliateCategories": [
+    "solar"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Efficiency first",
+    "Sizing",
+    "Storage",
+    "Net metering"
+  ]
+}

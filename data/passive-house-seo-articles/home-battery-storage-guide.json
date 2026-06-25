@@ -1,0 +1,21 @@
+{
+  "slug": "home-battery-storage-guide",
+  "title": "Home Battery Storage for Solar-Powered Passive Homes",
+  "metaDescription": "When batteries make sense, how to size them, and integration with low-load envelopes.",
+  "targetKeyword": "home battery storage",
+  "category": "Renewables",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/marketplace/solar"
+  ],
+  "affiliateCategories": [
+    "solar"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Use cases",
+    "Sizing",
+    "Economics",
+    "Products"
+  ]
+}

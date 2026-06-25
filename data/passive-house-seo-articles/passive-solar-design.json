@@ -1,0 +1,22 @@
+{
+  "slug": "passive-solar-design",
+  "title": "Passive Solar Design Without Overheating",
+  "metaDescription": "Balance winter solar gains with summer shading for comfortable, low-energy homes.",
+  "targetKeyword": "passive solar design",
+  "category": "Design",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house/design",
+    "/passive-house-principles"
+  ],
+  "affiliateCategories": [
+    "windows"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Orientation",
+    "SHGC",
+    "Shading",
+    "Mass"
+  ]
+}

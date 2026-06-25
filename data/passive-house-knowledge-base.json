@@ -1,0 +1,338 @@
+{
+  "version": "1.0.0",
+  "source": "CPHD course concepts (NAPHN/PHA) — rewritten for EcoModernLiving.ai",
+  "lastUpdated": "2026-06-21",
+  "definitions": [
+    {
+      "term": "Passive House",
+      "definition": "A building performance standard where year-round thermal comfort is achieved primarily by conditioning the fresh air required for healthy indoor air quality, without relying on large conventional heating or cooling systems.",
+      "relatedPages": ["/passive-house", "/passive-house-principles", "/guides/passive-house"]
+    },
+    {
+      "term": "EnerPHit",
+      "definition": "The Passive House Institute retrofit standard for existing buildings, with slightly relaxed airtightness (≤1.0 ACH50) and climate-specific heating demand limits compared to new construction.",
+      "relatedPages": ["/passive-house", "/guides/passive-house"]
+    },
+    {
+      "term": "PHPP",
+      "definition": "Passive House Planning Package — the energy modeling software used to verify heating/cooling demand, loads, primary energy, and certification criteria before construction.",
+      "relatedPages": ["/passive-house/design", "/passive-house-calculators"]
+    },
+    {
+      "term": "TFA (Treated Floor Area)",
+      "definition": "Net usable floor area in Passive House modeling, excluding internal walls and certain stair volumes, used as the reference area for energy metrics.",
+      "relatedPages": ["/passive-house-calculators"]
+    },
+    {
+      "term": "ACH50 / n50",
+      "definition": "Air changes per hour at 50 Pascals pressure difference during a blower door test. New Passive House buildings must achieve ≤0.6 ACH50.",
+      "relatedPages": ["/passive-house-principles", "/passive-house-calculators"]
+    },
+    {
+      "term": "U-Factor",
+      "definition": "Thermal transmittance measuring how quickly heat flows through a building component. Lower U-values mean better insulation. Windows use U-factor; opaque assemblies often use R-value.",
+      "relatedPages": ["/marketplace/windows", "/passive-house-principles"]
+    },
+    {
+      "term": "R-Value",
+      "definition": "Thermal resistance of insulation or assemblies (hr·ft²·°F/Btu). Higher R-values reduce heat loss through walls, roofs, and floors.",
+      "relatedPages": ["/marketplace/insulation", "/passive-house-calculators"]
+    },
+    {
+      "term": "Psi-value (Ψ)",
+      "definition": "Linear thermal bridge coefficient (Btu/hr·ft·°F) describing heat loss along junctions such as wall-to-floor connections.",
+      "relatedPages": ["/passive-house-principles", "/passive-house/envelope"]
+    },
+    {
+      "term": "Chi-value (χ)",
+      "definition": "Point thermal bridge coefficient (Btu/hr·°F) for discrete penetrations like structural ties through insulation.",
+      "relatedPages": ["/passive-house-principles"]
+    },
+    {
+      "term": "SHGC (g-value)",
+      "definition": "Solar Heat Gain Coefficient — the fraction of solar radiation that passes through glazing as heat. Critical for balancing winter gains and summer overheating.",
+      "relatedPages": ["/marketplace/windows", "/passive-house-principles"]
+    },
+    {
+      "term": "HRV / ERV",
+      "definition": "Heat Recovery Ventilator or Energy Recovery Ventilator — balanced ventilation systems that recover heat (and sometimes moisture) from exhaust air to precondition incoming fresh air.",
+      "relatedPages": ["/marketplace/passive-house-materials", "/passive-house/hvac"]
+    },
+    {
+      "term": "PER (Primary Energy Renewable)",
+      "definition": "Primary energy accounting that reflects renewable energy supply factors, used in Passive House Plus and Premium certification classes.",
+      "relatedPages": ["/passive-house", "/guides/incentives"]
+    },
+    {
+      "term": "Operative Temperature",
+      "definition": "Combined measure of air temperature and radiant surface temperatures that determines perceived thermal comfort per ISO 7730.",
+      "relatedPages": ["/guides/healthy-homes", "/passive-house-principles"]
+    },
+    {
+      "term": "Thermal Bridge",
+      "definition": "A localized area where insulation is interrupted or thinned, creating a path for heat to bypass the thermal envelope.",
+      "relatedPages": ["/passive-house/envelope", "/passive-house-principles"]
+    },
+    {
+      "term": "SAR (Surface Area Ratio)",
+      "definition": "Total exterior envelope area divided by treated floor area. Higher SAR means more heat-losing surface per unit of living space.",
+      "relatedPages": ["/passive-house-calculators", "/passive-house/design"]
+    }
+  ],
+  "certificationCriteria": {
+    "newBuild": {
+      "heatingDemand": "≤ 4.75 kBtu/(ft²·yr)",
+      "heatLoad": "≤ 3.17 Btu/(hr·ft²)",
+      "coolingDemand": "≤ 4.75 kBtu/(ft²·yr) plus climate-specific dehumidification allowance",
+      "airtightness": "≤ 0.6 ACH @ 50 Pa",
+      "overheating": "≤ 10% of hours above 77°F (without active cooling)",
+      "perClasses": {
+        "classic": { "demand": 19.02, "generation": 0 },
+        "plus": { "demand": 14.26, "generation": 19.02 },
+        "premium": { "demand": 9.51, "generation": 38.04 }
+      }
+    },
+    "enerPHit": {
+      "heatingDemand": "Climate-specific (e.g. ≤ 7.92 kBtu/(ft²·yr) cool-temperate)",
+      "airtightness": "≤ 1.0 ACH @ 50 Pa",
+      "componentMethod": "Minimum R-values and window U-values per climate tables"
+    }
+  },
+  "formulas": [
+    {
+      "name": "Transmission heat loss (annual)",
+      "expression": "QT = A × U × ft × Gt",
+      "units": "kBtu/yr",
+      "description": "Annual heat loss through opaque or glazed envelope areas.",
+      "notes": "A = area (ft²), U = 1/R, ft = ground correction factor, Gt = heating degree hours."
+    },
+    {
+      "name": "Transmission heat load (peak)",
+      "expression": "PT = A × U × ft × ΔT",
+      "units": "Btu/hr",
+      "description": "Peak-hour heat loss used to size heating systems."
+    },
+    {
+      "name": "R-value (layered assembly)",
+      "expression": "R = Rsi + Σ(d × r) + Rse",
+      "units": "hr·ft²·°F/Btu",
+      "description": "Sum interior film resistance, layer resistances, and exterior film resistance."
+    },
+    {
+      "name": "Linear thermal bridge loss",
+      "expression": "QT-tb = L × Ψ × ft × Gt",
+      "units": "kBtu/yr",
+      "description": "Annual loss along linear junctions like slab edges."
+    },
+    {
+      "name": "Infiltration ventilation loss",
+      "expression": "QV-infill = Vn50 × e × n50 × Cair × Gt",
+      "units": "kBtu/yr",
+      "description": "Heat loss from air leakage at resting pressure; e ≈ 0.07 commonly used."
+    },
+    {
+      "name": "n50 from blower door",
+      "expression": "n50 = (V50 × 60) / Vn50",
+      "units": "1/h",
+      "description": "Convert CFM at 50 Pa to air changes per hour."
+    },
+    {
+      "name": "q50 (large buildings)",
+      "expression": "q50 = (V50 × 60) / EAn50",
+      "units": "CFM/ft²",
+      "description": "Surface-normalized leakage for buildings >53,000 ft³; target <0.034 CFM/ft² recommended."
+    },
+    {
+      "name": "Window installed U-value",
+      "expression": "Uw = (Ug×Ag + Uf×Af + Ψspacer×Lspacer + Ψinstall×Linstall) / Awindow",
+      "units": "Btu/(hr·ft²·°F)",
+      "description": "Weighted U-value including glass, frame, spacer, and installation losses."
+    },
+    {
+      "name": "Window energy balance",
+      "expression": "QS - QT = (r × SHGC × Aw × G) - (Aw × U × Gt)",
+      "units": "kBtu/yr",
+      "description": "Net annual energy through glazing after solar gains and transmission losses."
+    },
+    {
+      "name": "Internal heat gains",
+      "expression": "QI = 0.024 × Ht × qi × ATFA",
+      "units": "kBtu/yr",
+      "description": "Residential qi typically 0.67–1.30 Btu/(hr·ft²)."
+    }
+  ],
+  "topics": [
+    {
+      "name": "Fundamentals",
+      "relatedPages": ["/passive-house", "/passive-house-principles", "/guides/passive-house"],
+      "bestPractices": [
+        { "title": "Design the envelope first", "description": "Prioritize insulation, airtightness, and window performance before sizing mechanical systems." },
+        { "title": "Model in PHPP early", "description": "Use energy modeling during schematic design to test form factor, orientation, and insulation thickness." },
+        { "title": "Compact building form", "description": "Simpler, more compact massing reduces envelope area and lowers insulation requirements." }
+      ],
+      "faqs": [
+        { "question": "Can you open windows in a Passive House?", "answer": "Yes. Passive House buildings are not sealed boxes. Windows open normally; mechanical ventilation provides consistent fresh air when closed.", "links": ["/passive-house-faq"] },
+        { "question": "Is Passive House only for single-family homes?", "answer": "No. The standard applies to offices, schools, multifamily housing, retrofits, and mixed-use buildings worldwide.", "links": ["/passive-house"] },
+        { "question": "What are the five core Passive House principles?", "answer": "Continuous insulation, airtight construction, high-performance windows and doors, thermal-bridge-free design, and balanced ventilation with heat recovery.", "links": ["/passive-house-principles"] },
+        { "question": "How is Passive House different from net zero?", "answer": "Passive House limits energy demand through the building envelope first. Net zero focuses on offsetting annual energy use, often with renewables. Many Passive House projects also achieve net zero.", "links": ["/guides/net-zero"] },
+        { "question": "What is the Passive House comfort definition?", "answer": "Thermal comfort per ISO 7730 should be achievable by post-heating or post-cooling the ventilation air stream alone, without recirculating large volumes of conditioned air.", "links": ["/passive-house-principles"] },
+        { "question": "Does Passive House ban active heating and cooling?", "answer": "No. Active systems are sized small and used as backup. The goal is to minimize — not eliminate — mechanical heating and cooling.", "links": ["/passive-house/hvac"] },
+        { "question": "What internal temperature is used in PHPP?", "answer": "68°F with 50% relative humidity is the standard interior design condition for residential Passive House modeling.", "links": ["/passive-house-calculators"] },
+        { "question": "Why use exterior dimensions for heat loss?", "answer": "Passive House uses exterior envelope dimensions for a conservative, reproducible calculation of transmission losses.", "links": ["/passive-house/envelope"] },
+        { "question": "What is the Saskatchewan Conservation House?", "answer": "A 1977 Canadian prototype that demonstrated super insulation, triple glazing, heat-recovery ventilation, and early airtightness testing — a direct ancestor of the Passive House standard.", "links": ["/passive-house", "/guides/passive-house"] },
+        { "question": "What software is used for Passive House energy modeling?", "answer": "The Passive House Planning Package (PHPP) is the primary certification tool. designPH provides a SketchUp-based interface for PHPP workflows.", "links": ["/passive-house/design", "/passive-house-calculators"] }
+      ]
+    },
+    {
+      "name": "Building Envelope",
+      "relatedPages": ["/passive-house/envelope", "/marketplace/insulation"],
+      "bestPractices": [
+        { "title": "Continuous insulation", "description": "Wrap the thermal envelope without gaps so heat cannot bypass insulation layers." },
+        { "title": "Control moisture drive", "description": "Place vapor control layers on the warm side in heating climates and on the exterior in hot-humid climates." },
+        { "title": "Right-size insulation", "description": "Add insulation until diminishing returns; PHPP finds the economic and performance sweet spot." }
+      ],
+      "faqs": [
+        { "question": "What R-values do Passive House walls typically need?", "answer": "Climate and form factor dependent. Cool-temperate single-family homes often need R-38 to R-60+ opaque assemblies; multifamily compact forms may need less.", "links": ["/marketplace/insulation"] },
+        { "question": "What is a good A/V ratio?", "answer": "Lower is better. Multistory apartments can reach 0.08–0.10; single-story homes may exceed 0.30 and require more insulation.", "links": ["/passive-house-calculators"] },
+        { "question": "Is more insulation always better?", "answer": "No. Each additional inch yields diminishing returns. PHPP optimization balances cost and performance.", "links": ["/passive-house/costs"] },
+        { "question": "Can spray foam alone achieve Passive House airtightness?", "answer": "Spray foam insulates well but is not a dedicated air barrier product. Dedicated membranes, tapes, and detailing are still required for ≤0.6 ACH50.", "links": ["/passive-house/envelope"] },
+        { "question": "Does exterior insulation eliminate thermal bridging?", "answer": "Exterior insulation greatly reduces bridging but fasteners, balconies, and window penetrations can still create bridges if not detailed carefully.", "links": ["/passive-house-principles"] },
+        { "question": "What interior conditions risk condensation?", "answer": "At 68°F and 50% RH, surface temperatures below ~54°F increase mold risk; below ~49°F condensation risk rises sharply on cold surfaces.", "links": ["/guides/healthy-homes"] }
+      ]
+    },
+    {
+      "name": "Airtightness",
+      "relatedPages": ["/passive-house/envelope", "/passive-house-principles"],
+      "bestPractices": [
+        { "title": "Define the air barrier early", "description": "Identify the continuous airtight layer on drawings before construction begins." },
+        { "title": "Test progressively", "description": "Conduct blower door tests at rough-in and again at completion to catch leaks when they are accessible." },
+        { "title": "Prioritize air transport over diffusion", "description": "A 1-inch air leak moves far more moisture than vapor diffusion through intact materials." }
+      ],
+      "faqs": [
+        { "question": "Why is airtightness critical?", "answer": "It prevents drafts, moisture damage in assemblies, uncontrolled heat loss, noise infiltration, and undermines ventilation system performance.", "links": ["/passive-house-principles"] },
+        { "question": "What materials work for long-term airtightness?", "answer": "Liquid-applied membranes, specialized tapes, and well-cast concrete (when crack-free) — not standard DIY caulk or duct tape.", "links": ["/marketplace/passive-house-materials"] },
+        { "question": "When should blower door testing happen?", "answer": "At a point when the air barrier is accessible — typically after windows are installed and before drywall — and again at final completion.", "links": ["/passive-house/envelope"] },
+        { "question": "How is Vn50 calculated?", "answer": "Treated floor area multiplied by 8.2 ft standard ceiling height defines the reference test volume for most residential projects.", "links": ["/passive-house-calculators"] },
+        { "question": "What is reported from blower door tests?", "answer": "The average of pressurization and depressurization results at 50 Pa, expressed as n50 (ACH).", "links": ["/passive-house-calculators"] },
+        { "question": "Do large buildings have extra airtightness requirements?", "answer": "Buildings over 53,000 ft³ must meet n50 ≤0.6 and should report q50; target q50 <0.034 CFM/ft² is recommended.", "links": ["/passive-house-principles"] },
+        { "question": "Can ventilation ducts be sealed during testing?", "answer": "Yes — exterior intake and exhaust openings should be sealed during the test to avoid false leakage through ductwork.", "links": ["/passive-house/hvac"] }
+      ]
+    },
+    {
+      "name": "Windows & Doors",
+      "relatedPages": ["/marketplace/windows", "/passive-house-principles"],
+      "bestPractices": [
+        { "title": "Install with thermal bridge-free details", "description": "Use certified connection details and proper interior/exterior air seals at rough openings." },
+        { "title": "Balance U-value and SHGC", "description": "Cold climates favor lower U and moderate-to-high SHGC on south facades; cooling climates need stronger shading." },
+        { "title": "Specify two-decimal SHGC", "description": "Small differences in g-value significantly affect annual energy balance in PHPP." }
+      ],
+      "faqs": [
+        { "question": "What window U-value do Passive House projects target?", "answer": "Installed U-values often need to be ≤0.14–0.17 Btu/(hr·ft²·°F) in cold climates, depending on climate and orientation mix.", "links": ["/marketplace/windows"] },
+        { "question": "What is triple-pane low-e glazing?", "answer": "Three glass panes with low-emissivity coatings and argon or krypton gas fill, reducing conduction and radiation heat transfer.", "links": ["/marketplace/windows"] },
+        { "question": "What is the window energy criterion Ug·g?", "answer": "A simplified metric where lower U and appropriate SHGC together indicate climate-suitable glazing performance.", "links": ["/passive-house-principles"] },
+        { "question": "Why do window frames matter?", "answer": "Frames conduct heat differently than glass. Uf, spacer psi-values, and frame-to-glass ratio all affect comfort and energy.", "links": ["/marketplace/windows"] },
+        { "question": "Should shading be interior or exterior?", "answer": "Exterior shading blocks solar gain before it enters the building and is far more effective for summer comfort.", "links": ["/passive-house-principles"] }
+      ]
+    },
+    {
+      "name": "Ventilation",
+      "relatedPages": ["/passive-house/hvac", "/marketplace/passive-house-materials"],
+      "bestPractices": [
+        { "title": "Use balanced HRV/ERV", "description": "Supply and extract airflows should be balanced with ≥75% heat recovery for certification." },
+        { "title": "Zone rooms correctly", "description": "Bedrooms and living areas get supply air; kitchens and baths extract; transfer paths connect zones." },
+        { "title": "Filter fresh air to F7+", "description": "High-quality filters protect occupants and keep heat exchangers clean." }
+      ],
+      "faqs": [
+        { "question": "Why can't you rely on window ventilation in Passive House?", "answer": "Natural ventilation is unreliable, causes excessive heat loss in cold weather, and cannot guarantee consistent indoor air quality.", "links": ["/passive-house/hvac"] },
+        { "question": "What airflow rate is typical?", "answer": "Roughly 0.3–0.4 air changes per hour based on occupant count and humidity control needs, verified in PHPP.", "links": ["/passive-house/hvac"] },
+        { "question": "HRV vs ERV — which to choose?", "answer": "HRVs recover heat; ERVs also transfer moisture. Cold dry climates often use HRV; humid or mixed climates may benefit from ERV.", "links": ["/marketplace/passive-house-materials"] },
+        { "question": "Can you heat a Passive House with ventilation air alone?", "answer": "Often yes in mild climates via supply-air post-heating coils. Disconnected or extract-only rooms may need supplemental heat.", "links": ["/passive-house/hvac"] },
+        { "question": "Why insulate ventilation ducts?", "answer": "Prevent condensation and heat loss when warm exhaust ducts pass through cold zones or vice versa.", "links": ["/passive-house/hvac"] }
+      ]
+    },
+    {
+      "name": "Heating & Cooling",
+      "relatedPages": ["/passive-house/hvac", "/marketplace/heat-pumps"],
+      "bestPractices": [
+        { "title": "Right-size heat pumps", "description": "Size to peak load (≤3.17 Btu/hr·ft²), not conventional oversizing rules." },
+        { "title": "Leverage internal gains", "description": "People, appliances, and lighting offset heating demand — account for them in PHPP." },
+        { "title": "Shade before you cool", "description": "Reduce solar gains and internal loads before adding mechanical cooling capacity." }
+      ],
+      "faqs": [
+        { "question": "What heating systems suit Passive House?", "answer": "Mini-split heat pumps, ventilation-integrated coils, small hydronic panels, and electric resistance backup sized to low peak loads.", "links": ["/marketplace/heat-pumps"] },
+        { "question": "What is the overheating criterion?", "answer": "Without active cooling, indoor temperatures should not exceed 77°F for more than 10% of annual hours.", "links": ["/passive-house-principles"] },
+        { "question": "How do you reduce cooling demand?", "answer": "External shading, low SHGC glazing, night ventilation, airtight envelope, insulation, and minimizing internal gains.", "links": ["/passive-house/hvac"] },
+        { "question": "Are radiators under windows still needed?", "answer": "Rarely in Passive House. High-performance glazing eliminates cold downdrafts that conventional systems compensated for.", "links": ["/passive-house/hvac"] },
+        { "question": "How does DHW compare to space heating load?", "answer": "In Passive House, domestic hot water energy can equal or exceed space heating — efficient DHW design matters.", "links": ["/passive-house/hvac"] }
+      ]
+    },
+    {
+      "name": "Economics & ROI",
+      "relatedPages": ["/passive-house/costs", "/guides/incentives"],
+      "bestPractices": [
+        { "title": "Calculate lifecycle cost", "description": "Use annuity or present-value methods comparing extra envelope investment to decades of energy savings." },
+        { "title": "Stack incentives", "description": "Combine federal tax credits, IRA rebates, and state programs to offset envelope and heat pump costs." },
+        { "title": "Factor experience curve", "description": "First Passive House projects cost more; teams with repeat experience reduce premiums significantly." }
+      ],
+      "faqs": [
+        { "question": "Is Passive House more expensive to build?", "answer": "Upfront costs can run 5–15% higher initially, but energy savings, comfort, durability, and incentives improve lifecycle economics.", "links": ["/passive-house/costs"] },
+        { "question": "What is cost of saved kBtu?", "answer": "A metric comparing incremental investment to annual energy saved — useful for comparing envelope upgrades.", "links": ["/passive-house-calculators"] },
+        { "question": "Do Passive House buildings have higher resale value?", "answer": "Growing evidence shows lower operating costs, comfort, and certification status attract buyers and reduce vacancy.", "links": ["/passive-house/costs"] },
+        { "question": "What incentives apply in the US?", "answer": "30% federal solar ITC, IRA heat pump rebates up to $8,000, EV credits, and state-specific efficiency programs.", "links": ["/guides/incentives"] }
+      ]
+    },
+    {
+      "name": "Renewable Energy",
+      "relatedPages": ["/passive-house/solar", "/marketplace/solar"],
+      "bestPractices": [
+        { "title": "Efficiency before PV", "description": "Minimize demand with the envelope so solar and batteries can cover a larger share of needs." },
+        { "title": "Match generation to load", "description": "Size PV and storage based on PHPP primary energy and occupant usage patterns." }
+      ],
+      "faqs": [
+        { "question": "What is Passive House Plus?", "answer": "Certification class requiring on-site or nearby renewable generation offsetting higher PER demand thresholds.", "links": ["/passive-house"] },
+        { "question": "What is Passive House Premium?", "answer": "The highest class — lowest PER demand and highest renewable generation requirements.", "links": ["/passive-house"] },
+        { "question": "Should you add solar before insulating?", "answer": "No. Envelope improvements deliver better ROI and reduce required PV capacity.", "links": ["/guides/net-zero"] }
+      ]
+    },
+    {
+      "name": "Water Efficiency",
+      "relatedPages": ["/marketplace/water-fixtures", "/guides/healthy-homes"],
+      "faqs": [
+        { "question": "How does water efficiency relate to Passive House?", "answer": "Low-flow fixtures reduce hot water energy — often a larger load than space heating in certified homes.", "links": ["/marketplace/water-fixtures"] },
+        { "question": "Are greywater systems compatible?", "answer": "Yes, though they are separate from certification criteria. They reduce potable water use and support sustainability goals.", "links": ["/marketplace/water-fixtures"] }
+      ]
+    },
+    {
+      "name": "Materials",
+      "relatedPages": ["/marketplace/passive-house-materials", "/marketplace/eco-paints"],
+      "faqs": [
+        { "question": "What insulation types are common in Passive House?", "answer": "Mineral wool, cellulose, wood fiber, EPS, and polyurethane each offer different R/inch, vapor, and carbon profiles.", "links": ["/marketplace/insulation"] },
+        { "question": "Are low-VOC finishes required?", "answer": "Not for certification, but they support indoor air quality alongside mechanical ventilation.", "links": ["/marketplace/eco-paints"] },
+        { "question": "What is thermal bridge-free design?", "answer": "Detailing that keeps Ψ <0.006 Btu/hr·ft·°F and ΔUTB <0.0018 Btu/(hr·ft²·°F) across the envelope.", "links": ["/passive-house-principles"] }
+      ]
+    },
+    {
+      "name": "Quality Assurance",
+      "relatedPages": ["/passive-house/timeline", "/passive-house"],
+      "faqs": [
+        { "question": "What QA steps are required for certification?", "answer": "Design review in PHPP, construction documentation, blower door test, ventilation commissioning, and independent certifier review.", "links": ["/passive-house"] },
+        { "question": "Can you buy airtightness off the shelf?", "answer": "No. Airtightness is achieved through detailing, crew training, and quality control — not a single product.", "links": ["/passive-house/envelope"] },
+        { "question": "When should material substitutions be re-modeled?", "answer": "Any change to insulation, windows, or ERV specs should be verified in PHPP before installation.", "links": ["/passive-house/design"] }
+      ]
+    }
+  ],
+  "productMappings": [
+    { "category": "Windows", "slug": "windows", "products": ["Triple-pane tilt-turn windows", "Low-e glazing units", "Insulated spacers"] },
+    { "category": "Insulation", "slug": "insulation", "products": ["Mineral wool batts", "Cellulose", "Rigid foam boards"] },
+    { "category": "Ventilation", "slug": "passive-house-materials", "products": ["HRV/ERV units", "Airtight membranes", "Duct insulation"] },
+    { "category": "Heat Pumps", "slug": "heat-pumps", "products": ["Mini-split systems", "Cold-climate ASHP"] },
+    { "category": "Solar", "slug": "solar", "products": ["PV panels", "Battery storage", "Monitoring"] },
+    { "category": "Smart Controls", "slug": "smart-thermostats", "products": ["Learning thermostats", "Energy monitors"] }
+  ],
+  "aiToolRecommendations": {
+    "homeAdvisor": ["Suggest envelope-first retrofit sequence", "Recommend climate-appropriate R-values", "Flag common thermal bridge locations"],
+    "energyAudit": ["Estimate ACH50 from construction era", "Score insulation levels by assembly", "Calculate simplified heat loss"],
+    "interiorDesign": ["Optimize south glazing for daylight", "Recommend shading strategies", "Suggest thermal comfort finishes"]
+  },
+  "seoArticles": []
+}

@@ -2,8 +2,18 @@ import { siteConfig } from "@/config/site";
 
 export type FormspreeForm = keyof typeof siteConfig.formspree;
 
+/** Accepts bare ID (mbdvljqr) or full Formspree URL */
+export function normalizeFormspreeId(value: string): string {
+  const trimmed = value.trim();
+  const fromUrl = trimmed.match(/formspree\.io\/f\/([a-z0-9]+)/i);
+  if (fromUrl) return fromUrl[1];
+  return trimmed.replace(/^\/+/, "");
+}
+
 export function getFormspreeEndpoint(form: FormspreeForm): string | null {
-  const id = siteConfig.formspree[form];
+  const raw = siteConfig.formspree[form];
+  if (!raw) return null;
+  const id = normalizeFormspreeId(raw);
   if (!id) return null;
   return `https://formspree.io/f/${id}`;
 }
@@ -21,24 +31,32 @@ export async function submitToFormspree(
     };
   }
 
-  const response = await fetch(endpoint, {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  });
+  try {
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
 
-  if (!response.ok) {
-    const body = (await response.json().catch(() => null)) as
-      | { error?: string }
-      | null;
+    if (!response.ok) {
+      const body = (await response.json().catch(() => null)) as
+        | { error?: string }
+        | null;
+      return {
+        ok: false,
+        message: body?.error ?? "Something went wrong. Please try again.",
+      };
+    }
+
+    return { ok: true };
+  } catch {
     return {
       ok: false,
-      message: body?.error ?? "Something went wrong. Please try again.",
+      message:
+        "Could not reach the form server. Check your connection and try again.",
     };
   }
-
-  return { ok: true };
 }

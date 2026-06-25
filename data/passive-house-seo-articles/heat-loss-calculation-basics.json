@@ -1,0 +1,22 @@
+{
+  "slug": "heat-loss-calculation-basics",
+  "title": "Heat Loss Calculation Basics for Homeowners",
+  "metaDescription": "Simplified transmission and infiltration loss estimates to prioritize upgrades.",
+  "targetKeyword": "heat loss calculation",
+  "category": "Calculations",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house-calculators",
+    "/ai/energy-audit"
+  ],
+  "affiliateCategories": [
+    "insulation"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Transmission",
+    "Infiltration",
+    "Tools",
+    "Priorities"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "passive-house-climate-zones",
+  "title": "Passive House in Different US Climate Zones",
+  "metaDescription": "How insulation, glazing, and humidity strategies shift across heating and cooling dominated climates.",
+  "targetKeyword": "passive house climate",
+  "category": "Fundamentals",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/passive-house/design",
+    "/passive-house-principles"
+  ],
+  "affiliateCategories": [
+    "windows",
+    "insulation"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Cold",
+    "Mixed",
+    "Hot-humid",
+    "PHPP tuning"
+  ]
+}

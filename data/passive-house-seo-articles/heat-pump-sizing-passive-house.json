@@ -1,0 +1,22 @@
+{
+  "slug": "heat-pump-sizing-passive-house",
+  "title": "Heat Pump Sizing for Passive House Peak Loads",
+  "metaDescription": "Why Passive House heat pumps are dramatically smaller — and how to avoid oversizing mistakes.",
+  "targetKeyword": "heat pump sizing",
+  "category": "HVAC",
+  "wordCountTarget": 1500,
+  "internalLinks": [
+    "/marketplace/heat-pumps",
+    "/passive-house/hvac"
+  ],
+  "affiliateCategories": [
+    "heat-pumps"
+  ],
+  "faqSchema": [],
+  "outline": [
+    "Peak load",
+    "Equipment types",
+    "Distribution",
+    "Backup heat"
+  ]
+}

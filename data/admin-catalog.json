@@ -1,0 +1,20 @@
+{
+  "insulation": [
+    {
+      "name": "Applegate Cellulose Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "affiliateUrl": "https://www.amazon.com/dp/B00DKE6FEI",
+      "imageUrl": "https://m.media-amazon.com/images/I/51reDHQtKmL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+      "amazonAsin": "B00DKE6FEI"
+    },
+    {
+      "name": "CertainTeed Sustainable Insulation",
+      "description": "High-performance insulation product — verify specs for your climate zone and project.",
+      "store": "Amazon",
+      "affiliateUrl": "https://www.amazon.com/dp/B00DKE6FEI",
+      "imageUrl": "https://https://m.media-amazon.com/images/I/51reDHQtKmL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+      "amazonAsin": "B00DKE6FEI"
+    }
+  ]
+}
