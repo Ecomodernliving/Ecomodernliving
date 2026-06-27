@@ -8,7 +8,8 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ecomodernliving.ai",
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@ecomodernliving.ai",
 
-  amazonAffiliateTag: process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG ?? "",
+  amazonAffiliateTag:
+    process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG || "ecomodernliving-20",
 
   formspree: {
     contact: process.env.NEXT_PUBLIC_FORMSPREE_CONTACT_ID ?? "",
@@ -22,10 +23,10 @@ export const siteConfig = {
       "https://www.youtube.com/@EcoModernLiving",
     instagram:
       process.env.NEXT_PUBLIC_INSTAGRAM_URL ??
-      "https://www.instagram.com/ecomodernliving",
+      "https://www.instagram.com/ecomodernliving.ai/",
     pinterest:
       process.env.NEXT_PUBLIC_PINTEREST_URL ??
-      "https://www.pinterest.com/ecomodernliving",
+      "https://www.pinterest.com/ecomodernliving/",
     facebook:
       process.env.NEXT_PUBLIC_FACEBOOK_URL ??
       "https://www.facebook.com/ecomodernliving",

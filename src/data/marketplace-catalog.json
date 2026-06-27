@@ -286,8 +286,9 @@
       "name": "Renogy Solar Panel Kit",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Amazon",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.amazon.com/s?k=renogy+solar+panel+kit"
+      "imageUrl": "https://m.media-amazon.com/images/P/B00BFCNFRM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00BFCNFRM",
+      "amazonAsin": "B00BFCNFRM"
     }
   ],
   "heat-pumps": [
@@ -761,43 +762,49 @@
       "name": "High Sierra Water Saving Showerhead",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Amazon",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.amazon.com/s?k=high+sierra+showerhead"
+      "imageUrl": "https://m.media-amazon.com/images/P/B08WPQ12XX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B08WPQ12XX",
+      "amazonAsin": "B08WPQ12XX"
     },
     {
       "name": "High Sierra Water Saving Showerhead",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Home Depot",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.homedepot.com/s/High%20Sierra%20Water%20Saving%20Showerhead"
+      "imageUrl": "https://m.media-amazon.com/images/P/B08WPQ12XX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/High%20Sierra%20Water%20Saving%20Showerhead",
+      "amazonAsin": "B08WPQ12XX"
     },
     {
       "name": "High Sierra Water Saving Showerhead",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Lowe's",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.lowes.com/search?searchTerm=High%20Sierra%20Water%20Saving%20Showerhead"
+      "imageUrl": "https://m.media-amazon.com/images/P/B08WPQ12XX.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=High%20Sierra%20Water%20Saving%20Showerhead",
+      "amazonAsin": "B08WPQ12XX"
     },
     {
       "name": "Niagara Earth Massage Water Saving Showerhead",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Amazon",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.amazon.com/s?k=niagara+earth+massage+showerhead"
+      "imageUrl": "https://m.media-amazon.com/images/P/B00TCODXJ0.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00TCODXJ0",
+      "amazonAsin": "B00TCODXJ0"
     },
     {
       "name": "Niagara Earth Massage Water Saving Showerhead",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Home Depot",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.homedepot.com/s/Niagara%20Earth%20Massage%20Water%20Saving%20Showerhead"
+      "imageUrl": "https://m.media-amazon.com/images/P/B00TCODXJ0.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Niagara%20Earth%20Massage%20Water%20Saving%20Showerhead",
+      "amazonAsin": "B00TCODXJ0"
     },
     {
       "name": "Niagara Earth Massage Water Saving Showerhead",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Lowe's",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Niagara%20Earth%20Massage%20Water%20Saving%20Showerhead"
+      "imageUrl": "https://m.media-amazon.com/images/P/B00TCODXJ0.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Niagara%20Earth%20Massage%20Water%20Saving%20Showerhead",
+      "amazonAsin": "B00TCODXJ0"
     }
   ],
   "air-purifiers": [
@@ -893,15 +900,17 @@
       "name": "Levoit Core 400S Smart Air Purifier",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Amazon",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.amazon.com/s?k=levoit+core+400s"
+      "imageUrl": "https://m.media-amazon.com/images/P/B09BJMY8HL.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09BJMY8HL",
+      "amazonAsin": "B09BJMY8HL"
     },
     {
       "name": "Coway Airmega Air Purifier",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Amazon",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.amazon.com/s?k=coway+airmega"
+      "imageUrl": "https://m.media-amazon.com/images/P/B01C9RIACG.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B01C9RIACG",
+      "amazonAsin": "B01C9RIACG"
     }
   ],
   "furniture": [
@@ -1295,43 +1304,49 @@
       "name": "FCMP Outdoor Compost Tumbler",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Amazon",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.amazon.com/s?k=fcmp+outdoor+compost+tumbler"
+      "imageUrl": "https://m.media-amazon.com/images/P/B007PFA7OM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B007PFA7OM",
+      "amazonAsin": "B007PFA7OM"
     },
     {
       "name": "FCMP Outdoor Compost Tumbler",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Wayfair",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=FCMP%20Outdoor%20Compost%20Tumbler"
+      "imageUrl": "https://m.media-amazon.com/images/P/B007PFA7OM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=FCMP%20Outdoor%20Compost%20Tumbler",
+      "amazonAsin": "B007PFA7OM"
     },
     {
       "name": "FCMP Outdoor Compost Tumbler",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Target",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.target.com/s?searchTerm=FCMP%20Outdoor%20Compost%20Tumbler"
+      "imageUrl": "https://m.media-amazon.com/images/P/B007PFA7OM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=FCMP%20Outdoor%20Compost%20Tumbler",
+      "amazonAsin": "B007PFA7OM"
     },
     {
       "name": "Miracle-Gro Dual Chamber Composter",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Amazon",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.amazon.com/s?k=miracle+gro+composter"
+      "imageUrl": "https://m.media-amazon.com/images/P/B09LMR4M3P.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B09LMR4M3P",
+      "amazonAsin": "B09LMR4M3P"
     },
     {
       "name": "Miracle-Gro Dual Chamber Composter",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Wayfair",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Miracle-Gro%20Dual%20Chamber%20Composter"
+      "imageUrl": "https://m.media-amazon.com/images/P/B09LMR4M3P.01._SL400_.jpg",
+      "affiliateUrl": "https://www.wayfair.com/keyword.php?keyword=Miracle-Gro%20Dual%20Chamber%20Composter",
+      "amazonAsin": "B09LMR4M3P"
     },
     {
       "name": "Miracle-Gro Dual Chamber Composter",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Target",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.target.com/s?searchTerm=Miracle-Gro%20Dual%20Chamber%20Composter"
+      "imageUrl": "https://m.media-amazon.com/images/P/B09LMR4M3P.01._SL400_.jpg",
+      "affiliateUrl": "https://www.target.com/s?searchTerm=Miracle-Gro%20Dual%20Chamber%20Composter",
+      "amazonAsin": "B09LMR4M3P"
     }
   ],
   "solar": [
@@ -1379,8 +1394,9 @@
       "name": "Renogy Solar Panel Kit",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Amazon",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.amazon.com/s?k=renogy+solar+panel+kit"
+      "imageUrl": "https://m.media-amazon.com/images/P/B00BFCNFRM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00BFCNFRM",
+      "amazonAsin": "B00BFCNFRM"
     }
   ],
   "indoor-gardening": [
@@ -1444,15 +1460,17 @@
       "name": "ChargePoint Home Flex Level 2 EV Charger",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Amazon",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.amazon.com/s?k=chargepoint+home+flex"
+      "imageUrl": "https://m.media-amazon.com/images/P/B0FP886BVQ.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0FP886BVQ",
+      "amazonAsin": "B0FP886BVQ"
     },
     {
       "name": "Emporia Level 2 EV Charger",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Amazon",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.amazon.com/s?k=emporia+ev+charger"
+      "imageUrl": "https://m.media-amazon.com/images/P/B0CKKW6GNF.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0CKKW6GNF",
+      "amazonAsin": "B0CKKW6GNF"
     },
     {
       "name": "Jackery Solar Generator",
@@ -1498,8 +1516,9 @@
       "name": "Renogy Solar Panel Kit",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Amazon",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.amazon.com/s?k=renogy+solar+panel+kit"
+      "imageUrl": "https://m.media-amazon.com/images/P/B00BFCNFRM.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B00BFCNFRM",
+      "amazonAsin": "B00BFCNFRM"
     }
   ],
   "eco-paints": [
@@ -1507,43 +1526,49 @@
       "name": "ECOS Low VOC Eco-Friendly Paint",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Amazon",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.amazon.com/s?k=ecos+paint"
+      "imageUrl": "https://m.media-amazon.com/images/P/B0CZZX39Q3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B0CZZX39Q3",
+      "amazonAsin": "B0CZZX39Q3"
     },
     {
       "name": "ECOS Low VOC Eco-Friendly Paint",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Home Depot",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.homedepot.com/s/ECOS%20Low%20VOC%20Eco-Friendly%20Paint"
+      "imageUrl": "https://m.media-amazon.com/images/P/B0CZZX39Q3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/ECOS%20Low%20VOC%20Eco-Friendly%20Paint",
+      "amazonAsin": "B0CZZX39Q3"
     },
     {
       "name": "ECOS Low VOC Eco-Friendly Paint",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Lowe's",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.lowes.com/search?searchTerm=ECOS%20Low%20VOC%20Eco-Friendly%20Paint"
+      "imageUrl": "https://m.media-amazon.com/images/P/B0CZZX39Q3.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=ECOS%20Low%20VOC%20Eco-Friendly%20Paint",
+      "amazonAsin": "B0CZZX39Q3"
     },
     {
       "name": "Rust-Oleum Low VOC Paint",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Amazon",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.amazon.com/s?k=low+voc+paint"
+      "imageUrl": "https://m.media-amazon.com/images/P/B000C02BKA.01._SL400_.jpg",
+      "affiliateUrl": "https://www.amazon.com/dp/B000C02BKA",
+      "amazonAsin": "B000C02BKA"
     },
     {
       "name": "Rust-Oleum Low VOC Paint",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Home Depot",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.homedepot.com/s/Rust-Oleum%20Low%20VOC%20Paint"
+      "imageUrl": "https://m.media-amazon.com/images/P/B000C02BKA.01._SL400_.jpg",
+      "affiliateUrl": "https://www.homedepot.com/s/Rust-Oleum%20Low%20VOC%20Paint",
+      "amazonAsin": "B000C02BKA"
     },
     {
       "name": "Rust-Oleum Low VOC Paint",
       "description": "Curated eco-friendly pick for sustainable modern homes.",
       "store": "Lowe's",
-      "imageUrl": "/images/product-placeholder.svg",
-      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Rust-Oleum%20Low%20VOC%20Paint"
+      "imageUrl": "https://m.media-amazon.com/images/P/B000C02BKA.01._SL400_.jpg",
+      "affiliateUrl": "https://www.lowes.com/search?searchTerm=Rust-Oleum%20Low%20VOC%20Paint",
+      "amazonAsin": "B000C02BKA"
     }
   ],
   "windows": [

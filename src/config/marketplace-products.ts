@@ -29,8 +29,8 @@ export const marketplaceProducts: Record<string, PageProduct[]> = {
     product("Whole House Water Filter System", "https://www.amazon.com/dp/B09JG2SWVC?tag=ecomodernliving-20&linkCode=ll2"),
     product("Circadian Rhythm Lighting System", "https://www.amazon.com/dp/B0DGW46BW3?tag=ecomodernliving-20&linkCode=ll2"),
     product("Medical Grade HEPA Air Purifier", "https://www.amazon.com/dp/B01728NLRG?tag=ecomodernliving-20&linkCode=ll2"),
-    product("Levoit Core 400S Smart Air Purifier", "https://www.amazon.com/s?k=levoit+core+400s"),
-    product("Coway Airmega Air Purifier", "https://www.amazon.com/s?k=coway+airmega"),
+    product("Levoit Core 400S Smart Air Purifier", "https://www.amazon.com/dp/B09BJMY8HL?tag=ecomodernliving-20&linkCode=ll2"),
+    product("Coway Airmega Air Purifier", "https://www.amazon.com/dp/B01C9RIACG?tag=ecomodernliving-20&linkCode=ll2"),
   ],
   "composting": [
     product("Lomi Kitchen Composter", "https://www.amazon.com/dp/B0CVNNKPRP?tag=ecomodernliving-20&linkCode=ll2"),
@@ -39,16 +39,16 @@ export const marketplaceProducts: Record<string, PageProduct[]> = {
     product("Vitamix Professional Blender", "https://www.amazon.com/dp/B0BWSJVTCJ?tag=ecomodernliving-20&linkCode=ll2"),
     product("Berkey Water Filtration System", "https://www.amazon.com/dp/B09C59M3YY?tag=ecomodernliving-20&linkCode=ll2"),
     product("Whole Home Water Filtration System", "https://www.amazon.com/dp/B083NPW1DN?tag=ecomodernliving-20&linkCode=ll2"),
-    product("FCMP Outdoor Compost Tumbler", "https://www.amazon.com/s?k=fcmp+outdoor+compost+tumbler"),
-    product("Miracle-Gro Dual Chamber Composter", "https://www.amazon.com/s?k=miracle+gro+composter"),
+    product("FCMP Outdoor Compost Tumbler", "https://www.amazon.com/dp/B007PFA7OM?tag=ecomodernliving-20&linkCode=ll2"),
+    product("Miracle-Gro Dual Chamber Composter", "https://www.amazon.com/dp/B09LMR4M3P?tag=ecomodernliving-20&linkCode=ll2"),
   ],
   "eco-paints": [
-    product("ECOS Low VOC Eco-Friendly Paint", "https://www.amazon.com/s?k=ecos+paint"),
-    product("Rust-Oleum Low VOC Paint", "https://www.amazon.com/s?k=low+voc+paint"),
+    product("ECOS Low VOC Eco-Friendly Paint", "https://www.amazon.com/dp/B0CZZX39Q3?tag=ecomodernliving-20&linkCode=ll2"),
+    product("Rust-Oleum Low VOC Paint", "https://www.amazon.com/dp/B000C02BKA?tag=ecomodernliving-20&linkCode=ll2"),
   ],
   "ev-chargers": [
-    product("ChargePoint Home Flex Level 2 EV Charger", "https://www.amazon.com/s?k=chargepoint+home+flex"),
-    product("Emporia Level 2 EV Charger", "https://www.amazon.com/s?k=emporia+ev+charger"),
+    product("ChargePoint Home Flex Level 2 EV Charger", "https://www.amazon.com/dp/B0FP886BVQ?tag=ecomodernliving-20&linkCode=ll2"),
+    product("Emporia Level 2 EV Charger", "https://www.amazon.com/dp/B0CKKW6GNF?tag=ecomodernliving-20&linkCode=ll2"),
   ],
   "furniture": [
     product("Organic Natural Mattress", "https://www.amazon.com/dp/B0DTTN5YMW?tag=ecomodernliving-20&linkCode=ll2"),
@@ -110,7 +110,7 @@ export const marketplaceProducts: Record<string, PageProduct[]> = {
     product("BLUETTI Solar Generator", "https://www.amazon.com/dp/B0C1SMJTDT?tag=ecomodernliving-20&linkCode=ll2"),
     product("Solar Powered Outdoor Lights", "https://www.amazon.com/dp/B09F3DJNGF?tag=ecomodernliving-20&linkCode=ll2"),
     product("Solar Security Camera", "https://www.amazon.com/dp/B0CCYP6KFM?tag=ecomodernliving-20&linkCode=ll2"),
-    product("Renogy Solar Panel Kit", "https://www.amazon.com/s?k=renogy+solar+panel+kit"),
+    product("Renogy Solar Panel Kit", "https://www.amazon.com/dp/B00BFCNFRM?tag=ecomodernliving-20&linkCode=ll2"),
   ],
   "water-fixtures": [
     product("Rachio Smart Sprinkler Controller", "https://www.amazon.com/dp/B07CZ864Y9?tag=ecomodernliving-20&linkCode=ll2"),
@@ -122,7 +122,7 @@ export const marketplaceProducts: Record<string, PageProduct[]> = {
     product("Water Saving Faucet Aerator", "https://www.amazon.com/dp/B09ZNWP8YX?tag=ecomodernliving-20&linkCode=ll2"),
     product("Dual Flush Toilet Conversion Kit", "https://www.amazon.com/dp/B00B9BNGU0?tag=ecomodernliving-20&linkCode=ll2"),
     product("High Efficiency Water Saving Toilet", "https://www.amazon.com/dp/B09WYQCPMP?tag=ecomodernliving-20&linkCode=ll2"),
-    product("High Sierra Water Saving Showerhead", "https://www.amazon.com/s?k=high+sierra+showerhead"),
-    product("Niagara Earth Massage Water Saving Showerhead", "https://www.amazon.com/s?k=niagara+earth+massage+showerhead"),
+    product("High Sierra Water Saving Showerhead", "https://www.amazon.com/dp/B08WPQ12XX?tag=ecomodernliving-20&linkCode=ll2"),
+    product("Niagara Earth Massage Water Saving Showerhead", "https://www.amazon.com/dp/B00TCODXJ0?tag=ecomodernliving-20&linkCode=ll2"),
   ],
 };

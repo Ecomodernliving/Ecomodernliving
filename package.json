@@ -9,9 +9,11 @@
     "start": "next start",
     "lint": "next lint",
     "build:catalog": "node scripts/build-product-catalog.mjs",
-    "resolve:asins": "node scripts/resolve-product-asins.mjs"
+    "resolve:asins": "node scripts/resolve-product-asins.mjs",
+    "migrate:postgres": "node scripts/migrate-to-postgres.mjs"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
     "bcryptjs": "^3.0.3",
     "clsx": "^2.1.1",
     "jose": "^6.2.3",

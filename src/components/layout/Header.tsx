@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
-import { ChevronDown, Leaf, Menu, ArrowRight } from "lucide-react";
+import { ChevronDown, Menu, ArrowRight } from "lucide-react";
 import clsx from "clsx";
 import {
   mainNavigation,
@@ -13,6 +13,7 @@ import { NavIcon } from "@/components/NavIcon";
 import { MobileMenu } from "./MobileMenu";
 import { NavHref } from "@/components/NavHref";
 import { AuthNav } from "@/components/auth/AuthNav";
+import { Logo } from "./Logo";
 
 function MegaMenuDropdown({
   item,
@@ -172,19 +173,8 @@ export function Header() {
       >
         <div className="relative mx-auto max-w-7xl px-4 lg:px-6">
           <div className="flex h-16 items-center gap-6 lg:h-[4.25rem]">
-            <Link href="/" className="group flex shrink-0 items-center gap-2.5">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-forest-600 to-forest-700 text-white shadow-md shadow-forest-600/25 transition-shadow group-hover:shadow-lg">
-                <Leaf className="h-5 w-5" />
-              </div>
-              <div className="hidden sm:block leading-none">
-                <span className="font-display text-[17px] font-bold tracking-tight text-forest-900">
-                  EcoModern
-                </span>
-                <span className="font-display text-[17px] font-light text-sage-500">
-                  {" "}
-                  Living
-                </span>
-              </div>
+            <Link href="/" className="group flex shrink-0 items-center" aria-label="EcoModern Living home">
+              <Logo responsiveWordmark priority />
             </Link>
 
             <nav className="hidden flex-1 items-center justify-center lg:flex">

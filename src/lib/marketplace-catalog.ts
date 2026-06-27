@@ -3,7 +3,7 @@ import type { AffiliateStore } from "@/lib/affiliate-stores";
 import { marketplaceProducts as staticProducts } from "@/config/marketplace-products";
 import {
   mergeWithAdminProducts,
-  readAdminCatalog,
+  readAdminProductsForSlug,
 } from "@/lib/marketplace-admin";
 import catalogJson from "@/data/marketplace-catalog.json";
 
@@ -240,8 +240,7 @@ export function getMarketplaceCatalog(): Promise<Record<string, PageProduct[]>> 
 export async function getProductsForSlug(slug: string): Promise<PageProduct[]> {
   const catalog = await getMarketplaceCatalog();
   const base = catalog[slug] ?? [];
-  const adminCatalog = await readAdminCatalog();
-  const admin = adminCatalog[slug] ?? [];
+  const admin = await readAdminProductsForSlug(slug);
   return mergeWithAdminProducts(base, admin);
 }
 

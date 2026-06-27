@@ -15,6 +15,18 @@ export async function POST(request: Request) {
   const admin = await requireAdmin();
   if (isAdminResponse(admin)) return admin;
 
+  // Vercel's filesystem is read-only, so uploaded files can't be saved/served.
+  // Guide the admin to paste an image URL or use the ASIN's auto image instead.
+  if (process.env.VERCEL) {
+    return NextResponse.json(
+      {
+        error:
+          "File uploads aren't supported on the live site. Paste an image URL, or leave it blank to use the Amazon image from the ASIN.",
+      },
+      { status: 400 }
+    );
+  }
+
   try {
     const formData = await request.formData();
     const file = formData.get("file");

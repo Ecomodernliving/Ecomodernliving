@@ -16,5 +16,15 @@
       "imageUrl": "https://https://m.media-amazon.com/images/I/51reDHQtKmL._AC_SY300_SX300_QL70_FMwebp_.jpg",
       "amazonAsin": "B00DKE6FEI"
     }
+  ],
+  "eco-paints": [
+    {
+      "name": "TEST PRODUCT NAME",
+      "description": "TEST Desccription",
+      "store": "Amazon",
+      "affiliateUrl": "https://www.amazon.com/dp/B0CZZX39Q3?tag=ecomodernliving-20&linkCode=ogi&th=1",
+      "imageUrl": "https://m.media-amazon.com/images/products/eco-paints/1782574086246-9d8zsi.jpg",
+      "amazonAsin": "B0CZZX39Q3"
+    }
   ]
 }

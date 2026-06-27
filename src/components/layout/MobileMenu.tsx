@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronDown, X, Leaf } from "lucide-react";
+import { ChevronDown, X } from "lucide-react";
 import clsx from "clsx";
 import {
   mainNavigation,
@@ -11,6 +11,7 @@ import {
 import { NavIcon } from "@/components/NavIcon";
 import { NavHref } from "@/components/NavHref";
 import { AuthNav } from "@/components/auth/AuthNav";
+import { Logo } from "./Logo";
 
 type MobileMenuProps = {
   isOpen: boolean;
@@ -36,13 +37,13 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
       <div className="fixed inset-y-0 right-0 z-[70] flex w-full max-w-[min(100%,24rem)] animate-slide-in flex-col bg-white shadow-2xl pt-safe lg:hidden">
         <div className="flex items-center justify-between border-b border-sage-100 px-4 py-3 sm:px-5 sm:py-4">
-          <Link href="/" onClick={onClose} className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-forest-600 text-white">
-              <Leaf className="h-4 w-4" />
-            </div>
-            <span className="font-display font-bold text-forest-900">
-              EcoModern Living
-            </span>
+          <Link
+            href="/"
+            onClick={onClose}
+            className="flex items-center"
+            aria-label="EcoModern Living home"
+          >
+            <Logo markClassName="h-10 w-10" />
           </Link>
           <button
             type="button"

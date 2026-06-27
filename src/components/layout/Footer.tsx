@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { Leaf } from "lucide-react";
 import { mainNavigation, utilityLinks } from "@/config/navigation";
 import { legalLinks, siteConfig } from "@/config/site";
 import type { NavItem } from "@/config/navigation";
 import { SocialLinks } from "@/components/layout/SocialLinks";
+import { Logo } from "@/components/layout/Logo";
 
 function getNavHref(item: NavItem): string {
   return (
@@ -61,14 +61,10 @@ export function Footer() {
         {/* Brand */}
         <Link
           href="/"
-          className="group inline-flex items-center justify-center gap-2.5"
+          className="group inline-flex items-center justify-center"
+          aria-label="EcoModern Living home"
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-forest-500 to-forest-700 text-white shadow-md ring-1 ring-forest-600/40 transition-transform group-hover:scale-105">
-            <Leaf className="h-4 w-4" />
-          </div>
-          <span className="font-display text-base font-bold text-white">
-            EcoModern Living
-          </span>
+          <Logo theme="dark" />
         </Link>
 
         <p className="mt-2.5 whitespace-nowrap text-[11px] text-sage-500 sm:text-sm">
