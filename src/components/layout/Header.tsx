@@ -13,6 +13,7 @@ import { NavIcon } from "@/components/NavIcon";
 import { MobileMenu } from "./MobileMenu";
 import { NavHref } from "@/components/NavHref";
 import { AuthNav } from "@/components/auth/AuthNav";
+import { SiteSearch } from "@/components/search/SiteSearch";
 import { Logo } from "./Logo";
 
 function MegaMenuDropdown({
@@ -228,6 +229,8 @@ export function Header() {
             </nav>
 
             <div className="ml-auto flex shrink-0 items-center gap-1.5 sm:gap-2">
+              <SiteSearch />
+
               <div className="hidden items-center gap-1 lg:flex">
                 {utilityLinks.map((link) => (
                   <Link
