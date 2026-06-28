@@ -20,7 +20,7 @@ export const siteConfig = {
   social: {
     youtube:
       process.env.NEXT_PUBLIC_YOUTUBE_URL ??
-      "https://www.youtube.com/@EcoModernLiving",
+      "https://www.youtube.com/@ecomodernliving",
     instagram:
       process.env.NEXT_PUBLIC_INSTAGRAM_URL ??
       "https://www.instagram.com/ecomodernliving.ai/",
