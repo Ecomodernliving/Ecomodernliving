@@ -85,7 +85,7 @@ function GroupedProductCard({
   group: GroupedProduct;
   catalogSlug?: string;
   isAdmin: boolean;
-  onEdit: (product: PageProduct) => void;
+  onEdit: (group: GroupedProduct) => void;
 }) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-sage-200/80 bg-white shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-lg hover:ring-2 hover:ring-forest-200/60">
@@ -99,7 +99,7 @@ function GroupedProductCard({
         {isAdmin && catalogSlug && (
           <button
             type="button"
-            onClick={() => onEdit(group.primaryProduct)}
+            onClick={() => onEdit(group)}
             className="absolute right-3 top-3 inline-flex min-h-9 min-w-9 items-center justify-center rounded-full bg-white/95 text-forest-700 shadow-md ring-1 ring-sage-200/80 transition-colors hover:bg-forest-600 hover:text-white"
             aria-label={`Edit ${group.name}`}
           >
@@ -167,16 +167,19 @@ export function ProductCatalog({ products: initialProducts, catalogSlug }: Produ
   const [editOpen, setEditOpen] = useState(false);
   const [editingProduct, setEditingProduct] = useState<PageProduct | null>(null);
   const [editingKey, setEditingKey] = useState<string | undefined>();
+  const [editingGroupKeys, setEditingGroupKeys] = useState<string[]>([]);
 
   function openAdd() {
     setEditingProduct(null);
     setEditingKey(undefined);
+    setEditingGroupKeys([]);
     setEditOpen(true);
   }
 
-  function openEdit(product: PageProduct) {
-    setEditingProduct(product);
-    setEditingKey(productKey(product));
+  function openEdit(group: GroupedProduct) {
+    setEditingProduct(group.primaryProduct);
+    setEditingKey(productKey(group.primaryProduct));
+    setEditingGroupKeys(group.listings.map((l) => productKey(l.product)));
     setEditOpen(true);
   }
 
@@ -188,6 +191,12 @@ export function ProductCatalog({ products: initialProducts, catalogSlug }: Produ
       map.set(key, product);
       return Array.from(map.values());
     });
+    router.refresh();
+  }
+
+  function handleDeleted(keys: string[]) {
+    const keySet = new Set(keys);
+    setItems((prev) => prev.filter((p) => !keySet.has(productKey(p))));
     router.refresh();
   }
 
@@ -350,8 +359,10 @@ export function ProductCatalog({ products: initialProducts, catalogSlug }: Produ
           slug={catalogSlug}
           product={editingProduct}
           originalKey={editingKey}
+          deleteKeys={editingGroupKeys}
           onClose={() => setEditOpen(false)}
           onSaved={handleSaved}
+          onDeleted={handleDeleted}
         />
       )}
     </div>

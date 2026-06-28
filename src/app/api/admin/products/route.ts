@@ -80,16 +80,21 @@ export async function DELETE(request: Request) {
   try {
     const body = await request.json();
     const slug = String(body.slug ?? "").trim();
-    const key = String(body.key ?? "").trim();
+    const keys = Array.isArray(body.keys)
+      ? body.keys.map((k: unknown) => String(k).trim()).filter(Boolean)
+      : [String(body.key ?? "").trim()].filter(Boolean);
 
-    if (!slug || !key) {
+    if (!slug || keys.length === 0) {
       return NextResponse.json(
         { error: "Slug and product key are required." },
         { status: 400 }
       );
     }
 
-    const products = await removeAdminProduct(slug, key);
+    let products: Awaited<ReturnType<typeof removeAdminProduct>> = [];
+    for (const key of keys) {
+      products = await removeAdminProduct(slug, key);
+    }
     revalidatePath(`/marketplace/${slug}`);
     revalidatePath("/marketplace");
 

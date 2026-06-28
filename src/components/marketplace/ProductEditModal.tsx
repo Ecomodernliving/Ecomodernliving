@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { Loader2, Upload, X } from "lucide-react";
+import { Loader2, Trash2, Upload, X } from "lucide-react";
 import type { PageProduct } from "@/config/page-content";
 import { AFFILIATE_STORES, type AffiliateStore } from "@/lib/affiliate-stores";
 import { productKey } from "@/lib/marketplace-product-utils";
@@ -12,8 +12,10 @@ type ProductEditModalProps = {
   slug: string;
   product?: PageProduct | null;
   originalKey?: string;
+  deleteKeys?: string[];
   onClose: () => void;
   onSaved: (product: PageProduct) => void;
+  onDeleted?: (keys: string[]) => void;
 };
 
 export function ProductEditModal({
@@ -21,8 +23,10 @@ export function ProductEditModal({
   slug,
   product,
   originalKey,
+  deleteKeys,
   onClose,
   onSaved,
+  onDeleted,
 }: ProductEditModalProps) {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
@@ -34,6 +38,8 @@ export function ProductEditModal({
   const [error, setError] = useState("");
   const [saving, setSaving] = useState(false);
   const [uploading, setUploading] = useState(false);
+  const [deleting, setDeleting] = useState(false);
+  const [confirmDelete, setConfirmDelete] = useState(false);
 
   useEffect(() => {
     if (!open) return;
@@ -45,6 +51,7 @@ export function ProductEditModal({
     setAmazonAsin(product?.amazonAsin ?? "");
     setTag(product?.tag ?? "");
     setError("");
+    setConfirmDelete(false);
   }, [open, product]);
 
   if (!open) return null;
@@ -107,6 +114,37 @@ export function ProductEditModal({
       setError("Unable to save product. Try again.");
     } finally {
       setSaving(false);
+    }
+  }
+
+  async function handleDelete() {
+    const keys =
+      deleteKeys && deleteKeys.length > 0
+        ? deleteKeys
+        : originalKey
+          ? [originalKey]
+          : [];
+    if (keys.length === 0) return;
+    setDeleting(true);
+    setError("");
+    try {
+      const res = await fetch("/api/admin/products", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify({ slug, keys }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setError(data.error ?? "Unable to remove product");
+        return;
+      }
+      onDeleted?.(keys);
+      onClose();
+    } catch {
+      setError("Unable to remove product. Try again.");
+    } finally {
+      setDeleting(false);
     }
   }
 
@@ -270,13 +308,53 @@ export function ProductEditModal({
             </button>
             <button
               type="submit"
-              disabled={saving || uploading}
+              disabled={saving || uploading || deleting}
               className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-xl bg-forest-600 px-4 text-sm font-semibold text-white hover:bg-forest-700 disabled:opacity-60"
             >
               {saving && <Loader2 className="h-4 w-4 animate-spin" />}
               Save product
             </button>
           </div>
+
+          {product && originalKey && (
+            <div className="mt-1 border-t border-sage-100 pt-3">
+              {confirmDelete ? (
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <p className="text-sm font-medium text-red-700">
+                    Remove this product from the catalog?
+                  </p>
+                  <div className="flex gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setConfirmDelete(false)}
+                      disabled={deleting}
+                      className="inline-flex min-h-9 items-center justify-center rounded-lg border border-sage-200 px-3 text-sm font-medium text-sage-600 hover:bg-sage-50"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleDelete}
+                      disabled={deleting}
+                      className="inline-flex min-h-9 items-center justify-center gap-1.5 rounded-lg bg-red-600 px-3 text-sm font-semibold text-white hover:bg-red-700 disabled:opacity-60"
+                    >
+                      {deleting && <Loader2 className="h-4 w-4 animate-spin" />}
+                      Delete
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <button
+                  type="button"
+                  onClick={() => setConfirmDelete(true)}
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-red-600 hover:text-red-700"
+                >
+                  <Trash2 className="h-4 w-4" />
+                  Delete product
+                </button>
+              )}
+            </div>
+          )}
         </form>
       </div>
     </div>,

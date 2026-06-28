@@ -4,7 +4,9 @@ import { marketplaceProducts as staticProducts } from "@/config/marketplace-prod
 import {
   mergeWithAdminProducts,
   readAdminProductsForSlug,
+  readHiddenKeysForSlug,
 } from "@/lib/marketplace-admin";
+import { productKey } from "@/lib/marketplace-product-utils";
 import catalogJson from "@/data/marketplace-catalog.json";
 
 const ASIN_PATTERN = /^[A-Z0-9]{10}$/i;
@@ -240,8 +242,14 @@ export function getMarketplaceCatalog(): Promise<Record<string, PageProduct[]>> 
 export async function getProductsForSlug(slug: string): Promise<PageProduct[]> {
   const catalog = await getMarketplaceCatalog();
   const base = catalog[slug] ?? [];
-  const admin = await readAdminProductsForSlug(slug);
-  return mergeWithAdminProducts(base, admin);
+  const [admin, hidden] = await Promise.all([
+    readAdminProductsForSlug(slug),
+    readHiddenKeysForSlug(slug),
+  ]);
+  const merged = mergeWithAdminProducts(base, admin);
+  return hidden.size > 0
+    ? merged.filter((p) => !hidden.has(productKey(p)))
+    : merged;
 }
 
 export async function getTotalProductCount(): Promise<number> {

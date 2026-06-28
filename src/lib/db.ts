@@ -66,6 +66,10 @@ export function ensureSchema(): Promise<void> {
         PRIMARY KEY (slug, product_key)
       )
     `;
+    // `hidden` marks a product (including a built-in catalog item) as removed.
+    await sql`
+      ALTER TABLE admin_products ADD COLUMN IF NOT EXISTS hidden BOOLEAN NOT NULL DEFAULT false
+    `;
   })().catch((err) => {
     // Reset so a later request can retry schema creation.
     schemaReady = null;
