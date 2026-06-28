@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { Loader2, Upload, X } from "lucide-react";
 import type { PageProduct } from "@/config/page-content";
 import { AFFILIATE_STORES, type AffiliateStore } from "@/lib/affiliate-stores";
@@ -47,6 +48,7 @@ export function ProductEditModal({
   }, [open, product]);
 
   if (!open) return null;
+  if (typeof document === "undefined") return null;
 
   async function handleImageUpload(file: File) {
     setUploading(true);
@@ -108,7 +110,7 @@ export function ProductEditModal({
     }
   }
 
-  return (
+  return createPortal(
     <div className="fixed inset-0 z-[100] flex items-end justify-center p-4 sm:items-center">
       <button
         type="button"
@@ -277,6 +279,7 @@ export function ProductEditModal({
           </div>
         </form>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
