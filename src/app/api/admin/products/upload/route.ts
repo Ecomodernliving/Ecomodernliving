@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
+import { put } from "@vercel/blob";
 import { isAdminResponse, requireAdmin } from "@/lib/auth/require-admin";
 
 const MAX_BYTES = 5 * 1024 * 1024;
@@ -15,24 +16,13 @@ export async function POST(request: Request) {
   const admin = await requireAdmin();
   if (isAdminResponse(admin)) return admin;
 
-  // Vercel's filesystem is read-only, so uploaded files can't be saved/served.
-  // Guide the admin to paste an image URL or use the ASIN's auto image instead.
-  if (process.env.VERCEL) {
-    return NextResponse.json(
-      {
-        error:
-          "File uploads aren't supported on the live site. Paste an image URL, or leave it blank to use the Amazon image from the ASIN.",
-      },
-      { status: 400 }
-    );
-  }
-
   try {
     const formData = await request.formData();
     const file = formData.get("file");
-    const slug = String(formData.get("slug") ?? "general")
-      .trim()
-      .replace(/[^a-z0-9-]/gi, "");
+    const slug =
+      String(formData.get("slug") ?? "general")
+        .trim()
+        .replace(/[^a-z0-9-]/gi, "") || "general";
 
     if (!(file instanceof File) || file.size === 0) {
       return NextResponse.json({ error: "Image file is required." }, { status: 400 });
@@ -54,15 +44,38 @@ export async function POST(request: Request) {
 
     const ext = file.name.split(".").pop()?.toLowerCase() || "jpg";
     const safeName = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}.${ext}`;
+
+    // Production-grade persistent storage via Vercel Blob (token is auto-injected
+    // once a Blob store is connected to the project in the Vercel dashboard).
+    if (process.env.BLOB_READ_WRITE_TOKEN) {
+      const blob = await put(`products/${slug}/${safeName}`, file, {
+        access: "public",
+        contentType: file.type,
+      });
+      return NextResponse.json({ ok: true, imageUrl: blob.url });
+    }
+
+    // On a serverless host with no Blob store, the filesystem is read-only/ephemeral.
+    if (process.env.VERCEL) {
+      return NextResponse.json(
+        {
+          error:
+            "Image uploads need a Vercel Blob store. Add one in the Vercel dashboard (Storage → Blob) and redeploy, or paste an image URL / leave blank to use the Amazon ASIN image.",
+        },
+        { status: 400 }
+      );
+    }
+
+    // Local dev: persist to the public folder so it's served statically.
     const dir = path.join(process.cwd(), "public", "images", "products", slug);
     await fs.mkdir(dir, { recursive: true });
-
     const buffer = Buffer.from(await file.arrayBuffer());
-    const filePath = path.join(dir, safeName);
-    await fs.writeFile(filePath, buffer);
+    await fs.writeFile(path.join(dir, safeName), buffer);
 
-    const imageUrl = `/images/products/${slug}/${safeName}`;
-    return NextResponse.json({ ok: true, imageUrl });
+    return NextResponse.json({
+      ok: true,
+      imageUrl: `/images/products/${slug}/${safeName}`,
+    });
   } catch {
     return NextResponse.json(
       { error: "Unable to upload image." },
