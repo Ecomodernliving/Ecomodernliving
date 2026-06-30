@@ -16,7 +16,7 @@ export const categoryToSlug: Record<string, string> = {
   "Smart Thermostats": "smart-thermostats",
   "Smart Power Management": "smart-home",
   "HVAC & Heat Pumps": "heat-pumps",
-  "Energy Efficient Appliances": "smart-home",
+  "Energy Efficient Appliances": "energy-efficient-appliances",
   "Water Conservation": "water-fixtures",
   "Sustainable Bathroom": "water-fixtures",
   "Healthy Home": "air-purifiers",

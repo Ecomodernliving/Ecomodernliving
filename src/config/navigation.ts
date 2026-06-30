@@ -94,6 +94,7 @@ export const mainNavigation: NavItem[] = [
           { label: "Heat Pumps", href: "/marketplace/heat-pumps", description: "Air-source, ground-source, mini-splits", icon: "thermometer" },
           { label: "Smart Thermostats", href: "/marketplace/smart-thermostats", description: "Learning controls for max efficiency", icon: "cpu" },
           { label: "EV Chargers", href: "/marketplace/ev-chargers", description: "Level 2 home & garage installations", icon: "plug" },
+          { label: "Energy-Efficient Appliances", href: "/marketplace/energy-efficient-appliances", description: "ENERGY STAR fridges, washers, dryers & dishwashers", icon: "zap" },
         ],
       },
       {
