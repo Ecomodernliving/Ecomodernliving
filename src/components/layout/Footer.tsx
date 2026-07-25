@@ -29,7 +29,7 @@ function FooterLink({
   return (
     <Link
       href={href}
-      className="inline-flex min-h-9 items-center text-sm text-sage-600 transition-colors hover:text-forest-700"
+      className="inline-flex min-h-9 items-center text-sm text-sage-400 transition-colors hover:text-white"
     >
       {children}
     </Link>
@@ -38,7 +38,7 @@ function FooterLink({
 
 function Dot() {
   return (
-    <span className="select-none px-1.5 text-sage-300" aria-hidden="true">
+    <span className="select-none px-1.5 text-sage-700" aria-hidden="true">
       ·
     </span>
   );
@@ -56,28 +56,31 @@ export function Footer() {
   ];
 
   return (
-    <footer className="border-t border-sage-200/50 bg-cream-50 pb-safe text-sage-700">
+    <footer className="border-t border-forest-800/60 bg-forest-950 pb-safe text-sage-300">
       <div className="mx-auto max-w-3xl px-4 py-8 text-center sm:py-10">
+        {/* Brand */}
         <Link
           href="/"
           className="group inline-flex items-center justify-center"
           aria-label="EcoModern Living home"
         >
-          <Logo />
+          <Logo theme="dark" />
         </Link>
 
         <p className="mt-2.5 whitespace-nowrap text-[11px] text-sage-500 sm:text-sm">
-          Sustainable living, curated eco products &amp; passive house education.
+          Sustainable living, curated eco products & passive house education.
         </p>
 
-        <p className="mt-6 text-[10px] font-semibold uppercase tracking-[0.16em] text-sage-500">
+        {/* Social */}
+        <p className="mt-6 text-[10px] font-semibold uppercase tracking-[0.16em] text-sage-600">
           Follow us
         </p>
         <div className="mt-2.5 flex justify-center">
           <SocialLinks />
         </div>
 
-        <p className="mt-6 text-[10px] font-semibold uppercase tracking-[0.16em] text-forest-600">
+        {/* Explore */}
+        <p className="mt-6 text-[10px] font-semibold uppercase tracking-[0.16em] text-forest-400">
           Explore
         </p>
         <nav
@@ -117,8 +120,9 @@ export function Footer() {
         </nav>
       </div>
 
-      <div className="border-t border-sage-200/50 bg-cream-50 px-4 py-5 text-center">
-        <p className="text-xs text-sage-500">
+      {/* Bottom bar */}
+      <div className="border-t border-forest-200/80 bg-forest-100 px-4 py-5 text-center">
+        <p className="text-xs text-forest-700">
           © {new Date().getFullYear()}{" "}
           <span className="font-medium text-forest-900">{siteConfig.name}</span>. All
           rights reserved.
@@ -139,17 +143,23 @@ export function Footer() {
                   key="about-contact"
                   className="inline-flex items-center whitespace-nowrap"
                 >
-                  {index > 0 && <Dot />}
+                  {index > 0 && (
+                    <span className="select-none px-1.5 text-forest-300" aria-hidden="true">
+                      ·
+                    </span>
+                  )}
                   <Link
                     href={about.href}
-                    className="inline-flex min-h-9 items-center px-0.5 text-xs text-sage-600 transition-colors hover:text-forest-700 sm:text-sm"
+                    className="inline-flex min-h-9 items-center px-0.5 text-xs text-forest-700 transition-colors hover:text-forest-950 sm:text-sm"
                   >
                     {about.label}
                   </Link>
-                  <Dot />
+                  <span className="select-none px-1.5 text-forest-300" aria-hidden="true">
+                    ·
+                  </span>
                   <Link
                     href={contact.href}
-                    className="inline-flex min-h-9 items-center px-0.5 text-xs text-sage-600 transition-colors hover:text-forest-700 sm:text-sm"
+                    className="inline-flex min-h-9 items-center px-0.5 text-xs text-forest-700 transition-colors hover:text-forest-950 sm:text-sm"
                   >
                     {contact.label}
                   </Link>
@@ -159,10 +169,14 @@ export function Footer() {
 
             return (
               <span key={link.href} className="inline-flex items-center">
-                {index > 0 && <Dot />}
+                {index > 0 && (
+                  <span className="select-none px-1.5 text-forest-300" aria-hidden="true">
+                    ·
+                  </span>
+                )}
                 <Link
                   href={link.href}
-                  className="inline-flex min-h-9 items-center px-0.5 text-xs text-sage-600 transition-colors hover:text-forest-700 sm:text-sm"
+                  className="inline-flex min-h-9 items-center px-0.5 text-xs text-forest-700 transition-colors hover:text-forest-950 sm:text-sm"
                 >
                   {link.label}
                 </Link>
