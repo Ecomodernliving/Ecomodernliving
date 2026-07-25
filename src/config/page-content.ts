@@ -281,7 +281,7 @@ export function buildPageContent(
     href.includes("building-codes") ||
     href === "/store";
 
-  return {
+  const merged: PageContent = {
     intro: description,
     highlights: [
       `Expert guidance on ${label.toLowerCase()}`,
@@ -300,10 +300,38 @@ export function buildPageContent(
     timeline: undefined,
     tips: defaultTips(label, category).length > 0 ? defaultTips(label, category) : undefined,
     comingSoon: isComingSoon,
-    ctaLabel: category === "ai" ? "Try It Free" : category === "services" ? "Book Consultation" : "Explore Products",
-    ctaHref: category === "marketplace" ? "#products" : "#get-started",
+    ctaLabel:
+      category === "ai"
+        ? "Try It Free"
+        : category === "services"
+          ? "Book Consultation"
+          : "Explore Products",
+    ctaHref:
+      category === "marketplace"
+        ? "#products"
+        : category === "passive-house"
+          ? "/passive-house-products"
+          : "#get-started",
     ...override,
   };
+
+  // Avoid dead in-page anchors when the target section isn't rendered
+  if (merged.ctaHref === "#get-started" && !merged.steps?.length) {
+    merged.ctaHref =
+      category === "passive-house"
+        ? "/passive-house-products"
+        : merged.products?.length
+          ? "#products"
+          : "/marketplace";
+  }
+  if (merged.ctaHref === "#products" && !merged.products?.length) {
+    merged.ctaHref =
+      category === "passive-house"
+        ? "/passive-house-products"
+        : "/marketplace";
+  }
+
+  return merged;
 }
 
 export function getCategoryAccent(category: PageCategory): {
