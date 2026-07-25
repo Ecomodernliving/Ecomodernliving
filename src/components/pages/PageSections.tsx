@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Zap, CalendarDays, Sun, Landmark } from "lucide-react";
 import { NavIcon } from "@/components/NavIcon";
 import { NavHref } from "@/components/NavHref";
 import type { NavLink } from "@/config/navigation";
@@ -647,36 +647,111 @@ export function NewsletterForm() {
 }
 
 function AuditEstimateCard({ estimate }: { estimate: EnergyEstimate }) {
+  const metrics = [
+    {
+      icon: Zap,
+      label: "Efficiency upgrades",
+      value: `$${estimate.efficiencySavingsMonthly}`,
+      suffix: "/mo",
+      hint: "Envelope & equipment",
+      tone: "from-forest-50 to-cream-50 border-forest-200",
+      iconClass: "bg-forest-100 text-forest-700",
+    },
+    {
+      icon: CalendarDays,
+      label: "Annual savings",
+      value: `$${estimate.efficiencySavingsAnnual.toLocaleString()}`,
+      suffix: "",
+      hint: "Yearly efficiency impact",
+      tone: "from-forest-50 to-cream-50 border-forest-200",
+      iconClass: "bg-forest-100 text-forest-700",
+    },
+    {
+      icon: Sun,
+      label: "Solar offset",
+      value: `~$${estimate.solarOffsetAnnual.toLocaleString()}`,
+      suffix: "/yr",
+      hint: "Climate-adjusted potential",
+      tone: "from-amber-50 to-orange-50/40 border-amber-200/80",
+      iconClass: "bg-amber-100 text-amber-800",
+    },
+    {
+      icon: Landmark,
+      label: "Federal tax credit",
+      value: `~$${estimate.federalTaxCreditEstimate.toLocaleString()}`,
+      suffix: "",
+      hint: "Est. solar ITC (~30%)",
+      tone: "from-amber-50 to-orange-50/40 border-amber-200/80",
+      iconClass: "bg-amber-100 text-amber-800",
+    },
+  ] as const;
+
   return (
-    <div className="rounded-xl border border-forest-200 bg-gradient-to-br from-forest-50 to-cream-50 p-4">
-      <p className="text-xs font-semibold uppercase tracking-wide text-forest-600">
-        Your estimate
-      </p>
-      <div className="mt-3 grid gap-3 sm:grid-cols-2">
-        <div>
-          <p className="text-xs text-sage-500">Efficiency savings</p>
-          <p className="font-display text-xl font-bold text-forest-800">
-            ${estimate.efficiencySavingsMonthly}
-            <span className="text-sm font-medium text-sage-500">/mo</span>
+    <div className="overflow-hidden rounded-2xl border border-forest-200/80 bg-white shadow-sm shadow-forest-900/5">
+      <div className="relative h-28 overflow-hidden sm:h-32">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/hero-passive-house.jpg"
+          alt=""
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-forest-950/70 via-forest-900/30 to-transparent" />
+        <div className="absolute bottom-3 left-4 right-4">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-cream-100/90">
+            Free energy audit
+          </p>
+          <p className="font-display text-lg font-bold text-white sm:text-xl">
+            Your savings estimate
           </p>
         </div>
-        <div>
-          <p className="text-xs text-sage-500">Annual savings</p>
-          <p className="font-display text-xl font-bold text-forest-800">
-            ${estimate.efficiencySavingsAnnual.toLocaleString()}
-          </p>
+      </div>
+
+      <div className="p-4 sm:p-5">
+        <div className="grid gap-3 sm:grid-cols-2">
+          {metrics.map((m) => (
+            <div
+              key={m.label}
+              className={`rounded-xl border bg-gradient-to-br p-3.5 ${m.tone}`}
+            >
+              <div className="flex items-start gap-3">
+                <span
+                  className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg ${m.iconClass}`}
+                >
+                  <m.icon className="h-4 w-4" aria-hidden />
+                </span>
+                <div className="min-w-0">
+                  <p className="text-[11px] font-semibold uppercase tracking-wide text-sage-600">
+                    {m.label}
+                  </p>
+                  <p className="mt-0.5 font-display text-xl font-bold text-forest-900">
+                    {m.value}
+                    {m.suffix ? (
+                      <span className="text-sm font-medium text-sage-500">
+                        {m.suffix}
+                      </span>
+                    ) : null}
+                  </p>
+                  <p className="mt-0.5 text-xs text-sage-500">{m.hint}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-        <div>
-          <p className="text-xs text-sage-500">Solar offset potential</p>
-          <p className="font-display text-lg font-bold text-forest-800">
-            ~${estimate.solarOffsetAnnual.toLocaleString()}/yr
-          </p>
-        </div>
-        <div>
-          <p className="text-xs text-sage-500">Est. federal tax credit</p>
-          <p className="font-display text-lg font-bold text-forest-800">
-            ~${estimate.federalTaxCreditEstimate.toLocaleString()}
-          </p>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          <Link
+            href="/marketplace"
+            className="inline-flex items-center gap-1.5 rounded-full bg-forest-700 px-4 py-2 text-sm font-semibold text-white hover:bg-forest-800"
+          >
+            Shop eco upgrades
+            <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+          <Link
+            href="/guides/incentives"
+            className="inline-flex items-center gap-1.5 rounded-full border border-amber-300 bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-900 hover:bg-amber-100"
+          >
+            View incentives
+          </Link>
         </div>
       </div>
     </div>
