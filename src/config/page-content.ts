@@ -281,6 +281,19 @@ export function buildPageContent(
     href.includes("building-codes") ||
     href === "/store";
 
+  const productsForPage =
+    href === "/passive-house-products"
+      ? passiveHouseContentOverrides["/passive-house-products"]?.products
+      : category === "marketplace"
+        ? marketplaceProducts[slug] ?? defaultProducts(label)
+        : category === "passive-house" &&
+            !isComingSoon &&
+            href !== "/passive-house-calculators" &&
+            href !== "/passive-house-faq" &&
+            href !== "/passive-house"
+          ? passiveHouseContentOverrides["/passive-house-products"]?.products
+          : undefined;
+
   const merged: PageContent = {
     intro: description,
     highlights: [
@@ -290,12 +303,7 @@ export function buildPageContent(
       category === "passive-house" ? "Research-backed education" : "Free resources and tools available",
     ],
     features: defaultFeatures(label, category),
-    products:
-      href === "/passive-house-products"
-        ? passiveHouseContentOverrides["/passive-house-products"]?.products
-        : category === "marketplace"
-          ? marketplaceProducts[slug] ?? defaultProducts(label)
-          : undefined,
+    products: productsForPage,
     steps: defaultSteps(category).length > 0 ? defaultSteps(category) : undefined,
     timeline: undefined,
     tips: defaultTips(label, category).length > 0 ? defaultTips(label, category) : undefined,
@@ -307,22 +315,25 @@ export function buildPageContent(
           ? "Book Consultation"
           : "Explore Products",
     ctaHref:
-      category === "marketplace"
+      category === "marketplace" || category === "passive-house"
         ? "#products"
-        : category === "passive-house"
-          ? "/passive-house-products"
-          : "#get-started",
+        : "#get-started",
     ...override,
   };
 
+  // Prefer in-page scroll to products when that section exists
+  if (
+    (merged.ctaLabel === "Explore Products" ||
+      merged.ctaLabel === "View Products") &&
+    merged.products &&
+    merged.products.length > 0
+  ) {
+    merged.ctaHref = "#products";
+  }
+
   // Avoid dead in-page anchors when the target section isn't rendered
   if (merged.ctaHref === "#get-started" && !merged.steps?.length) {
-    merged.ctaHref =
-      category === "passive-house"
-        ? "/passive-house-products"
-        : merged.products?.length
-          ? "#products"
-          : "/marketplace";
+    merged.ctaHref = merged.products?.length ? "#products" : "/marketplace";
   }
   if (merged.ctaHref === "#products" && !merged.products?.length) {
     merged.ctaHref =

@@ -98,7 +98,18 @@ export function CTAButton({ label, href, category }: CTAButtonProps) {
 
   if (href.startsWith("#")) {
     return (
-      <a href={href} className={className}>
+      <a
+        href={href}
+        className={className}
+        onClick={(e) => {
+          const id = href.slice(1);
+          const el = document.getElementById(id);
+          if (!el) return;
+          e.preventDefault();
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+          window.history.replaceState(null, "", href);
+        }}
+      >
         {label}
         <ArrowRight className="h-4 w-4" />
       </a>

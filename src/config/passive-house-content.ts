@@ -6,6 +6,18 @@ import { extractAsin } from "@/lib/affiliate-stores";
 const catalog = catalogJson as Record<string, PageProduct[]>;
 
 /** Prefer catalog entries (with images), then static marketplace products. */
+export function getPassiveHouseProductPicks(): PageProduct[] {
+  return pickProducts(
+    "heat-pumps",
+    "smart-thermostats",
+    "solar",
+    "air-purifiers",
+    "smart-home",
+    "water-fixtures",
+    "eco-paints"
+  );
+}
+
 function pickProducts(...slugs: string[]) {
   const picked: PageProduct[] = [];
   const seen = new Set<string>();
@@ -77,8 +89,8 @@ export const passiveHouseContentOverrides: Partial<Record<string, Partial<PageCo
       { title: "Thermal Bridge Free", description: "Detail every junction — slab edges, balconies, roof connections — so heat cannot shortcut through the insulation." },
       { title: "Heat Recovery Ventilation", description: "Balanced ERV/HRV systems deliver filtered fresh air while recovering up to 90%+ of exhaust heat." },
     ],
-    ctaLabel: "View Products",
-    ctaHref: "/passive-house-products",
+    ctaLabel: "Explore Products",
+    ctaHref: "#products",
   },
   "/passive-house-products": {
     intro:
@@ -98,8 +110,8 @@ export const passiveHouseContentOverrides: Partial<Record<string, Partial<PageCo
       "Ventilation: select ERV/HRV with ≥75% sensible recovery and F7+ filtration",
       "Heat pumps: size to peak load, not conventional oversizing rules",
     ],
-    ctaLabel: "Shop Marketplace",
-    ctaHref: "/marketplace/passive-house-materials",
+    ctaLabel: "Explore Products",
+    ctaHref: "#products",
   },
   "/passive-house-calculators": {
     intro:
