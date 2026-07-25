@@ -1,8 +1,41 @@
-import type { PageContent } from "./page-content";
+import type { PageContent, PageProduct } from "./page-content";
 import { marketplaceProducts } from "./marketplace-products";
+import catalogJson from "@/data/marketplace-catalog.json";
+import { extractAsin } from "@/lib/affiliate-stores";
 
+const catalog = catalogJson as Record<string, PageProduct[]>;
+
+/** Prefer catalog entries (with images), then static marketplace products. */
 function pickProducts(...slugs: string[]) {
-  return slugs.flatMap((s) => marketplaceProducts[s] ?? []).slice(0, 12);
+  const picked: PageProduct[] = [];
+  const seen = new Set<string>();
+
+  for (const slug of slugs) {
+    const sources = [...(catalog[slug] ?? []), ...(marketplaceProducts[slug] ?? [])];
+    let taken = 0;
+    for (const product of sources) {
+      const asin =
+        extractAsin(product.amazonAsin) ||
+        extractAsin(product.amazonUrl) ||
+        extractAsin(product.affiliateUrl);
+      const key = asin || `${slug}::${product.name}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      picked.push({
+        ...product,
+        amazonAsin: asin ?? product.amazonAsin,
+        imageUrl:
+          product.imageUrl ||
+          (asin
+            ? `https://m.media-amazon.com/images/P/${asin}.01._SL400_.jpg`
+            : undefined),
+      });
+      taken += 1;
+      if (taken >= 2) break;
+    }
+  }
+
+  return picked.slice(0, 14);
 }
 
 /** Rich content overrides for Passive House education hub pages */

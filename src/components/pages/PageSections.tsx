@@ -9,7 +9,9 @@ import type { NavLink } from "@/config/navigation";
 import type { PageCategory } from "@/lib/navigation-utils";
 import { getCategoryAccent } from "@/config/page-content";
 import { resolveProductAffiliateUrl, affiliateRel } from "@/lib/affiliate";
+import { getProductImage } from "@/lib/affiliate-stores";
 import type { EnergyEstimate } from "@/lib/energy-estimate";
+import type { PageProduct } from "@/config/page-content";
 
 export function SectionHeading({
   title,
@@ -171,43 +173,43 @@ export function FeatureGrid({
 export function ProductGrid({
   products,
 }: {
-  products: {
-    name: string;
-    description: string;
-    tag?: string;
-    priceRange?: string;
-    amazonUrl?: string;
-    amazonQuery?: string;
-    amazonAsin?: string;
-  }[];
+  products: PageProduct[];
 }) {
   return (
     <div id="products" className="grid gap-5 sm:grid-cols-2">
       {products.map((product) => {
         const affiliateUrl = resolveProductAffiliateUrl(product);
+        const imageSrc = getProductImage(product);
 
         return (
           <div
             key={product.name}
             className="group relative flex flex-col overflow-hidden rounded-2xl border border-sage-200/80 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-forest-900/8"
           >
-            <div className="border-b border-sage-100 bg-gradient-to-br from-forest-50/50 to-sage-50/30 px-5 py-4">
-              <div className="flex items-start justify-between gap-3">
+            <div className="relative aspect-[4/3] overflow-hidden bg-sage-50">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={imageSrc}
+                alt={product.name}
+                className="h-full w-full object-contain p-4 transition-transform duration-300 group-hover:scale-[1.03]"
+                loading="lazy"
+              />
+              <div className="absolute left-3 top-3 flex items-start justify-between gap-2">
                 {product.tag ? (
-                  <span className="inline-block rounded-full bg-forest-600 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">
+                  <span className="inline-block rounded-full bg-forest-600 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
                     {product.tag}
                   </span>
                 ) : (
-                  <span className="inline-block rounded-full bg-sage-100 px-2.5 py-0.5 text-[10px] font-bold uppercase text-sage-600">
+                  <span className="inline-block rounded-full bg-white/90 px-2.5 py-0.5 text-[10px] font-bold uppercase text-sage-600 shadow-sm backdrop-blur">
                     Eco Pick
                   </span>
                 )}
-                {product.priceRange && (
-                  <span className="shrink-0 rounded-lg bg-white px-2.5 py-1 text-xs font-semibold text-sage-600 shadow-sm">
-                    {product.priceRange}
-                  </span>
-                )}
               </div>
+              {product.priceRange && (
+                <span className="absolute right-3 top-3 rounded-lg bg-white/95 px-2.5 py-1 text-xs font-semibold text-sage-600 shadow-sm backdrop-blur">
+                  {product.priceRange}
+                </span>
+              )}
             </div>
             <div className="flex flex-1 flex-col p-5">
               <h3 className="font-display text-base font-semibold text-forest-900 group-hover:text-forest-600 transition-colors">

@@ -56,6 +56,34 @@ export function amazonImageFromAsin(asin: string): string {
   return `https://m.media-amazon.com/images/P/${asin}.01._SL400_.jpg`;
 }
 
+const ASIN_PATTERN = /^[A-Z0-9]{10}$/i;
+
+/** Pull an ASIN from a raw ASIN or Amazon product URL. */
+export function extractAsin(value?: string): string | undefined {
+  if (!value) return undefined;
+  const trimmed = value.trim();
+  if (ASIN_PATTERN.test(trimmed)) return trimmed.toUpperCase();
+
+  const patterns = [
+    /\/dp\/([A-Z0-9]{10})/i,
+    /\/gp\/product\/([A-Z0-9]{10})/i,
+    /\/gp\/aw\/d\/([A-Z0-9]{10})/i,
+  ];
+  for (const pattern of patterns) {
+    const match = trimmed.match(pattern);
+    if (match) return match[1].toUpperCase();
+  }
+  return undefined;
+}
+
+export function resolveProductAsin(product: PageProduct): string | undefined {
+  return (
+    extractAsin(product.amazonAsin) ||
+    extractAsin(product.amazonUrl) ||
+    extractAsin(product.affiliateUrl)
+  );
+}
+
 export const PLACEHOLDER_IMAGE = "/images/product-placeholder.svg";
 
 const CATEGORY_IMAGES: Record<string, string> = {
@@ -123,7 +151,8 @@ export function getProductImage(product: PageProduct, slug?: string): string {
   if (product.imageUrl && !isPlaceholderImage(product.imageUrl)) {
     return product.imageUrl;
   }
-  if (product.amazonAsin) return amazonImageFromAsin(product.amazonAsin);
+  const asin = resolveProductAsin(product);
+  if (asin) return amazonImageFromAsin(asin);
   return categoryImageForSlug(slug);
 }
 

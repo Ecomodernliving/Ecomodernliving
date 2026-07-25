@@ -6,6 +6,7 @@
  */
 
 import type { PageProduct } from "./page-content";
+import { extractAsin } from "@/lib/affiliate-stores";
 
 function product(
   name: string,
@@ -13,7 +14,17 @@ function product(
   description = "Curated eco-friendly pick for sustainable modern homes.",
   tag?: string
 ): PageProduct {
-  return { name, amazonUrl, description, tag: tag || undefined };
+  const amazonAsin = extractAsin(amazonUrl);
+  return {
+    name,
+    amazonUrl,
+    description,
+    tag: tag || undefined,
+    amazonAsin,
+    imageUrl: amazonAsin
+      ? `https://m.media-amazon.com/images/P/${amazonAsin}.01._SL400_.jpg`
+      : undefined,
+  };
 }
 
 export const marketplaceProducts: Record<string, PageProduct[]> = {
