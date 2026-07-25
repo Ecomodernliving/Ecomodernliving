@@ -27,11 +27,8 @@ type EmailLayoutOptions = {
   previewText?: string;
 };
 
-const TAGLINE =
-  "Sustainable living, curated eco products &amp; passive house education.";
-
 /**
- * Industry-standard HTML email chrome: branded header + site-matched footer.
+ * Industry-standard HTML email chrome: branded header + compact site footer.
  */
 export function wrapEmailHtml(
   bodyHtml: string,
@@ -45,15 +42,6 @@ export function wrapEmailHtml(
   const year = new Date().getFullYear();
   const contactHref = `${siteUrl}/contact`;
 
-  const socialEntries = [
-    { label: "YouTube", href: siteConfig.social.youtube },
-    { label: "Instagram", href: siteConfig.social.instagram },
-    { label: "Facebook", href: siteConfig.social.facebook },
-    { label: "LinkedIn", href: siteConfig.social.linkedin },
-    { label: "TikTok", href: siteConfig.social.tiktok },
-    { label: "Pinterest", href: siteConfig.social.pinterest },
-  ];
-
   const footerLinks = [
     ...legalLinks.map((l) => ({ label: l.label, href: `${siteUrl}${l.href}` })),
     ...utilityLinks.map((l) => ({
@@ -63,22 +51,13 @@ export function wrapEmailHtml(
     { label: "Unsubscribe", href: unsubscribeUrl },
   ];
 
-  const linkStyle =
-    "color:#a8b89a;text-decoration:none;font-size:12px;white-space:nowrap;";
   const mutedLinkStyle =
     "color:#788862;text-decoration:none;font-size:12px;white-space:nowrap;";
-
-  const socialHtml = socialEntries
-    .map(
-      (s, i) =>
-        `${i > 0 ? '&nbsp;·&nbsp;' : ""}<a href="${s.href}" style="${linkStyle}">${s.label}</a>`
-    )
-    .join("");
 
   const legalHtml = footerLinks
     .map(
       (l, i) =>
-        `${i > 0 ? '&nbsp;·&nbsp;' : ""}<a href="${l.href}" style="${mutedLinkStyle}">${l.label === "Terms of Service" ? "Terms &amp; Conditions" : l.label}</a>`
+        `${i > 0 ? "&nbsp;·&nbsp;" : ""}<a href="${l.href}" style="${mutedLinkStyle}">${l.label === "Terms of Service" ? "Terms &amp; Conditions" : l.label}</a>`
     )
     .join("");
 
@@ -122,25 +101,7 @@ export function wrapEmailHtml(
 
           ${reasonHtml ? `<tr><td style="padding:0 28px 8px;">${reasonHtml}</td></tr>` : ""}
 
-          <!-- Footer (matches site footer) -->
-          <tr>
-            <td style="background:#0e2119;padding:28px 24px 20px;text-align:center;">
-              <a href="${siteUrl}" style="text-decoration:none;display:inline-block;">
-                <img src="${logoUrl}" alt="" width="36" height="36" style="display:block;margin:0 auto 8px;border:0;border-radius:8px;" />
-                <span style="font-size:15px;font-weight:700;color:#ffffff;letter-spacing:-0.02em;">EcoModern</span><span style="font-size:15px;font-weight:300;color:#a8b89a;"> Living</span>
-              </a>
-              <p style="margin:10px 0 0;font-size:12px;line-height:1.5;color:#788862;">
-                ${TAGLINE}
-              </p>
-
-              <p style="margin:20px 0 8px;font-size:10px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#5e6c4d;">
-                Follow us
-              </p>
-              <p style="margin:0;line-height:1.8;">
-                ${socialHtml}
-              </p>
-            </td>
-          </tr>
+          <!-- Footer -->
           <tr>
             <td style="background:#0a1a14;padding:18px 24px 24px;text-align:center;border-top:1px solid #1a3328;">
               <p style="margin:0 0 10px;font-size:12px;color:#788862;">

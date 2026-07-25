@@ -7,14 +7,31 @@ import {
 } from "@/lib/email/newsletter-welcome";
 import {
   getSubscriber,
+  markConfirmationEmailed,
+  shouldResendConfirmation,
   subscribeEmail,
   unsubscribeEmail,
+  type NewsletterSubscriber,
 } from "@/lib/newsletter/subscribers";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-const ALREADY_MESSAGE =
-  "You're already subscribed to EcoModern Living tips.";
+async function sendConfirmation(
+  email: string,
+  existing?: NewsletterSubscriber | null
+): Promise<{ ok: true; resent: boolean } | { ok: false; error: string }> {
+  if (existing?.status === "subscribed" && !shouldResendConfirmation(existing)) {
+    return { ok: true, resent: false };
+  }
+
+  const welcome = await sendNewsletterWelcomeEmail(email);
+  if (!welcome.ok) {
+    return { ok: false, error: welcome.error };
+  }
+
+  await markConfirmationEmailed(email);
+  return { ok: true, resent: Boolean(existing?.status === "subscribed") };
+}
 
 export async function POST(request: Request) {
   try {
@@ -29,21 +46,47 @@ export async function POST(request: Request) {
     }
 
     const existing = await getSubscriber(email);
+
     if (existing?.status === "subscribed") {
+      const sent = await sendConfirmation(email, existing);
+      if (!sent.ok) {
+        return NextResponse.json(
+          {
+            error: sent.error,
+            hint: "Check RESEND_API_KEY / RESEND_FROM_EMAIL in Vercel env and redeploy.",
+          },
+          { status: 503 }
+        );
+      }
+
       return NextResponse.json({
         ok: true,
         alreadySubscribed: true,
-        message: ALREADY_MESSAGE,
+        emailed: sent.resent,
+        message: sent.resent
+          ? "You're already subscribed - we sent another confirmation to your inbox (check spam)."
+          : "You're already subscribed to EcoModern Living tips. Check your inbox/spam for the confirmation we sent earlier.",
       });
     }
 
     // Claim the address before emailing so a second submit sees "already subscribed".
     const claimed = await subscribeEmail(email);
     if (claimed.alreadySubscribed) {
+      const sent = await sendConfirmation(email, {
+        email,
+        status: "subscribed",
+        subscribedAt: new Date().toISOString(),
+      });
+      if (!sent.ok) {
+        return NextResponse.json({ error: sent.error }, { status: 503 });
+      }
       return NextResponse.json({
         ok: true,
         alreadySubscribed: true,
-        message: ALREADY_MESSAGE,
+        emailed: sent.resent,
+        message: sent.resent
+          ? "You're already subscribed - we sent another confirmation to your inbox (check spam)."
+          : "You're already subscribed to EcoModern Living tips.",
       });
     }
 
@@ -57,11 +100,13 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           error: welcome.error,
-          hint: "Check RESEND_API_KEY / RESEND_FROM_EMAIL in .env.local and restart the server.",
+          hint: "Check RESEND_API_KEY / RESEND_FROM_EMAIL in .env.local / Vercel and restart or redeploy.",
         },
         { status: 503 }
       );
     }
+
+    await markConfirmationEmailed(email);
 
     const formspreeConfigured = !!getFormspreeEndpoint("newsletter");
     if (formspreeConfigured) {

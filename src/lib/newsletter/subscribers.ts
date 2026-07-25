@@ -9,6 +9,7 @@ export type NewsletterSubscriber = {
   status: SubscriberStatus;
   subscribedAt: string;
   unsubscribedAt?: string;
+  lastEmailedAt?: string;
 };
 
 type SubscribersDB = {
@@ -46,6 +47,10 @@ async function ensureNewsletterSchema(): Promise<void> {
       unsubscribed_at TIMESTAMPTZ
     )
   `;
+  await sql`
+    ALTER TABLE newsletter_subscribers
+    ADD COLUMN IF NOT EXISTS last_emailed_at TIMESTAMPTZ
+  `;
 }
 
 function normalizeEmail(email: string): string {
@@ -61,7 +66,7 @@ export async function getSubscriber(
     await ensureNewsletterSchema();
     const sql = getSql();
     const rows = (await sql`
-      SELECT email, status, subscribed_at, unsubscribed_at
+      SELECT email, status, subscribed_at, unsubscribed_at, last_emailed_at
       FROM newsletter_subscribers
       WHERE email = ${normalized}
       LIMIT 1
@@ -70,6 +75,7 @@ export async function getSubscriber(
       status: string;
       subscribed_at: string | Date;
       unsubscribed_at: string | Date | null;
+      last_emailed_at: string | Date | null;
     }>;
 
     const row = rows[0];
@@ -86,6 +92,11 @@ export async function getSubscriber(
         ? row.unsubscribed_at instanceof Date
           ? row.unsubscribed_at.toISOString()
           : new Date(row.unsubscribed_at).toISOString()
+        : undefined,
+      lastEmailedAt: row.last_emailed_at
+        ? row.last_emailed_at instanceof Date
+          ? row.last_emailed_at.toISOString()
+          : new Date(row.last_emailed_at).toISOString()
         : undefined,
     };
   }
@@ -173,4 +184,43 @@ export async function unsubscribeEmail(email: string): Promise<void> {
     });
   }
   await fsWriteDB(db);
+}
+
+/** Record that a confirmation email was sent (for rate-limiting resends). */
+export async function markConfirmationEmailed(email: string): Promise<void> {
+  const normalized = normalizeEmail(email);
+  const now = new Date().toISOString();
+
+  if (isDbConfigured()) {
+    await ensureNewsletterSchema();
+    const sql = getSql();
+    await sql`
+      UPDATE newsletter_subscribers
+      SET last_emailed_at = now()
+      WHERE email = ${normalized}
+    `;
+    return;
+  }
+
+  const db = await fsReadDB();
+  const idx = db.subscribers.findIndex((s) => s.email === normalized);
+  if (idx >= 0) {
+    db.subscribers[idx] = {
+      ...db.subscribers[idx],
+      lastEmailedAt: now,
+    };
+    await fsWriteDB(db);
+  }
+}
+
+const RESEND_COOLDOWN_MS = 2 * 60 * 1000; // 2 minutes
+
+/** Whether we should send another confirmation for an existing subscriber. */
+export function shouldResendConfirmation(
+  subscriber: NewsletterSubscriber
+): boolean {
+  if (!subscriber.lastEmailedAt) return true;
+  const last = Date.parse(subscriber.lastEmailedAt);
+  if (Number.isNaN(last)) return true;
+  return Date.now() - last >= RESEND_COOLDOWN_MS;
 }
