@@ -1,4 +1,5 @@
 import type { EnergyEstimate } from "@/lib/energy-estimate";
+import { sendResendEmail } from "@/lib/email/resend";
 
 function auditEmailHtml(estimate: EnergyEstimate, email: string): string {
   return `
@@ -41,29 +42,10 @@ export async function sendAuditEstimateEmail(
   email: string,
   estimate: EnergyEstimate
 ): Promise<boolean> {
-  const apiKey = process.env.RESEND_API_KEY;
-  const from =
-    process.env.RESEND_FROM_EMAIL ??
-    "EcoModern Living <onboarding@resend.dev>";
-
-  if (!apiKey) return false;
-
-  try {
-    const response = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from,
-        to: [email],
-        subject: "Your EcoModern Living Energy Savings Estimate",
-        html: auditEmailHtml(estimate, email),
-      }),
-    });
-    return response.ok;
-  } catch {
-    return false;
-  }
+  const result = await sendResendEmail({
+    to: email,
+    subject: "Your EcoModern Living Energy Savings Estimate",
+    html: auditEmailHtml(estimate, email),
+  });
+  return result.ok;
 }

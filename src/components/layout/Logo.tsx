@@ -24,7 +24,7 @@ export function LogoMark({
       alt={title}
       priority={priority}
       sizes="48px"
-      className={clsx("h-12 w-12 object-contain", className)}
+      className={clsx("object-contain", className ?? "h-12 w-12")}
     />
   );
 }
@@ -50,12 +50,15 @@ export function Logo({
   priority,
 }: LogoProps) {
   return (
-    <span className={clsx("inline-flex items-center gap-2", className)}>
-      <LogoMark className={markClassName} priority={priority} />
+    <span className={clsx("inline-flex min-w-0 items-center gap-1.5 sm:gap-2", className)}>
+      <LogoMark
+        className={clsx("h-10 w-10 sm:h-12 sm:w-12", markClassName)}
+        priority={priority}
+      />
       {withWordmark && (
         <span
           className={clsx(
-            "font-display text-[17px] leading-none tracking-tight",
+            "font-display text-[15px] leading-none tracking-tight sm:text-[17px]",
             responsiveWordmark && "hidden sm:inline-block"
           )}
         >

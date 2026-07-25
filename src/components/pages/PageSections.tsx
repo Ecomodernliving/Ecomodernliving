@@ -565,32 +565,36 @@ export function ContactForm() {
 }
 
 export function NewsletterForm() {
+  const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [error, setError] = useState("");
-  const [successMessage, setSuccessMessage] = useState(
-    "You're subscribed! Watch your inbox for eco tips and product picks."
-  );
+  const [successMessage, setSuccessMessage] = useState("");
+  const [alreadySubscribed, setAlreadySubscribed] = useState(false);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("loading");
     setError("");
+    setAlreadySubscribed(false);
+    setSuccessMessage("");
 
-    const form = e.currentTarget;
-    const data = new FormData(form);
     const response = await fetch("/api/forms/newsletter", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        email: String(data.get("email") ?? ""),
-      }),
+      body: JSON.stringify({ email }),
     });
 
     const result = await response.json();
     if (response.ok && result.ok) {
+      const already = Boolean(result.alreadySubscribed);
+      setAlreadySubscribed(already);
+      setSuccessMessage(
+        result.message ??
+          (already
+            ? "You're already subscribed to EcoModern Living tips."
+            : "You're subscribed! Check your inbox (and spam) for a confirmation from EcoModern Living.")
+      );
       setStatus("success");
-      if (result.message) setSuccessMessage(result.message);
-      form.reset();
     } else {
       setStatus("error");
       setError(result.error ?? "Something went wrong. Please try again.");
@@ -604,16 +608,32 @@ export function NewsletterForm() {
           name="email"
           type="email"
           required
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+            if (status === "success" || status === "error") {
+              setStatus("idle");
+              setError("");
+              setSuccessMessage("");
+              setAlreadySubscribed(false);
+            }
+          }}
           placeholder="Enter your email"
-          disabled={status === "loading" || status === "success"}
+          disabled={status === "loading"}
           className="flex-1 rounded-full border border-sage-200 bg-white px-5 py-3 text-sm text-sage-800 placeholder:text-sage-400 focus:border-forest-400 focus:outline-none focus:ring-2 focus:ring-forest-100 disabled:opacity-60"
         />
         <button
           type="submit"
-          disabled={status === "loading" || status === "success"}
+          disabled={status === "loading"}
           className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-forest-600 px-6 py-3 text-sm font-semibold text-white shadow-md hover:bg-forest-700 transition-colors disabled:opacity-60"
         >
-          {status === "loading" ? "Subscribing…" : status === "success" ? "Subscribed!" : "Subscribe Free"}
+          {status === "loading"
+            ? "Subscribing…"
+            : status === "success"
+              ? alreadySubscribed
+                ? "Already subscribed"
+                : "Subscribed!"
+              : "Subscribe Free"}
           <ArrowRight className="h-4 w-4" />
         </button>
       </form>

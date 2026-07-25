@@ -195,9 +195,9 @@ const phCards = [
 export default function HomePage() {
   return (
     <>
-      {/* Hero — industry-standard full-bleed with dimmed scrim */}
+      {/* Hero — full-bleed image with stacked content (no absolute overlap on mobile) */}
       <section className="hero-fullbleed relative w-full overflow-hidden">
-        <div className="relative h-[clamp(420px,72svh,760px)] w-full">
+        <div className="relative flex min-h-[min(100svh,760px)] w-full flex-col justify-between sm:min-h-[clamp(520px,72svh,760px)]">
           <Image
             src="/images/hero-passive-house.jpg"
             alt="Modern eco passive house at dusk with solar panels, green roof, triple-glazed windows, and sustainable landscaping"
@@ -209,14 +209,14 @@ export default function HomePage() {
 
           <div className="hero-scrim hero-scrim-center absolute inset-0 z-[1]" aria-hidden="true" />
 
-          <div className="absolute inset-0 z-[2] flex items-center justify-center px-4 pb-36 sm:px-6 sm:pb-40 md:pb-32 lg:px-8 lg:pb-36">
+          <div className="relative z-[2] flex flex-1 flex-col items-center justify-center px-4 pb-6 pt-10 sm:px-6 sm:pb-8 sm:pt-12 lg:px-8">
             <div className="w-full max-w-4xl text-center">
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3.5 py-1.5 text-xs font-semibold text-white/95 shadow-sm backdrop-blur-sm">
-                <span className="relative flex h-2 w-2">
+              <div className="inline-flex max-w-full items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3.5 py-1.5 text-xs font-semibold text-white/95 shadow-sm backdrop-blur-sm">
+                <span className="relative flex h-2 w-2 shrink-0">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
                 </span>
-                Sustainable solutions for modern living
+                <span className="truncate">Sustainable solutions for modern living</span>
               </div>
 
               <h1 className="mt-4 font-display text-[1.75rem] font-bold leading-[1.1] tracking-tight text-white min-[400px]:text-3xl sm:text-4xl lg:text-5xl lg:leading-tight">
@@ -224,43 +224,45 @@ export default function HomePage() {
                 <span className="text-gradient-light">Live greener.</span>
               </h1>
 
-              <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
+              <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/85 min-[400px]:text-base sm:text-lg">
                 AI-powered tools, curated eco products, and expert passive house
                 education — everything you need for a sustainable modern home.
               </p>
 
-              <div className="mt-7 flex flex-wrap items-center justify-center gap-3 sm:mt-8">
+              <div className="mt-6 flex flex-col items-stretch justify-center gap-3 min-[400px]:flex-row min-[400px]:flex-wrap min-[400px]:items-center sm:mt-8">
                 <Link
                   href="/ai/energy-audit"
-                  className="inline-flex items-center gap-2 rounded-full bg-forest-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-black/25 hover:bg-forest-400 hover:-translate-y-0.5 transition-all"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-forest-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-black/25 hover:bg-forest-400 hover:-translate-y-0.5 transition-all sm:px-6"
                 >
-                  <Zap className="h-4 w-4" />
+                  <Zap className="h-4 w-4 shrink-0" />
                   Free Energy Audit
                 </Link>
                 <Link
                   href="/passive-house"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/20 transition-all"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/20 transition-all sm:px-6"
                 >
                   Passive House Guide
-                  <ArrowRight className="h-4 w-4" />
+                  <ArrowRight className="h-4 w-4 shrink-0" />
                 </Link>
               </div>
             </div>
           </div>
 
-          <div className="absolute inset-x-0 bottom-0 z-[3] bg-gradient-to-t from-forest-950/90 via-forest-950/55 to-transparent px-3 pb-3 pt-8 sm:px-6 sm:pb-4 sm:pt-10 lg:px-8 lg:pt-12">
-            <div className="mx-auto grid max-w-7xl grid-cols-2 gap-x-3 gap-y-4 sm:grid-cols-3 sm:gap-x-4 md:grid-cols-6 md:gap-y-5">
+          <div className="relative z-[3] bg-gradient-to-t from-forest-950/90 via-forest-950/55 to-transparent px-3 pb-4 pt-6 sm:px-6 sm:pb-5 sm:pt-8 lg:px-8 lg:pt-10">
+            <div className="mx-auto grid max-w-7xl grid-cols-2 gap-x-3 gap-y-5 sm:grid-cols-3 sm:gap-x-4 sm:gap-y-5 md:grid-cols-6 md:gap-y-5">
               {heroBadges.map((badge) => (
-                <div key={badge.title} className="flex flex-col items-center text-center">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/25 bg-forest-800 shadow-lg sm:h-12 sm:w-12">
+                <div key={badge.title} className="flex flex-col items-center gap-2 text-center">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/25 bg-forest-800 shadow-lg sm:h-12 sm:w-12">
                     <badge.icon className="h-4 w-4 text-white sm:h-5 sm:w-5" strokeWidth={1.5} aria-hidden="true" />
                   </div>
-                  <p className="mt-1.5 text-[10px] font-bold uppercase leading-tight tracking-wide text-white sm:mt-2 sm:text-xs">
-                    {badge.title}
-                  </p>
-                  <p className="mt-0.5 hidden text-[10px] leading-snug text-white/75 sm:block sm:text-[11px]">
-                    {badge.description}
-                  </p>
+                  <div className="min-w-0">
+                    <p className="text-[10px] font-bold uppercase leading-snug tracking-wide text-white sm:text-xs">
+                      {badge.title}
+                    </p>
+                    <p className="mt-0.5 hidden text-[10px] leading-snug text-white/75 sm:block sm:text-[11px]">
+                      {badge.description}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>

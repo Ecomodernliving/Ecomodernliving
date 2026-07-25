@@ -1,12 +1,25 @@
 import { NextResponse } from "next/server";
+import { getFormspreeEndpoint } from "@/lib/formspree";
 import { submitFormspreeServer } from "@/lib/email/formspree-server";
+import {
+  notifyAdminOfNewsletterSignup,
+  sendNewsletterWelcomeEmail,
+} from "@/lib/email/newsletter-welcome";
+import {
+  getSubscriber,
+  subscribeEmail,
+  unsubscribeEmail,
+} from "@/lib/newsletter/subscribers";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+const ALREADY_MESSAGE =
+  "You're already subscribed to EcoModern Living tips.";
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const email = String(body.email ?? "").trim();
+    const email = String(body.email ?? "").trim().toLowerCase();
 
     if (!email || !EMAIL_RE.test(email)) {
       return NextResponse.json(
@@ -15,21 +28,67 @@ export async function POST(request: Request) {
       );
     }
 
-    const result = await submitFormspreeServer("newsletter", {
-      email,
-      _replyto: email,
-      _subject: "EcoModern Living — Newsletter signup",
-    });
+    const existing = await getSubscriber(email);
+    if (existing?.status === "subscribed") {
+      return NextResponse.json({
+        ok: true,
+        alreadySubscribed: true,
+        message: ALREADY_MESSAGE,
+      });
+    }
 
-    if (!result.ok) {
-      return NextResponse.json({ error: result.message }, { status: 502 });
+    // Claim the address before emailing so a second submit sees "already subscribed".
+    const claimed = await subscribeEmail(email);
+    if (claimed.alreadySubscribed) {
+      return NextResponse.json({
+        ok: true,
+        alreadySubscribed: true,
+        message: ALREADY_MESSAGE,
+      });
+    }
+
+    const welcome = await sendNewsletterWelcomeEmail(email);
+    if (!welcome.ok) {
+      try {
+        await unsubscribeEmail(email);
+      } catch (err) {
+        console.warn("[newsletter] rollback after email failure failed:", err);
+      }
+      return NextResponse.json(
+        {
+          error: welcome.error,
+          hint: "Check RESEND_API_KEY / RESEND_FROM_EMAIL in .env.local and restart the server.",
+        },
+        { status: 503 }
+      );
+    }
+
+    const formspreeConfigured = !!getFormspreeEndpoint("newsletter");
+    if (formspreeConfigured) {
+      const result = await submitFormspreeServer("newsletter", {
+        email,
+        _replyto: email,
+        _subject: "EcoModern Living — Newsletter signup",
+      });
+      if (!result.ok) {
+        console.warn("[newsletter] Formspree capture failed:", result.message);
+      }
+    } else {
+      const notified = await notifyAdminOfNewsletterSignup(email);
+      if (!notified.ok) {
+        console.warn("[newsletter] Admin notify failed:", notified.error);
+      }
     }
 
     return NextResponse.json({
       ok: true,
-      message: "You're subscribed! Watch your inbox for eco tips and product picks.",
+      emailed: true,
+      alreadySubscribed: false,
+      message:
+        "You're subscribed! Check your inbox (and spam) for a confirmation from EcoModern Living.",
     });
-  } catch {
+  } catch (err) {
+    console.error("[newsletter] subscribe failed:", err);
     return NextResponse.json(
       { error: "Unable to subscribe. Please try again." },
       { status: 500 }

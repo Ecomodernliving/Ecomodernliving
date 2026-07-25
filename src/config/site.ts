@@ -7,6 +7,10 @@ export const siteConfig = {
   name: "EcoModern Living",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ecomodernliving.ai",
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@ecomodernliving.ai",
+  /** Shown in email footers (CAN-SPAM). Override with a real postal address when available. */
+  mailingAddress:
+    process.env.NEXT_PUBLIC_MAILING_ADDRESS?.trim() ||
+    "EcoModern Living · hello@ecomodernliving.ai · United States",
 
   amazonAffiliateTag:
     process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG || "ecomodernliving-20",

@@ -174,8 +174,8 @@ export function Header() {
       >
         <div className="relative mx-auto max-w-7xl px-4 lg:px-6">
           <div className="flex h-16 items-center gap-6 lg:h-[4.25rem]">
-            <Link href="/" className="group flex shrink-0 items-center" aria-label="EcoModern Living home">
-              <Logo responsiveWordmark priority />
+            <Link href="/" className="group flex min-w-0 shrink items-center" aria-label="EcoModern Living home">
+              <Logo priority />
             </Link>
 
             <nav className="hidden flex-1 items-center justify-center lg:flex">

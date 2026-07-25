@@ -34,6 +34,7 @@ yarn-error.log*
 
 # local user accounts (auth)
 /data/users.json
+/data/newsletter-subscribers.json
 
 # typescript
 *.tsbuildinfo
