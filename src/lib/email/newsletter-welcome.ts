@@ -56,6 +56,7 @@ export async function sendNewsletterWelcomeEmail(
     to: email,
     subject: "You're subscribed — EcoModern Living tips",
     html,
+    replyTo: ADMIN_EMAIL,
     headers: {
       "List-Unsubscribe": `<${getUnsubscribeUrl(email)}>, <${getUnsubscribeApiUrl(email)}>`,
       "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",

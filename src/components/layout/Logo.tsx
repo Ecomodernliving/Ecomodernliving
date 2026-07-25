@@ -34,7 +34,7 @@ type LogoProps = {
   theme?: "light" | "dark";
   /** Show the "EcoModern Living" wordmark next to the mark. */
   withWordmark?: boolean;
-  /** Hide the wordmark below the `sm` breakpoint (used in the header). */
+  /** Hide the wordmark between `lg` and `xl` so the desktop nav has room (still shown on mobile). */
   responsiveWordmark?: boolean;
   className?: string;
   markClassName?: string;
@@ -50,16 +50,17 @@ export function Logo({
   priority,
 }: LogoProps) {
   return (
-    <span className={clsx("inline-flex min-w-0 items-center gap-1.5 sm:gap-2", className)}>
+    <span className={clsx("inline-flex shrink-0 items-center gap-1.5 sm:gap-2", className)}>
       <LogoMark
-        className={clsx("h-10 w-10 sm:h-12 sm:w-12", markClassName)}
+        className={clsx("h-10 w-10 shrink-0 sm:h-11 sm:w-11", markClassName)}
         priority={priority}
       />
       {withWordmark && (
         <span
           className={clsx(
-            "font-display text-[15px] leading-none tracking-tight sm:text-[17px]",
-            responsiveWordmark && "hidden sm:inline-block"
+            "font-display text-[15px] leading-none tracking-tight whitespace-nowrap sm:text-[16px]",
+            // Mobile (<lg): show name. Mid desktop (lg–xl): icon only. Wide (xl+): full name.
+            responsiveWordmark && "max-lg:inline-block hidden xl:inline-block"
           )}
         >
           <span

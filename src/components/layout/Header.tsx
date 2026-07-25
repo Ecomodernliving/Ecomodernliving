@@ -173,17 +173,21 @@ export function Header() {
         onMouseLeave={scheduleClose}
       >
         <div className="relative mx-auto max-w-7xl px-4 lg:px-6">
-          <div className="flex h-16 items-center gap-6 lg:h-[4.25rem]">
-            <Link href="/" className="group flex min-w-0 shrink items-center" aria-label="EcoModern Living home">
-              <Logo priority />
+          <div className="grid h-16 grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 lg:h-[4.25rem] lg:gap-4">
+            <Link
+              href="/"
+              className="relative z-20 flex shrink-0 items-center"
+              aria-label="EcoModern Living home"
+            >
+              <Logo priority responsiveWordmark />
             </Link>
 
-            <nav className="hidden flex-1 items-center justify-center lg:flex">
-              <ul className="flex items-center">
+            <nav className="hidden min-w-0 items-center justify-center overflow-hidden lg:flex">
+              <ul className="flex max-w-full items-center justify-center">
                 {mainNavigation.map((item) => (
                   <li
                     key={item.label}
-                    className="relative"
+                    className="relative shrink"
                     onMouseEnter={() => {
                       cancelClose();
                       if (item.sections) openMenu(item.label);
@@ -194,7 +198,7 @@ export function Header() {
                       <button
                         type="button"
                         className={clsx(
-                          "flex min-h-11 items-center gap-1 whitespace-nowrap rounded-lg px-2.5 xl:px-3 text-[13px] font-medium transition-colors",
+                          "flex min-h-11 max-w-full items-center gap-0.5 rounded-lg px-1 text-[11px] font-medium transition-colors xl:gap-1 xl:px-2 xl:text-[13px] 2xl:px-2.5",
                           activeMenu === item.label
                             ? "bg-forest-50 text-forest-700"
                             : "text-sage-700 hover:bg-sage-100/70 hover:text-forest-700"
@@ -202,9 +206,9 @@ export function Header() {
                         aria-expanded={activeMenu === item.label}
                         aria-haspopup="true"
                       >
-                        {item.label}
+                        <span className="truncate">{item.label}</span>
                         {item.badge && (
-                          <span className="rounded bg-forest-100 px-1 py-px text-[8px] font-bold uppercase tracking-wide text-forest-700">
+                          <span className="hidden shrink-0 rounded bg-forest-100 px-1 py-px text-[8px] font-bold uppercase tracking-wide text-forest-700 xl:inline">
                             {item.badge}
                           </span>
                         )}
@@ -218,9 +222,9 @@ export function Header() {
                     ) : (
                       <Link
                         href={item.href ?? "#"}
-                        className="flex min-h-11 items-center whitespace-nowrap rounded-lg px-2.5 xl:px-3 text-[13px] font-medium text-sage-700 hover:bg-sage-100/70 hover:text-forest-700 transition-colors"
+                        className="flex min-h-11 items-center rounded-lg px-1 text-[11px] font-medium text-sage-700 hover:bg-sage-100/70 hover:text-forest-700 transition-colors xl:px-2 xl:text-[13px] 2xl:px-2.5"
                       >
-                        {item.label}
+                        <span className="truncate">{item.label}</span>
                       </Link>
                     )}
                   </li>
@@ -228,15 +232,15 @@ export function Header() {
               </ul>
             </nav>
 
-            <div className="ml-auto flex shrink-0 items-center gap-1.5 sm:gap-2">
+            <div className="relative z-20 flex shrink-0 items-center gap-1 sm:gap-1.5">
               <SiteSearch />
 
-              <div className="hidden items-center gap-1 lg:flex">
+              <div className="hidden items-center gap-0.5 xl:flex">
                 {utilityLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="inline-flex min-h-11 items-center rounded-lg px-3 py-2 text-[13px] font-medium text-sage-500 hover:text-forest-700 transition-colors"
+                    className="inline-flex min-h-11 items-center rounded-lg px-2.5 py-2 text-[13px] font-medium text-sage-500 hover:text-forest-700 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -244,9 +248,13 @@ export function Header() {
                 <AuthNav variant="header" />
               </div>
 
+              <div className="hidden items-center lg:flex xl:hidden">
+                <AuthNav variant="header" />
+              </div>
+
               <button
                 type="button"
-                className="hidden min-h-11 min-w-11 items-center justify-center rounded-lg text-sage-700 hover:bg-sage-100 max-lg:inline-flex"
+                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg text-sage-700 hover:bg-sage-100 lg:hidden"
                 onClick={() => setMobileOpen(true)}
                 aria-label="Open menu"
               >

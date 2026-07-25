@@ -40,7 +40,6 @@ export function wrapEmailHtml(
     ? getUnsubscribeUrl(email)
     : `${siteUrl}/unsubscribe`;
   const year = new Date().getFullYear();
-  const contactHref = `${siteUrl}/contact`;
 
   const footerLinks = [
     ...legalLinks.map((l) => ({ label: l.label, href: `${siteUrl}${l.href}` })),
@@ -52,7 +51,7 @@ export function wrapEmailHtml(
   ];
 
   const mutedLinkStyle =
-    "color:#788862;text-decoration:none;font-size:12px;white-space:nowrap;";
+    "color:#ffffff;text-decoration:none;font-size:12px;white-space:nowrap;";
 
   const legalHtml = footerLinks
     .map(
@@ -104,16 +103,11 @@ export function wrapEmailHtml(
           <!-- Footer -->
           <tr>
             <td style="background:#0a1a14;padding:18px 24px 24px;text-align:center;border-top:1px solid #1a3328;">
-              <p style="margin:0 0 10px;font-size:12px;color:#788862;">
-                © ${year} <span style="color:#a8b89a;font-weight:500;">${siteConfig.name}</span>. All rights reserved.
+              <p style="margin:0 0 10px;font-size:12px;color:#ffffff;">
+                © ${year} <span style="color:#ffffff;font-weight:500;">${siteConfig.name}</span>. All rights reserved.
               </p>
-              <p style="margin:0 0 10px;line-height:1.8;">
+              <p style="margin:0;line-height:1.8;">
                 ${legalHtml}
-              </p>
-              <p style="margin:0;font-size:11px;color:#5e6c4d;">
-                <a href="mailto:${siteConfig.contactEmail}" style="color:#5e6c4d;text-decoration:none;">${siteConfig.contactEmail}</a>
-                &nbsp;·&nbsp;
-                <a href="${contactHref}" style="color:#5e6c4d;text-decoration:none;">ecomodernliving.ai</a>
               </p>
             </td>
           </tr>
