@@ -3,6 +3,17 @@
  * Copy .env.example → .env.local and fill in your values.
  */
 
+const DEFAULT_INSTAGRAM_URL = "https://www.instagram.com/ecomodernliving/";
+
+/** Prefer env, but never keep the broken @ecomodernliving.ai profile URL. */
+function resolveInstagramUrl(): string {
+  const raw = process.env.NEXT_PUBLIC_INSTAGRAM_URL?.trim();
+  if (!raw || /instagram\.com\/ecomodernliving\.ai\/?/i.test(raw)) {
+    return DEFAULT_INSTAGRAM_URL;
+  }
+  return raw.replace(/\/?$/, "/");
+}
+
 export const siteConfig = {
   name: "EcoModern Living",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ecomodernliving.ai",
@@ -25,9 +36,7 @@ export const siteConfig = {
     youtube:
       process.env.NEXT_PUBLIC_YOUTUBE_URL ??
       "https://www.youtube.com/@ecomodernliving",
-    instagram:
-      process.env.NEXT_PUBLIC_INSTAGRAM_URL ??
-      "https://www.instagram.com/ecomodernliving/",
+    instagram: resolveInstagramUrl(),
     pinterest:
       process.env.NEXT_PUBLIC_PINTEREST_URL ??
       "https://www.pinterest.com/ecomodernliving/",
