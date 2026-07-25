@@ -121,10 +121,10 @@ export function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-forest-800/60 bg-forest-950/80 px-4 py-5 text-center">
-        <p className="text-xs text-sage-500">
+      <div className="border-t border-forest-200/80 bg-forest-100 px-4 py-5 text-center">
+        <p className="text-xs text-forest-700">
           © {new Date().getFullYear()}{" "}
-          <span className="font-medium text-sage-400">{siteConfig.name}</span>. All
+          <span className="font-medium text-forest-900">{siteConfig.name}</span>. All
           rights reserved.
         </p>
 
@@ -143,17 +143,23 @@ export function Footer() {
                   key="about-contact"
                   className="inline-flex items-center whitespace-nowrap"
                 >
-                  {index > 0 && <Dot />}
+                  {index > 0 && (
+                    <span className="select-none px-1.5 text-forest-300" aria-hidden="true">
+                      ·
+                    </span>
+                  )}
                   <Link
                     href={about.href}
-                    className="inline-flex min-h-9 items-center px-0.5 text-xs text-sage-500 transition-colors hover:text-sage-300 sm:text-sm"
+                    className="inline-flex min-h-9 items-center px-0.5 text-xs text-forest-700 transition-colors hover:text-forest-950 sm:text-sm"
                   >
                     {about.label}
                   </Link>
-                  <Dot />
+                  <span className="select-none px-1.5 text-forest-300" aria-hidden="true">
+                    ·
+                  </span>
                   <Link
                     href={contact.href}
-                    className="inline-flex min-h-9 items-center px-0.5 text-xs text-sage-500 transition-colors hover:text-sage-300 sm:text-sm"
+                    className="inline-flex min-h-9 items-center px-0.5 text-xs text-forest-700 transition-colors hover:text-forest-950 sm:text-sm"
                   >
                     {contact.label}
                   </Link>
@@ -163,10 +169,14 @@ export function Footer() {
 
             return (
               <span key={link.href} className="inline-flex items-center">
-                {index > 0 && <Dot />}
+                {index > 0 && (
+                  <span className="select-none px-1.5 text-forest-300" aria-hidden="true">
+                    ·
+                  </span>
+                )}
                 <Link
                   href={link.href}
-                  className="inline-flex min-h-9 items-center px-0.5 text-xs text-sage-500 transition-colors hover:text-sage-300 sm:text-sm"
+                  className="inline-flex min-h-9 items-center px-0.5 text-xs text-forest-700 transition-colors hover:text-forest-950 sm:text-sm"
                 >
                   {link.label}
                 </Link>

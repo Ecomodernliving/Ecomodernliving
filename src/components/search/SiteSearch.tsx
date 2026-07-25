@@ -178,13 +178,9 @@ export function SiteSearch() {
         type="button"
         onClick={() => setOpen(true)}
         aria-label="Search the site"
-        className="group inline-flex min-h-11 items-center gap-2 rounded-full border border-sage-200 bg-cream-50 px-3 text-sage-500 transition-colors hover:border-forest-300 hover:text-forest-700 lg:w-36 lg:justify-start lg:px-3 xl:w-48 2xl:w-56"
+        className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg text-sage-700 transition-colors hover:bg-sage-100 hover:text-forest-700"
       >
-        <Search className="h-4 w-4 shrink-0" />
-        <span className="hidden text-[13px] lg:inline">Search…</span>
-        <span className="ml-auto hidden items-center gap-0.5 rounded border border-sage-200 bg-white px-1.5 py-0.5 text-[10px] font-medium text-sage-400 xl:inline-flex">
-          ⌘K
-        </span>
+        <Search className="h-5 w-5" />
       </button>
 
       {open &&
