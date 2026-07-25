@@ -26,6 +26,8 @@ function money(n: number): string {
 function ctaButton(href: string, label: string, bg: string): string {
   return `
     <a href="${escapeHtml(href)}"
+       target="_blank"
+       rel="noopener noreferrer"
        style="display:inline-block;background:${bg};color:#ffffff;text-decoration:none;padding:12px 20px;border-radius:999px;font-size:14px;font-weight:700;">
       ${escapeHtml(label)}
     </a>
@@ -62,7 +64,7 @@ function metricCard(
   `;
 }
 
-function auditEmailHtml(estimate: EnergyEstimate, email: string): string {
+function auditEmailHtml(estimate: EnergyEstimate): string {
   const siteUrl = getSiteUrl();
   const heroUrl = `${siteUrl}/images/hero-passive-house.jpg`;
 
@@ -159,8 +161,8 @@ function auditEmailHtml(estimate: EnergyEstimate, email: string): string {
     </table>
 
     <p style="color:${MUTED};line-height:1.6;margin:18px 0 0;font-size:13px;">
-      Full AI audit results with product recommendations are coming soon.
-      We’ll notify <strong style="color:${FOREST};">${escapeHtml(email)}</strong> when they’re ready.
+      This is an estimate only — explore upgrades in our
+      <a href="${siteUrl}/marketplace" target="_blank" rel="noopener noreferrer" style="color:${ACCENT};font-weight:600;text-decoration:none;">marketplace</a>.
     </p>
   `;
 }
@@ -172,7 +174,7 @@ export async function sendAuditEstimateEmail(
   const result = await sendResendEmail({
     to: email,
     subject: "Your EcoModern Living Energy Savings Estimate",
-    html: wrapEmailHtml(auditEmailHtml(estimate, email), {
+    html: wrapEmailHtml(auditEmailHtml(estimate), {
       email,
       previewText: `Save ~$${estimate.efficiencySavingsMonthly}/mo with efficiency upgrades — your free audit estimate.`,
       reason:

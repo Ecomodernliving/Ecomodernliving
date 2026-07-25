@@ -741,6 +741,8 @@ function AuditEstimateCard({ estimate }: { estimate: EnergyEstimate }) {
         <div className="mt-4 flex flex-wrap gap-2">
           <Link
             href="/marketplace"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 rounded-full bg-forest-700 px-4 py-2 text-sm font-semibold text-white hover:bg-forest-800"
           >
             Shop eco upgrades
@@ -748,6 +750,8 @@ function AuditEstimateCard({ estimate }: { estimate: EnergyEstimate }) {
           </Link>
           <Link
             href="/guides/incentives"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 rounded-full border border-amber-300 bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-900 hover:bg-amber-100"
           >
             View incentives
@@ -788,7 +792,7 @@ export function AuditForm() {
       setStatus("success");
       setSuccessMessage(
         result.message ??
-          "We'll email your personalized savings estimate. Full AI audit results coming soon."
+          "We've emailed your personalized savings estimate. This is an estimate only — explore upgrades in our marketplace."
       );
       if (result.estimate) setEstimate(result.estimate);
       form.reset();
@@ -862,7 +866,8 @@ export function AuditForm() {
       </div>
       {status !== "success" && (
         <p className="text-xs text-sage-500">
-          We&apos;ll email your personalized savings estimate. Full AI audit results coming soon.
+          We&apos;ll email your personalized savings estimate. This is an
+          estimate only — explore upgrades in our marketplace.
         </p>
       )}
       {estimate && status === "success" && <AuditEstimateCard estimate={estimate} />}

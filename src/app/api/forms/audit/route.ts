@@ -65,8 +65,8 @@ export async function POST(request: Request) {
       estimate,
       emailed,
       message: emailed
-        ? `We've emailed your personalized savings estimate to ${email}. Full AI audit results coming soon.`
-        : `Your estimate is ready. Full AI audit results coming soon — we'll follow up at ${email}.`,
+        ? `We've emailed your personalized savings estimate to ${email}. This is an estimate only — explore upgrades in our marketplace.`
+        : `Your estimate is ready. This is an estimate only — explore upgrades in our marketplace.`,
     });
   } catch {
     return NextResponse.json(
