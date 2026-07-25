@@ -948,7 +948,7 @@ export function AuditForm() {
         />
       </div>
       {status !== "success" && (
-        <p className="text-xs text-sage-500">
+        <p className="text-center text-xs text-sage-500">
           We&apos;ll email your personalized savings estimate. This is an
           estimate only — explore upgrades in our marketplace.
         </p>
@@ -960,14 +960,16 @@ export function AuditForm() {
         successMessage={successMessage}
       />
       {status !== "success" && (
-        <button
-          type="submit"
-          disabled={status === "loading"}
-          className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-forest-700 px-6 py-2.5 text-sm font-semibold text-white shadow-md hover:opacity-90 transition-opacity disabled:opacity-60"
-        >
-          {status === "loading" ? "Submitting…" : "Run Free Audit"}
-          <ArrowRight className="h-4 w-4" />
-        </button>
+        <div className="flex justify-center">
+          <button
+            type="submit"
+            disabled={status === "loading"}
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-forest-700 px-6 py-2.5 text-sm font-semibold text-white shadow-md hover:opacity-90 transition-opacity disabled:opacity-60"
+          >
+            {status === "loading" ? "Submitting…" : "Run Free Audit"}
+            <ArrowRight className="h-4 w-4" />
+          </button>
+        </div>
       )}
     </form>
   );
