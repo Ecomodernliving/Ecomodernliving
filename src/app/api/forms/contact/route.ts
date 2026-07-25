@@ -1,5 +1,9 @@
 import { NextResponse } from "next/server";
 import { submitFormspreeServer } from "@/lib/email/formspree-server";
+import {
+  sendContactAdminEmail,
+  sendContactConfirmationEmail,
+} from "@/lib/email/contact-reply";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -28,17 +32,24 @@ export async function POST(request: Request) {
       );
     }
 
-    const result = await submitFormspreeServer("contact", {
-      name,
-      email,
-      message,
-      _replyto: email,
-      _subject: "EcoModern Living — Contact form",
-    });
+    const payload = { name, email, message };
 
-    if (!result.ok) {
-      return NextResponse.json({ error: result.message }, { status: 502 });
+    // Prefer branded Resend notification (avoids plain Formspree admin email).
+    const adminOk = await sendContactAdminEmail(payload);
+    if (!adminOk) {
+      const formspree = await submitFormspreeServer("contact", {
+        name,
+        email,
+        message,
+        _replyto: email,
+        _subject: "EcoModern Living — Contact form",
+      });
+      if (!formspree.ok) {
+        return NextResponse.json({ error: formspree.message }, { status: 502 });
+      }
     }
+
+    void sendContactConfirmationEmail(payload);
 
     return NextResponse.json({
       ok: true,

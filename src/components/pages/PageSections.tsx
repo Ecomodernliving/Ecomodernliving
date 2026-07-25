@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Zap, CalendarDays, Sun, Landmark } from "lucide-react";
+import { ArrowRight, CheckCircle2, Zap, CalendarDays, Sun, Landmark, User, Mail, MessageSquareText, Clock3, Leaf } from "lucide-react";
 import { NavIcon } from "@/components/NavIcon";
 import { NavHref } from "@/components/NavHref";
 import type { NavLink } from "@/config/navigation";
@@ -508,61 +508,142 @@ export function ContactForm() {
   }
 
   return (
-    <form id="contact-form" onSubmit={handleSubmit} className="space-y-4 rounded-2xl border border-sage-200/80 bg-white p-6 shadow-sm">
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div>
-          <label htmlFor="name" className="block text-sm font-medium text-sage-700">
-            Name
-          </label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            required
-            placeholder="Your name"
-            disabled={status === "loading"}
-            className="mt-1.5 w-full rounded-xl border border-sage-200 bg-cream-50 px-4 py-2.5 text-sm text-sage-800 placeholder:text-sage-400 focus:border-forest-400 focus:outline-none focus:ring-2 focus:ring-forest-100 disabled:opacity-60"
-          />
-        </div>
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-sage-700">
-            Email
-          </label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            required
-            placeholder="you@example.com"
-            disabled={status === "loading"}
-            className="mt-1.5 w-full rounded-xl border border-sage-200 bg-cream-50 px-4 py-2.5 text-sm text-sage-800 placeholder:text-sage-400 focus:border-forest-400 focus:outline-none focus:ring-2 focus:ring-forest-100 disabled:opacity-60"
-          />
-        </div>
-      </div>
-      <div>
-        <label htmlFor="message" className="block text-sm font-medium text-sage-700">
-          Message
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          rows={4}
-          required
-          placeholder="How can we help?"
-          disabled={status === "loading"}
-          className="mt-1.5 w-full rounded-xl border border-sage-200 bg-cream-50 px-4 py-2.5 text-sm text-sage-800 placeholder:text-sage-400 focus:border-forest-400 focus:outline-none focus:ring-2 focus:ring-forest-100 resize-none disabled:opacity-60"
+    <div className="overflow-hidden rounded-2xl border border-sage-200/80 bg-white shadow-sm shadow-forest-900/5">
+      <div className="relative h-32 overflow-hidden sm:h-36">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/hero-passive-house.jpg"
+          alt=""
+          className="h-full w-full object-cover"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-forest-950/75 via-forest-900/35 to-transparent" />
+        <div className="absolute bottom-4 left-5 right-5">
+          <p className="font-display text-xl font-bold text-white sm:text-2xl">
+            Send a message
+          </p>
+        </div>
       </div>
-      <FormFeedback status={status} message={error} />
-      <button
-        type="submit"
-        disabled={status === "loading" || status === "success"}
-        className="inline-flex items-center gap-2 rounded-full bg-forest-600 px-6 py-2.5 text-sm font-semibold text-white shadow-md hover:bg-forest-700 transition-colors disabled:opacity-60"
-      >
-        {status === "loading" ? "Sending…" : "Send Message"}
-        <ArrowRight className="h-4 w-4" />
-      </button>
-    </form>
+
+      <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
+        <aside className="space-y-4 border-b border-sage-100 bg-gradient-to-br from-forest-50 to-cream-50 p-5 sm:p-6 lg:border-b-0 lg:border-r">
+          <ul className="space-y-3">
+            {[
+              {
+                icon: Clock3,
+                title: "Fast response",
+                body: "Most messages answered in 1–2 business days",
+              },
+              {
+                icon: Leaf,
+                title: "Practical guidance",
+                body: "Product picks, incentives, and planning tips",
+              },
+              {
+                icon: Mail,
+                title: "Direct email",
+                body: "hello@ecomodernliving.ai",
+              },
+            ].map((item) => (
+              <li
+                key={item.title}
+                className="flex items-start gap-3 rounded-xl border border-forest-100/80 bg-white/80 p-3"
+              >
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-forest-100 text-forest-700">
+                  <item.icon className="h-4 w-4" aria-hidden />
+                </span>
+                <div>
+                  <p className="text-sm font-semibold text-forest-900">
+                    {item.title}
+                  </p>
+                  <p className="mt-0.5 text-xs leading-relaxed text-sage-600">
+                    {item.body}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </aside>
+
+        <form
+          id="contact-form"
+          onSubmit={handleSubmit}
+          className="space-y-4 p-5 sm:p-6"
+        >
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label
+                htmlFor="name"
+                className="flex items-center gap-1.5 text-sm font-medium text-sage-700"
+              >
+                <User className="h-3.5 w-3.5 text-forest-600" aria-hidden />
+                Name
+              </label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                placeholder="Your name"
+                disabled={status === "loading"}
+                className="mt-1.5 w-full rounded-xl border border-sage-200 bg-cream-50 px-4 py-2.5 text-sm text-sage-800 placeholder:text-sage-400 focus:border-forest-400 focus:outline-none focus:ring-2 focus:ring-forest-100 disabled:opacity-60"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="email"
+                className="flex items-center gap-1.5 text-sm font-medium text-sage-700"
+              >
+                <Mail className="h-3.5 w-3.5 text-forest-600" aria-hidden />
+                Email
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                placeholder="you@example.com"
+                disabled={status === "loading"}
+                className="mt-1.5 w-full rounded-xl border border-sage-200 bg-cream-50 px-4 py-2.5 text-sm text-sage-800 placeholder:text-sage-400 focus:border-forest-400 focus:outline-none focus:ring-2 focus:ring-forest-100 disabled:opacity-60"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              htmlFor="message"
+              className="flex items-center gap-1.5 text-sm font-medium text-sage-700"
+            >
+              <MessageSquareText
+                className="h-3.5 w-3.5 text-forest-600"
+                aria-hidden
+              />
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows={5}
+              required
+              placeholder="How can we help?"
+              disabled={status === "loading"}
+              className="mt-1.5 w-full resize-none rounded-xl border border-sage-200 bg-cream-50 px-4 py-2.5 text-sm text-sage-800 placeholder:text-sage-400 focus:border-forest-400 focus:outline-none focus:ring-2 focus:ring-forest-100 disabled:opacity-60"
+            />
+          </div>
+          <FormFeedback status={status} message={error} />
+          <button
+            type="submit"
+            disabled={status === "loading" || status === "success"}
+            className="inline-flex items-center gap-2 rounded-full bg-forest-600 px-6 py-2.5 text-sm font-semibold text-white shadow-md transition-colors hover:bg-forest-700 disabled:opacity-60"
+          >
+            {status === "loading"
+              ? "Sending…"
+              : status === "success"
+                ? "Message sent"
+                : "Send Message"}
+            <ArrowRight className="h-4 w-4" />
+          </button>
+        </form>
+      </div>
+    </div>
   );
 }
 

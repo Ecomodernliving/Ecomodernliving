@@ -103,6 +103,16 @@ const CATEGORY_IMAGES: Record<string, string> = {
     "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400&h=400&fit=crop&q=80",
   "water-fixtures":
     "https://images.unsplash.com/photo-1585705276555-3273c2933b8e?w=400&h=400&fit=crop&q=80",
+  store:
+    "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=400&fit=crop&q=80",
+  furniture:
+    "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=400&fit=crop&q=80",
+  "indoor-gardening":
+    "https://images.unsplash.com/photo-1466692476862-a0423fe14a6d?w=400&h=400&fit=crop&q=80",
+  "smart-home":
+    "https://images.unsplash.com/photo-1558002038-1055907df827?w=400&h=400&fit=crop&q=80",
+  composting:
+    "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=400&fit=crop&q=80",
 };
 
 export function isPlaceholderImage(url?: string): boolean {

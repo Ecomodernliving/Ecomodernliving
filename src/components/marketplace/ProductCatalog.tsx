@@ -20,6 +20,7 @@ import {
   categoryImageForSlug,
   getProductImage,
   getProductStore,
+  PLACEHOLDER_IMAGE,
   storeStyles,
   type AffiliateStore,
 } from "@/lib/affiliate-stores";
@@ -48,8 +49,25 @@ function ProductCardImage({
       return;
     }
     const category = categoryImageForSlug(catalogSlug);
-    if (src !== category) setSrc(category);
+    if (src !== category && category !== src) {
+      setSrc(category);
+      return;
+    }
+    if (src !== PLACEHOLDER_IMAGE) setSrc(PLACEHOLDER_IMAGE);
   };
+
+  // Local SVG placeholders break with next/image fill in some browsers
+  if (src.endsWith(".svg") || src === PLACEHOLDER_IMAGE) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={src}
+        alt={product.name}
+        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+        onError={handleError}
+      />
+    );
+  }
 
   const isExternal = src.startsWith("http");
 

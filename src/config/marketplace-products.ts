@@ -86,6 +86,12 @@ export const marketplaceProducts: Record<string, PageProduct[]> = {
     product("Click and Grow Smart Garden", "https://www.amazon.com/dp/B01MRVMKQH?tag=ecomodernliving-20&linkCode=ll2"),
     product("Hydroponic Growing System", "https://www.amazon.com/dp/B08DLMRKHM?tag=ecomodernliving-20&linkCode=ll2"),
     product("Indoor Greenhouse Growing Kit", "https://www.amazon.com/dp/B0FL7V6PYB?tag=ecomodernliving-20&linkCode=ll2"),
+    product(
+      "Rolife DIY Miniature Greenhouse Kit",
+      "https://www.amazon.com/dp/B07NZ2ZNVM?tag=ecomodernliving-20&linkCode=ll2",
+      "Cathy's Flower House features a transparent, pointed-arch structure and a variety of plants, creating a lush botanical greenhouse.",
+      "Best Value"
+    ),
     product("AeroGarden Harvest Indoor Garden", "https://www.amazon.com/s?k=aerogarden+harvest"),
     product("iDOO Hydroponic Garden System", "https://www.amazon.com/s?k=idoo+hydroponic+garden"),
   ],

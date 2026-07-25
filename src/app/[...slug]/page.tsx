@@ -76,7 +76,7 @@ export default async function DynamicPage({ params }: PageProps) {
   );
 
   const pageSlug = href.split("/").pop() ?? "";
-  if (category === "marketplace" && pageSlug) {
+  if (category === "marketplace" && pageSlug && !content.comingSoon) {
     const { getProductsForSlug } = await import("@/lib/marketplace-catalog");
     const sheetProducts = await getProductsForSlug(pageSlug);
     if (sheetProducts.length > 0) {

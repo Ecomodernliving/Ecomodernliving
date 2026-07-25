@@ -148,16 +148,82 @@ function defaultTips(label: string, category: PageCategory): string[] {
 
 const contentOverrides: Partial<Record<string, Partial<PageContent>>> = {
   "/ai/home-advisor": {
-    intro: "Upload photos of your home, floor plans, and utility bills. Our AI analyzes your space and delivers a personalized sustainable upgrade plan with ROI calculations.",
-    comingSoon: false,
-    ctaLabel: "Start Free Analysis",
-    ctaHref: "#get-started",
+    intro:
+      "Upload photos of your home, floor plans, and utility bills for a personalized sustainable upgrade plan.",
+    comingSoon: true,
+    steps: [],
+    features: [],
+    ctaLabel: "Try Energy Audit",
+    ctaHref: "/ai/energy-audit",
   },
   "/ai/energy-audit": {
     intro: "Enter your square footage, appliance usage, and utility bills to get an instant estimate of energy waste, solar savings potential, and available tax credits.",
     comingSoon: false,
     ctaLabel: "Run Free Audit",
     ctaHref: "#audit-form",
+  },
+  "/ai/product-recommender": {
+    intro:
+      "Describe your home and goals — get curated eco product picks with rough cost and ROI context.",
+    comingSoon: true,
+    steps: [],
+    features: [],
+    ctaLabel: "Browse Marketplace",
+    ctaHref: "/marketplace",
+  },
+  "/ai/interior-design": {
+    intro:
+      "Upload a room photo for eco-modern redesigns that optimize daylighting, passive solar orientation, and thermal comfort materials.",
+    comingSoon: true,
+    steps: [],
+    features: [],
+    ctaLabel: "Try Energy Audit",
+    ctaHref: "/ai/energy-audit",
+  },
+  "/ai/material-finder": {
+    intro:
+      "Find low-carbon alternatives to conventional building materials — insulation, finishes, structural options, and more.",
+    comingSoon: true,
+    highlights: [],
+    features: [],
+    steps: [],
+    tips: [],
+    ctaLabel: "Browse Marketplace",
+    ctaHref: "/marketplace",
+  },
+  "/ai/renovation-planner": {
+    intro:
+      "Plan green renovations with cost, materials, energy savings, and ROI estimates.",
+    comingSoon: true,
+    highlights: [],
+    features: [],
+    steps: [],
+    tips: [],
+    ctaLabel: "Try Energy Audit",
+    ctaHref: "/ai/energy-audit",
+  },
+  "/ai/building-codes": {
+    intro:
+      "Get guidance on permits, codes, and compliance for sustainable upgrades.",
+    comingSoon: true,
+    highlights: [],
+    features: [],
+    steps: [],
+    tips: [],
+    ctaLabel: "Contact Us",
+    ctaHref: "/contact",
+  },
+  "/store": {
+    intro:
+      "EcoModern Living brand products — decor, kits, and planners designed for sustainable homes.",
+    comingSoon: true,
+    highlights: [],
+    features: [],
+    products: [],
+    steps: [],
+    tips: [],
+    ctaLabel: "Browse Marketplace",
+    ctaHref: "/marketplace",
   },
   "/passive-house/journal": {
     intro: "Educational articles on passive house design, retrofit strategies, product comparisons, and industry trends — written to help you plan with confidence.",
@@ -248,19 +314,43 @@ const contentOverrides: Partial<Record<string, Partial<PageContent>>> = {
     ctaLabel: "Subscribe Free",
     ctaHref: "#subscribe",
   },
+  "/marketplace/tiny-homes-adus": {
+    intro:
+      "Prefabricated tiny homes, modular ADUs, and compact living kits — curated picks are on the way.",
+    comingSoon: true,
+    products: [],
+    highlights: [
+      "Factory-built and modular options",
+      "ADU-friendly footprints and layouts",
+      "Energy-efficient envelope strategies",
+      "Guides for zoning and site planning",
+    ],
+    features: [],
+    ctaLabel: undefined,
+    ctaHref: undefined,
+  },
   "/about": {
-    intro: "EcoModern Living is an AI-powered sustainable living platform. We combine curated eco products, intelligent home tools, and expert passive house education to help you plan a greener home.",
+    intro:
+      "EcoModern Living is an AI-powered sustainable living platform. We combine curated eco products, intelligent home tools, and expert passive house education to help you plan a greener home.",
     highlights: [
       "Founded by sustainability and AI enthusiasts",
       "Research-backed passive house guides and tools",
       "60+ curated product categories with affiliate partnerships",
       "Free AI tools for energy audits and home upgrades",
     ],
+    // Utility pages: skip generic template blocks
+    features: [],
+    ctaLabel: undefined,
+    ctaHref: undefined,
   },
   "/contact": {
-    intro: "Have a question about sustainable living, passive house planning, or partnership opportunities? We'd love to hear from you.",
-    ctaLabel: "Send Message",
-    ctaHref: "#contact-form",
+    intro:
+      "Have a question about sustainable living, Passive House planning, or partnership opportunities? We'd love to hear from you.",
+    // Form + aside already cover highlights / audience / CTA
+    highlights: [],
+    features: [],
+    ctaLabel: undefined,
+    ctaHref: undefined,
   },
 };
 
@@ -282,17 +372,18 @@ export function buildPageContent(
     href === "/store";
 
   const productsForPage =
-    href === "/passive-house-products"
-      ? passiveHouseContentOverrides["/passive-house-products"]?.products
-      : category === "marketplace"
-        ? marketplaceProducts[slug] ?? defaultProducts(label)
-        : category === "passive-house" &&
-            !isComingSoon &&
-            href !== "/passive-house-calculators" &&
-            href !== "/passive-house-faq" &&
-            href !== "/passive-house"
-          ? passiveHouseContentOverrides["/passive-house-products"]?.products
-          : undefined;
+    isComingSoon
+      ? undefined
+      : href === "/passive-house-products"
+        ? passiveHouseContentOverrides["/passive-house-products"]?.products
+        : category === "marketplace"
+          ? marketplaceProducts[slug] ?? defaultProducts(label)
+          : category === "passive-house" &&
+              href !== "/passive-house-calculators" &&
+              href !== "/passive-house-faq" &&
+              href !== "/passive-house"
+            ? passiveHouseContentOverrides["/passive-house-products"]?.products
+            : undefined;
 
   const merged: PageContent = {
     intro: description,
@@ -320,6 +411,19 @@ export function buildPageContent(
         : "#get-started",
     ...override,
   };
+
+  // Coming-soon pages: drop generic template blocks unless the override set them
+  if (merged.comingSoon) {
+    if (override.highlights === undefined) merged.highlights = [];
+    if (override.features === undefined) merged.features = [];
+    if (override.steps === undefined) merged.steps = undefined;
+    if (override.tips === undefined) merged.tips = undefined;
+    if (override.products === undefined) merged.products = undefined;
+    if (override.ctaLabel === undefined) {
+      merged.ctaLabel = undefined;
+      merged.ctaHref = undefined;
+    }
+  }
 
   // Prefer in-page scroll to products when that section exists
   if (

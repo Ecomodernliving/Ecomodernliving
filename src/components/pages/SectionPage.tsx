@@ -160,6 +160,11 @@ export function SectionPage({
   const accent = getCategoryAccent(category);
 
   const sidebarLinks = isHub ? getAllSectionLinks(hubSections) : sectionLinks;
+  const isUtilityPage = href === "/about" || href === "/contact";
+  // Avoid repeating the page title as eyebrow (About/Contact utility pages)
+  const heroEyebrow =
+    parentLabel && parentLabel !== link.label ? parentLabel : undefined;
+  const showSectionNav = !isUtilityPage && sidebarLinks.length > 0;
 
 
 
@@ -175,9 +180,16 @@ export function SectionPage({
 
         icon={link.icon}
 
-        badge={link.badge ?? parentBadge}
+        badge={
+          content.comingSoon
+            ? // Avoid "Soon" + "Coming Soon" — show category badge only (e.g. AI)
+              parentBadge && parentBadge.toLowerCase() !== "soon"
+                ? parentBadge
+                : undefined
+            : (link.badge ?? parentBadge)
+        }
 
-        eyebrow={parentLabel}
+        eyebrow={heroEyebrow}
 
         category={category}
 
@@ -193,15 +205,17 @@ export function SectionPage({
 
 
 
-        <SectionNav
+        {showSectionNav && (
+          <SectionNav
 
-          title={isHub ? parentLabel : sectionTitle}
+            title={isHub ? parentLabel : sectionTitle}
 
-          links={sidebarLinks}
+            links={sidebarLinks}
 
-          currentHref={href}
+            currentHref={href}
 
-        />
+          />
+        )}
 
 
 
@@ -219,7 +233,9 @@ export function SectionPage({
 
               <>
 
-                {!content.comingSoon && content.ctaLabel && content.ctaHref && (
+                {content.ctaLabel &&
+                  content.ctaHref &&
+                  (!content.comingSoon || !content.ctaHref.startsWith("#")) && (
 
                   <div className="flex justify-center">
 
@@ -245,9 +261,13 @@ export function SectionPage({
 
                     <SectionHeading
 
-                      title="Key Highlights"
+                      title={href === "/about" ? "What We Stand For" : "Key Highlights"}
 
-                      subtitle="What matters most for this topic"
+                      subtitle={
+                        href === "/about"
+                          ? "The foundation of EcoModern Living"
+                          : "What matters most for this topic"
+                      }
 
                     />
 
@@ -362,23 +382,7 @@ export function SectionPage({
 
 
 
-                {href === "/contact" && (
-
-                  <ContentSection>
-
-                    <SectionHeading
-
-                      title="Send Us a Message"
-
-                      subtitle="We typically respond within 1–2 business days"
-
-                    />
-
-                    <ContactForm />
-
-                  </ContentSection>
-
-                )}
+                {href === "/contact" && <ContactForm />}
 
 
 
@@ -468,13 +472,15 @@ export function SectionPage({
 
                     <p className="font-display text-xl font-semibold text-forest-900 sm:text-2xl">
 
-                      Coming Soon
+                      Get notified at launch
 
                     </p>
 
                     <p className="mx-auto mt-3 max-w-md text-sm text-sage-500">
 
-                      We&apos;re building this feature. Join our newsletter to get notified at launch.
+                      {href === "/marketplace/tiny-homes-adus"
+                        ? "We're curating prefab tiny homes, modular ADUs, and compact living kits. Join the newsletter when this category goes live."
+                        : "We're building this feature. Join our newsletter and we'll email you when it's ready."}
 
                     </p>
 
@@ -490,87 +496,89 @@ export function SectionPage({
 
 
 
-                {siblings.length > 0 && (
+                {(() => {
+                  const hideExploreMore =
+                    content.comingSoon ||
+                    href === "/about" ||
+                    href === "/contact" ||
+                    href.endsWith("/about") ||
+                    href.endsWith("/contact");
+                  if (hideExploreMore || siblings.length === 0) return null;
+                  return (
+                    <ContentSection>
+                      <SectionHeading
+                        title="Explore More"
+                        subtitle={`More in ${sectionTitle}`}
+                      />
+                      <RelatedPages links={siblings} category={category} />
+                    </ContentSection>
+                  );
+                })()}
 
-                  <ContentSection>
 
-                    <SectionHeading
+                {!isUtilityPage && !content.comingSoon && (
+                  <CTABanner
 
-                      title="Explore More"
+                    title={
 
-                      subtitle={`More in ${sectionTitle}`}
+                      category === "marketplace"
 
-                    />
+                        ? "Need help choosing?"
 
-                    <RelatedPages links={siblings} category={category} />
+                        : category === "passive-house"
 
-                  </ContentSection>
+                          ? "Explore Passive House guides"
 
+                          : "Ready to get started?"
+
+                    }
+
+                    description={
+
+                      category === "marketplace"
+
+                        ? "Try our AI Product Recommender for personalized suggestions based on your home and budget."
+
+                        : category === "passive-house"
+
+                          ? "Use our free calculators and FAQ to plan your energy-efficient home."
+
+                          : "Use our free AI tools to analyze your home and discover the best sustainable upgrades."
+
+                    }
+
+                    ctaLabel={
+
+                      category === "marketplace"
+
+                        ? "Try AI Recommender"
+
+                        : category === "passive-house"
+
+                          ? "Try Calculators"
+
+                          : "Free Energy Audit"
+
+                    }
+
+                    ctaHref={
+
+                      category === "marketplace"
+
+                        ? "/ai/product-recommender"
+
+                        : category === "passive-house"
+
+                          ? "/passive-house-calculators"
+
+                          : "/ai/energy-audit"
+
+                    }
+
+                    category={category}
+
+                  />
                 )}
-
-
-
-                <CTABanner
-
-                  title={
-
-                    category === "marketplace"
-
-                      ? "Need help choosing?"
-
-                      : category === "passive-house"
-
-                        ? "Explore Passive House guides"
-
-                        : "Ready to get started?"
-
-                  }
-
-                  description={
-
-                    category === "marketplace"
-
-                      ? "Try our AI Product Recommender for personalized suggestions based on your home and budget."
-
-                      : category === "passive-house"
-
-                        ? "Use our free calculators and FAQ to plan your energy-efficient home."
-
-                        : "Use our free AI tools to analyze your home and discover the best sustainable upgrades."
-
-                  }
-
-                  ctaLabel={
-
-                    category === "marketplace"
-
-                      ? "Try AI Recommender"
-
-                      : category === "passive-house"
-
-                        ? "Try Calculators"
-
-                        : "Free Energy Audit"
-
-                  }
-
-                  ctaHref={
-
-                    category === "marketplace"
-
-                      ? "/ai/product-recommender"
-
-                      : category === "passive-house"
-
-                        ? "/passive-house-calculators"
-
-                        : "/ai/energy-audit"
-
-                  }
-
-                  category={category}
-
-                />
 
               </>
 

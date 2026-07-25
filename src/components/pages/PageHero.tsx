@@ -57,15 +57,16 @@ export function PageHero({
 
         {(badge || comingSoon) && (
           <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
-            {badge && (
-              <span className="rounded-full bg-forest-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white shadow-sm">
-                {badge}
-              </span>
-            )}
-            {comingSoon && (
+            {comingSoon ? (
               <span className="rounded-full bg-amber-100 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-amber-800">
                 Coming Soon
               </span>
+            ) : (
+              badge && (
+                <span className="rounded-full bg-forest-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-white shadow-sm">
+                  {badge}
+                </span>
+              )
             )}
           </div>
         )}

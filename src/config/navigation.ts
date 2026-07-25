@@ -111,7 +111,7 @@ export const mainNavigation: NavItem[] = [
         title: "Smart & Specialty",
         links: [
           { label: "Smart Home Systems", href: "/marketplace/smart-home", description: "Automation, sensors, energy monitoring", icon: "smartphone" },
-          { label: "Tiny Homes & ADUs", href: "/marketplace/tiny-homes-adus", description: "Prefabricated, modular, accessory units", icon: "house" },
+          { label: "Tiny Homes & ADUs", href: "/marketplace/tiny-homes-adus", description: "Prefabricated, modular, accessory units", icon: "house", badge: "Soon" },
           { label: "Composting Systems", href: "/marketplace/composting", description: "Countertop to full backyard solutions", icon: "recycle" },
           { label: "Affiliate Partners", href: "/marketplace/partners", description: "Amazon, Home Depot, Lowe's, Wayfair & more", icon: "handshake" },
         ],
@@ -132,18 +132,18 @@ export const mainNavigation: NavItem[] = [
       {
         title: "AI-Powered Tools",
         links: [
-          { label: "Sustainable Home Advisor", href: "/ai/home-advisor", description: "Upload images & bills for upgrade plans", icon: "compass" },
-          { label: "Green Product Recommender", href: "/ai/product-recommender", description: "Ask anything — get products with ROI estimates", icon: "sparkles" },
-          { label: "Eco Interior Design", href: "/ai/interior-design", description: "Upload a room → get eco-modern redesigns", icon: "palette" },
+          { label: "Sustainable Home Advisor", href: "/ai/home-advisor", description: "Upload images & bills for upgrade plans", icon: "compass", badge: "Soon" },
+          { label: "Green Product Recommender", href: "/ai/product-recommender", description: "Ask anything — get products with ROI estimates", icon: "sparkles", badge: "Soon" },
+          { label: "Eco Interior Design", href: "/ai/interior-design", description: "Upload a room → get eco-modern redesigns", icon: "palette", badge: "Soon" },
           { label: "Home Energy Audit", href: "/ai/energy-audit", description: "Estimate waste, solar savings & tax credits", icon: "zap" },
         ],
       },
       {
-        title: "SaaS (Coming Soon)",
+        title: "SaaS Tools",
         links: [
-          { label: "Green Renovation Planner", href: "/ai/renovation-planner", description: "Cost, materials, energy savings & ROI", icon: "calculator" },
-          { label: "Sustainable Material Finder", href: "/ai/material-finder", description: "Low-carbon alternatives to conventional materials", icon: "search" },
-          { label: "Building Code Assistant", href: "/ai/building-codes", description: "Permits, codes & compliance guidance", icon: "fileText" },
+          { label: "Green Renovation Planner", href: "/ai/renovation-planner", description: "Cost, materials, energy savings & ROI", icon: "calculator", badge: "Soon" },
+          { label: "Sustainable Material Finder", href: "/ai/material-finder", description: "Low-carbon alternatives to conventional materials", icon: "search", badge: "Soon" },
+          { label: "Building Code Assistant", href: "/ai/building-codes", description: "Permits, codes & compliance guidance", icon: "fileText", badge: "Soon" },
         ],
       },
     ],
@@ -273,7 +273,7 @@ export const mainNavigation: NavItem[] = [
           { label: "Eco Homes Marketplace", href: "/eco-homes", description: "Green-certified, passive & solar-powered listings", icon: "building2" },
           { label: "Instagram", href: siteConfig.social.instagram, description: "Minimalist eco interiors & sustainable design inspiration", icon: "camera", external: true },
           { label: "Pinterest", href: siteConfig.social.pinterest, description: "Scandinavian eco design inspiration", icon: "camera", external: true },
-          { label: "EcoModern Store", href: "/store", description: "Our brand — decor, kits & planners (coming soon)", icon: "shoppingBag", badge: "Soon" },
+          { label: "EcoModern Store", href: "/store", description: "Our brand — decor, kits & planners", icon: "shoppingBag", badge: "Soon" },
         ],
       },
     ],
