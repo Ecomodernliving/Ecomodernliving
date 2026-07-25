@@ -36,7 +36,7 @@ async function fsWriteDB(db: SubscribersDB): Promise<void> {
   await fs.writeFile(SUBSCRIBERS_FILE, JSON.stringify(db, null, 2), "utf8");
 }
 
-async function ensureNewsletterSchema(): Promise<void> {
+export async function ensureNewsletterSchema(): Promise<void> {
   await ensureSchema();
   const sql = getSql();
   await sql`
@@ -55,6 +55,26 @@ async function ensureNewsletterSchema(): Promise<void> {
 
 function normalizeEmail(email: string): string {
   return email.trim().toLowerCase();
+}
+
+/** Active subscriber emails for weekly campaigns. */
+export async function listActiveSubscriberEmails(): Promise<string[]> {
+  if (isDbConfigured()) {
+    await ensureNewsletterSchema();
+    const sql = getSql();
+    const rows = (await sql`
+      SELECT email
+      FROM newsletter_subscribers
+      WHERE status = 'subscribed'
+      ORDER BY subscribed_at ASC
+    `) as Array<{ email: string }>;
+    return rows.map((r) => r.email);
+  }
+
+  const db = await fsReadDB();
+  return db.subscribers
+    .filter((s) => s.status === "subscribed")
+    .map((s) => s.email);
 }
 
 export async function getSubscriber(

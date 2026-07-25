@@ -3,6 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { ArrowRight, User } from "lucide-react";
 import { getSession } from "@/lib/auth/session";
+import { isAdminEmail } from "@/lib/auth/admin";
 
 export const metadata: Metadata = {
   title: "My Account",
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
 export default async function AccountPage() {
   const user = await getSession();
   if (!user) redirect("/login?next=/account");
+  const isAdmin = isAdminEmail(user.email);
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-12 sm:py-16">
@@ -29,6 +31,15 @@ export default async function AccountPage() {
         </div>
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2">
+          {isAdmin && (
+            <Link
+              href="/admin/newsletter"
+              className="group flex items-center justify-between rounded-xl border border-forest-200 bg-forest-50 px-4 py-3.5 text-sm font-medium text-forest-900 transition-colors hover:border-forest-300 hover:bg-forest-100 sm:col-span-2"
+            >
+              Weekly newsletter admin
+              <ArrowRight className="h-4 w-4 text-forest-500 transition-transform group-hover:translate-x-0.5" />
+            </Link>
+          )}
           <Link
             href="/ai/energy-audit"
             className="group flex items-center justify-between rounded-xl border border-sage-200 bg-cream-50 px-4 py-3.5 text-sm font-medium text-forest-800 transition-colors hover:border-forest-200 hover:bg-forest-50"

@@ -173,7 +173,7 @@ export function Header() {
         onMouseLeave={scheduleClose}
       >
         <div className="relative mx-auto max-w-7xl px-4 lg:px-6">
-          <div className="grid h-16 grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 lg:h-[4.25rem] lg:gap-4">
+          <div className="flex h-16 items-center justify-between gap-2 lg:grid lg:h-[4.25rem] lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:justify-normal lg:gap-4">
             <Link
               href="/"
               className="relative z-20 flex shrink-0 items-center"
@@ -232,7 +232,7 @@ export function Header() {
               </ul>
             </nav>
 
-            <div className="relative z-20 flex shrink-0 items-center gap-1 sm:gap-1.5">
+            <div className="relative z-20 ml-auto flex shrink-0 items-center gap-0.5 sm:gap-1 lg:ml-0">
               <SiteSearch />
 
               <div className="hidden items-center gap-0.5 xl:flex">

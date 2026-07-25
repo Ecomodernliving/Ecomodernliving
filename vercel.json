@@ -1,0 +1,12 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/compose-newsletter",
+      "schedule": "0 15 * * 6"
+    },
+    {
+      "path": "/api/cron/weekly-newsletter",
+      "schedule": "0 14 * * 1"
+    }
+  ]
+}
